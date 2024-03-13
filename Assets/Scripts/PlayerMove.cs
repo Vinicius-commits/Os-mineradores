@@ -62,13 +62,11 @@ public class PlayerMove : MonoBehaviour
         if (hit.gameObject.tag == "DismantlePlatform" )
         {
             Debug.Log("Colidiu");
-            hit.transform.GetComponent<DismantlePlatform>().ActiveRoutine();
             hit.collider.tag = "Untagged";
         }
 
         else if (hit.transform.tag == "Coins")
         {
-            GameManager._instance.CollectCoin();
             Destroy(hit.gameObject);
         }
 
@@ -89,7 +87,6 @@ public class PlayerMove : MonoBehaviour
 
         if (hit.transform.tag == "Enemy" && !_invicible)
         {
-            GameManager._instance.LoadScene("End");
         }
     }
 
