@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 675302865}
   - component: {fileID: 675302864}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -553,8 +553,8 @@ MonoBehaviour:
     speed: 0
     multiplier: 0
     acceleration: 0
-    currentSpeed: 0
     isSprinting: 0
+    currentSpeed: 0
   _jumpPower: 0
   _gravity: -9.81
   _gravityMultiplier: 3
