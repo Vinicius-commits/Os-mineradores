@@ -8,27 +8,36 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     #region Movement
+    [Header("Movimentation")]
     [SerializeField] CharacterController _characterController;
     [SerializeField] float _angleCurrentVelocity;
     [SerializeField] Vector3 _direction, _inputAction;
-    [SerializeField] Movement movement = new Movement();
+    [SerializeField] Movement _movement = new Movement();
     #endregion
 
     #region Jump
+    [Header("Jump")]
     [SerializeField] float _jumpPower;
     #endregion
 
     #region Gravity
-    [SerializeField] float _gravity = -9.81f, _gravityMultiplier = 3.0f;
+    [Header("Gravity")]
+    [SerializeField] float _gravity = -9.81f;
+    [SerializeField] float _gravityMultiplier = 3.0f;
     [SerializeField] Vector2 _velocity = new Vector2();
     #endregion
 
     #region Dash
-    [SerializeField] float dashStartTime, dashSpeed = 3.0f, dashTime, dashCooldown = 1.0f;
-    [SerializeField] bool isDashing;
+    [Header("Dash")]
+    [SerializeField] float _dashStartTime;
+    [SerializeField] float _dashSpeed = 3.0f;
+    [SerializeField] float _dashTime;
+    [SerializeField] float _dashCooldown = 1.0f;
+    [SerializeField] bool _isDashing;
     #endregion
-
+    
     #region Colisions
+    [Header("Collisions")]
     bool _invicible = false;
     #endregion 
 
@@ -39,11 +48,11 @@ public class PlayerMove : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (isDashing)
+        if (_isDashing)
         {
-            if (Time.time - dashStartTime >= dashCooldown)
+            if (Time.time - _dashStartTime >= _dashCooldown)
             {
-                isDashing = false;
+                _isDashing = false;
             }
         }
 
@@ -106,10 +115,10 @@ public class PlayerMove : MonoBehaviour
 
     public void ApplyMovement()
     {
-        var targetSpeed = movement.isSprinting ? movement.speed * movement.multiplier : movement.speed;
-        movement.currentSpeed = Mathf.MoveTowards(movement.currentSpeed, targetSpeed, movement.acceleration * Time.deltaTime);
+        var targetSpeed = _movement.isSprinting ? _movement.speed * _movement.multiplier : _movement.speed;
+        _movement.currentSpeed = Mathf.MoveTowards(_movement.currentSpeed, targetSpeed, _movement.acceleration * Time.deltaTime);
         
-        _characterController.Move(_direction * movement.currentSpeed * Time.deltaTime);
+        _characterController.Move(_direction * _movement.currentSpeed * Time.deltaTime);
     }
 
     public void ApplyRotation()
@@ -123,7 +132,7 @@ public class PlayerMove : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
-        movement.isSprinting = context.started || context.performed;
+        _movement.isSprinting = context.started || context.performed;
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -152,9 +161,9 @@ public class PlayerMove : MonoBehaviour
     {
         float dashStartTime = Time.time;
 
-        while(Time.time < dashStartTime + dashTime)
+        while(Time.time < dashStartTime + _dashTime)
         {
-            _characterController.Move(_direction * dashSpeed * Time.deltaTime);
+            _characterController.Move(_direction * _dashSpeed * Time.deltaTime);
             yield return null;
         }
     }
