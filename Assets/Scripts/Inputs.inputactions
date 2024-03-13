@@ -101,7 +101,7 @@
                 {
                     "name": "forward",
                     "id": "f4506596-bdc6-4331-8adc-ea99dc59bb59",
-                    "path": "",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -112,7 +112,7 @@
                 {
                     "name": "backward",
                     "id": "c65eed4b-820b-4384-b5a8-1660037012ad",
-                    "path": "",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -178,7 +178,7 @@
                 {
                     "name": "forward",
                     "id": "dfb7b686-4e1b-45d7-a9ac-d36f620dfe55",
-                    "path": "",
+                    "path": "<XInputController>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -189,7 +189,7 @@
                 {
                     "name": "backward",
                     "id": "9832fce0-3a6b-4b4c-b176-351b132e15bb",
-                    "path": "",
+                    "path": "<XInputController>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -244,7 +244,7 @@
                 {
                     "name": "",
                     "id": "1162ce19-aa44-4305-b3e9-0bc54523925e",
-                    "path": "<Keyboard>/leftCtrl",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
