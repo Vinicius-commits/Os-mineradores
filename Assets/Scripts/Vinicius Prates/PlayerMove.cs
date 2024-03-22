@@ -37,9 +37,7 @@ public class PlayerMove : MonoBehaviour
 
     public void ApplyMovement()
     {
-        var targetSpeed = _movimento.isSprinting ? _movimento.velocidade * _movimento.multiplier : _movimento.velocidade;
-        //_movimento.velocidadeAtual = Mathf.MoveTowards(_movimento.velocidadeAtual, targetSpeed, _movimento.aceleracao * Time.deltaTime);
-        
+        var targetSpeed = _movimento.isSprinting ? _movimento.velocidade * _movimento.multiplier : _movimento.velocidade;        
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
 
