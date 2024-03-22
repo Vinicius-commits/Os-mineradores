@@ -5,19 +5,19 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMove : MonoBehaviour
+public class PlayerMovimentacao : MonoBehaviour
 {
     #region Movement
     [Header("Movimentation")]
     [SerializeField] Rigidbody _rigidBody;
     [SerializeField] Vector3 _inputAcoes;
-    [SerializeField] Movement _movimento = new Movement();
+    [SerializeField] Movimento _movimento = new Movimento();
     [SerializeField] ForceMode _forceMode;
     #endregion
     
     #region Colisions
     [Header("Collisions")]
-    [SerializeField] bool isGrounded;
+    [SerializeField] bool _estaNoChao;
     #endregion 
 
     public void Awake()
@@ -37,7 +37,7 @@ public class PlayerMove : MonoBehaviour
 
     public void ApplyMovement()
     {
-        var targetSpeed = _movimento.isSprinting ? _movimento.velocidade * _movimento.multiplier : _movimento.velocidade;        
+        var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicar : _movimento.velocidade;        
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
 
@@ -52,7 +52,7 @@ public class PlayerMove : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
-        _movimento.isSprinting = context.started || context.performed;
+        _movimento.estaCorrendo = context.started || context.performed;
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -60,14 +60,14 @@ public class PlayerMove : MonoBehaviour
         _inputAcoes = context.ReadValue<Vector3>();
     }
 
-    public bool IsGrounded() => isGrounded;
+    public bool IsGrounded() => _estaNoChao;
 }
 
 [Serializable]
-public struct Movement
+public struct Movimento
 {
-    public float velocidade, multiplier, aceleracao;
+    public float velocidade, multiplicar, aceleracao;
 
-    [HideInInspector] public bool isSprinting;
+    [HideInInspector] public bool estaCorrendo;
     [HideInInspector] public float velocidadeAtual;
 }

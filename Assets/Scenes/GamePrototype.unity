@@ -168,8 +168,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2068694928}
-        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+      - m_Target: {fileID: 2068694931}
+        m_TargetAssemblyTypeName: PlayerMovimentacao, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
@@ -184,9 +184,9 @@ MonoBehaviour:
     m_ActionName: InputsPlayer/Move[/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2068694928}
+      - m_Target: {fileID: 2068694924}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
-        m_MethodName: Jump
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -200,9 +200,9 @@ MonoBehaviour:
     m_ActionName: InputsPlayer/Jump[/Keyboard/w,/Keyboard/space,/Keyboard/upArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2068694928}
+      - m_Target: {fileID: 2068694924}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
-        m_MethodName: Dash
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -216,8 +216,8 @@ MonoBehaviour:
     m_ActionName: InputsPlayer/Ability[/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2068694928}
-        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+      - m_Target: {fileID: 2068694931}
+        m_TargetAssemblyTypeName: PlayerMovimentacao, Assembly-CSharp
         m_MethodName: Sprint
         m_Mode: 0
         m_Arguments:
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 675302865}
   - component: {fileID: 675302864}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Chao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,11 +585,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2068694927}
-  - component: {fileID: 2068694928}
+  - component: {fileID: 2068694931}
   - component: {fileID: 2068694929}
   - component: {fileID: 2068694930}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Jogador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,29 +611,6 @@ Transform:
   - {fileID: 1389705401}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2068694928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068694924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aab9ec431bb19e147859ca11165120c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rigidBody: {fileID: 2068694929}
-  _angleCurrentVelocity: 0
-  _direcao: {x: 0, y: 0, z: 0}
-  _inputAcoes: {x: 0, y: 0, z: 0}
-  _movimento:
-    velocidade: 0
-    multiplier: 5
-    aceleracao: 0
-    isSprinting: 0
-    velocidadeAtual: 0
-  isGrounded: 1
 --- !u!54 &2068694929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -642,8 +619,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068694924}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 80
+  m_Drag: 1.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -684,6 +661,28 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2068694931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068694924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab9ec431bb19e147859ca11165120c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidBody: {fileID: 2068694929}
+  _inputAcoes: {x: 0, y: 0, z: 0}
+  _movimento:
+    velocidade: 45500
+    multiplicar: 2
+    aceleracao: 0
+    estaCorrendo: 0
+    velocidadeAtual: 0
+  _forceMode: 0
+  _estaNoChao: 1
 --- !u!1 &2081231446
 GameObject:
   m_ObjectHideFlags: 0
