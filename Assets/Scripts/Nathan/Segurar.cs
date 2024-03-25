@@ -3,35 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Segurar : MonoBehaviour
+public class Pegar : MonoBehaviour, IInteractable
 {
     private GameObject objetoSegurado;
     private bool segurando = false;
+    [SerializeField] Transform mao;
 
-    public void SegurarObjeto(InputAction.CallbackContext context)
+    public void Interagir()
     {
-        if (context.started)
+        SegurarObjeto();
+    }
+
+    public void SegurarObjeto()
+    {
+        if (!segurando)
         {
-            if (!segurando)
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+            foreach (Collider collider in colliders)
             {
-                Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
-                foreach (Collider collider in colliders)
+                if (collider.CompareTag("Pedra"))
                 {
-                    if (collider.CompareTag("Pedra"))
-                    {
-                        objetoSegurado = collider.gameObject;
-                        segurando = true;
+                    objetoSegurado = collider.gameObject;
+                    segurando = true;
 
-
-                        objetoSegurado.transform.SetParent(transform);
-                        return;
-                    }
+                    objetoSegurado.transform.SetParent(mao, false);
+                    return;
                 }
             }
-            else
-            {
-                SoltarObjeto();
-            }
+        }
+
+        else
+        {
+            SoltarObjeto();
         }
     }
 

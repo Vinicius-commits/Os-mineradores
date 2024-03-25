@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : class, new()
+public class Singleton<T> : MonoBehaviour where T : MonoBehaviour, new()
 {
-    private static T _instance = new T();
+    private static T _instance;
 
     public static T Instance
     {
         get
         {
-            if (_instance != null)
+            if (_instance == null)
             {
                 _instance = new T();
+                GameObject singletonGameObject = new GameObject("PatternGameObject");
+                _instance = singletonGameObject.AddComponent<T>();
             }
 
             return _instance;

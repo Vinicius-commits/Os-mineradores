@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class TerminarMinerio : MonoBehaviour
+public class TerminarMinerio : MonoBehaviour, IInteractable
 {
-
     [SerializeField] private float timer;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
-
-    void Mineracao(InputAction.CallbackContext context)
+    
+    public void Interagir()
     {
-        if(context.performed && !minerando)
+        Mineracao();
+    }
+
+    public void Mineracao()
+    {
+        if(!minerando)
         {
             //Verifica se o player ta perto do minerio
             Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
@@ -28,12 +31,12 @@ public class TerminarMinerio : MonoBehaviour
         }
     }
 
-    void Quebrar() //verifica se ele ja foi minerado 3 vezes caso sim ele quebra de deixa a pedra sem minerio
+    public void Quebrar() //verifica se ele ja foi minerado 3 vezes caso sim ele quebra de deixa a pedra sem minerio
     {
         GameManager.Instance.minerios++;
         contador++;
         minerando = false;
         if(contador >= 3)
-        Destroy(this.gameObject);
+            Destroy(this.gameObject);
     }
 }

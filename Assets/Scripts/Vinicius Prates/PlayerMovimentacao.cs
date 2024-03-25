@@ -18,6 +18,7 @@ public class PlayerMovimentacao : MonoBehaviour
     #region Colisions
     [Header("Collisions")]
     [SerializeField] bool _estaNoChao;
+    [SerializeField] RaycastHit hit;
     #endregion 
 
     public void Awake()
@@ -54,6 +55,25 @@ public class PlayerMovimentacao : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputAcoes = context.ReadValue<Vector3>();
+    }
+
+    public void Interaction(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+
+            if(hit.collider == null)
+            {
+                return;
+            }
+
+            if (hit.collider.CompareTag("Minerio") && hit.collider != null)
+                hit.collider.GetComponent<IInteractable>().Interagir();
+
+            if (hit.collider.CompareTag("Pedra") && hit.collider != null)
+                hit.collider.GetComponent<IInteractable>().Interagir();
+        }
     }
 
     public bool IsGrounded() => _estaNoChao;
