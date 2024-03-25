@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class MudarCena : MonoBehaviour
 {
-    public void SceneChange(string sceneName)
+    public void MudandoCena(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void QuitGame()
+    public void SairDaAplicacao()
     {
         Application.Quit();
     }
