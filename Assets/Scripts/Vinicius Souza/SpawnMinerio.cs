@@ -11,9 +11,9 @@ public class SpawnMinerio : MonoBehaviour
     {
         for(int i = 0; i < NumMinerios; i++)
         {
-            int j = Random.Range(0, minerios.Length);
+            int index = i % minerios.Length;
             Vector3 pos = new Vector3(Random.Range(Posicaotop.x, Posicaobot.x), 0.5f, Random.Range(Posicaotop.z, Posicaobot.z));
-            GameObject G = Instantiate(minerios[j], pos, Quaternion.identity);
+            GameObject G = Instantiate(minerios[index], pos, Quaternion.identity);
             G.transform.parent = transform;
         }
     }
