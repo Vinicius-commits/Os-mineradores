@@ -6,17 +6,13 @@ public class Singleton<T> : MonoBehaviour where T : class, new()
 {
     private static T _instance = new T();
 
-    public T Instance
+    public static T Instance
     {
         get
         {
             if (_instance != null)
             {
                 _instance = new T();
-            }
-            else 
-            { 
-                _instance = new T(); 
             }
 
             return _instance;

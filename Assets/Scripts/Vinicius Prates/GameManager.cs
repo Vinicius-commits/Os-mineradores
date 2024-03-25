@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    
-    public int minerios;
+    public int minerios = 0;
+
+    public GameManager()
+    {
+
+    }
 }

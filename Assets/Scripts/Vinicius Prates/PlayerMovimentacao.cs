@@ -25,19 +25,15 @@ public class PlayerMovimentacao : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody>();
     }
 
-    public void Update()
-    {
-        ApplyMovement();
-    }
-
     public void FixedUpdate()
     {
-        //ApplyRotation();
+        ApplyMovement();
+        ApplyRotation();
     }
 
     public void ApplyMovement()
     {
-        var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicar : _movimento.velocidade;        
+        var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;        
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
 
@@ -45,7 +41,7 @@ public class PlayerMovimentacao : MonoBehaviour
     {
         if (!(_inputAcoes.x == 0 && _inputAcoes.z == 0))
         {
-            var _viewAngle = Mathf.Atan2(_inputAcoes.z, 0.0f) * Mathf.Rad2Deg;
+            var _viewAngle = Mathf.Atan2(_inputAcoes.x, _inputAcoes.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0.0f, _viewAngle, 0.0f);
         }
     }
@@ -66,7 +62,7 @@ public class PlayerMovimentacao : MonoBehaviour
 [Serializable]
 public struct Movimento
 {
-    public float velocidade, multiplicar, aceleracao;
+    public float velocidade, multiplicarCorrida, aceleracao;
 
     [HideInInspector] public bool estaCorrendo;
     [HideInInspector] public float velocidadeAtual;

@@ -1,49 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Segurar : MonoBehaviour
 {
     private GameObject objetoSegurado;
     private bool segurando = false;
 
-    void Update()
+    public void SegurarObjeto(InputAction.CallbackContext context)
     {
-        
-        if (Input.GetKeyDown(KeyCode.E))
+        if (context.started)
         {
-            if (segurando)
+            if (!segurando)
             {
-                SoltarObjeto();
+                Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+                foreach (Collider collider in colliders)
+                {
+                    if (collider.CompareTag("Pedra"))
+                    {
+                        objetoSegurado = collider.gameObject;
+                        segurando = true;
+
+
+                        objetoSegurado.transform.SetParent(transform);
+                        return;
+                    }
+                }
             }
             else
             {
-                SegurarObjeto();
+                SoltarObjeto();
             }
         }
     }
 
-    void SegurarObjeto()
+    public void SoltarObjeto()
     {
-        
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 1f); 
-        foreach (Collider collider in colliders)
-        {
-            if (collider.CompareTag("Pedra"))
-            {
-                objetoSegurado = collider.gameObject;
-                segurando = true;
-
-                
-                objetoSegurado.transform.SetParent(transform);
-                return;
-            }
-        }
-    }
-
-    void SoltarObjeto()
-    {
-        
         objetoSegurado.transform.SetParent(null);
         segurando = false;
         objetoSegurado = null;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -230,6 +230,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8a7463d3-a903-4acb-82e2-095b644fab8b
     m_ActionName: InputsPlayer/Sprint[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2068694924}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6976219d-7eb3-42d6-a0bf-3d6dfc8758a5
+    m_ActionName: InputsPlayer/Interaction
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: InputsPlayer
@@ -1508,7 +1524,7 @@ MonoBehaviour:
   _inputAcoes: {x: 0, y: 0, z: 0}
   _movimento:
     velocidade: 45500
-    multiplicar: 2
+    multiplicarCorrida: 2
     aceleracao: 0
     estaCorrendo: 0
     velocidadeAtual: 0
