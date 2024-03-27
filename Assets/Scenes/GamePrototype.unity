@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 417950418}
   - component: {fileID: 417950417}
   - component: {fileID: 417950416}
+  - component: {fileID: 417950420}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Pedra
@@ -301,6 +302,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &417950420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417950415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8877bbbbc6a8121499c0121c766a78fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675302863
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
         type: 3}
@@ -469,6 +482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208336330151243625, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Minerio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -887,7 +905,7 @@ PrefabInstance:
     - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.50000095
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
         type: 3}
@@ -928,6 +946,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208336330151243625, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Minerio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1429,6 +1452,7 @@ GameObject:
   - component: {fileID: 2101129185}
   - component: {fileID: 2101129184}
   - component: {fileID: 2101129183}
+  - component: {fileID: 2101129187}
   m_Layer: 0
   m_Name: TestePedra
   m_TagString: Pedra
@@ -1522,6 +1546,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101129187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101129182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8877bbbbc6a8121499c0121c766a78fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5378146319054960298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1540,6 +1576,17 @@ PrefabInstance:
       propertyPath: mao
       value: 
       objectReference: {fileID: 818826416}
+    - target: {fileID: 4865370808433395627, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472455637541435693, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7898916237484177103, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
