@@ -7,6 +7,7 @@ public class TerminarMinerio : Interactable
     [SerializeField] private float timer;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
+    [SerializeField] private bool ouro , ferro , aluminio , niobio;
 
     public override void Interagir()
     {
@@ -33,7 +34,15 @@ public class TerminarMinerio : Interactable
 
     public void Quebrar() //verifica se ele ja foi minerado 3 vezes caso sim ele quebra de deixa a pedra sem minerio
     {
-        GameManager.Instance.minerios++;
+        if(ouro)
+        GameManager.Instance.ouro++;
+        else if(ferro)
+        GameManager.Instance.ferro++;
+        else if(aluminio)
+        GameManager.Instance.aluminio++;
+        else if(niobio)
+        GameManager.Instance.niobio++;
+        
         contador++;
         minerando = false;
         if(contador >= 3)

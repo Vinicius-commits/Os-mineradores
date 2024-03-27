@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8142705730337961607}
   m_Layer: 0
-  m_Name: Minerio
+  m_Name: Niobio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 610c370e3bc7586408679ac6d7ad833d, type: 2}
+  - {fileID: 2100000, guid: fd0f37ab2608f3e4fb0959c335ea9326, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -201,7 +201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 279088b622bc21c459cb3dd00594063c, type: 2}
+  - {fileID: 2100000, guid: a4b6bd46fe325f34dae0adb9ff8e3809, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -259,3 +259,7 @@ MonoBehaviour:
   timer: 3
   contador: 0
   minerando: 0
+  ouro: 0
+  ferro: 0
+  aluminio: 0
+  niobio: 1

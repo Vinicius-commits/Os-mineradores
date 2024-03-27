@@ -116,6 +116,7 @@ Transform:
   m_Children:
   - {fileID: 5190638423745545038}
   - {fileID: 4865370808433395627}
+  - {fileID: 2460838186621043988}
   m_Father: {fileID: 8760680942153757784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4183334285158125571
@@ -243,19 +244,7 @@ MonoBehaviour:
     m_ActionId: 40850b56-41a8-45ec-92d4-b1227c6d4a5f
     m_ActionName: InputsPlayer/Move[/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8505274383528960439}
-        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 8d91c06f-fa45-481a-ac42-a5373827b52e
     m_ActionName: InputsPlayer/Jump[/Keyboard/w,/Keyboard/space,/Keyboard/upArrow]
   - m_PersistentCalls:
@@ -280,9 +269,9 @@ MonoBehaviour:
     m_ActionName: InputsPlayer/Sprint[/Keyboard/leftShift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Segurar, Assembly-CSharp
-        m_MethodName: SegurarObjeto
+      - m_Target: {fileID: 3120051108343074228}
+        m_TargetAssemblyTypeName: PlayerMovimentacao, Assembly-CSharp
+        m_MethodName: Interaction
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -415,7 +404,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1963881990909150581
 CapsuleCollider:
@@ -440,3 +429,82 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &2714577899486110463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3278284152001286706}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27100003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69380224
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.006007942
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7201152
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.006048894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.977
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -92.132
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+        type: 3}
+      propertyPath: m_Name
+      value: pika
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5fc6adcea7e0f774f9a63fb524e7eec6, type: 3}
+--- !u!4 &2460838186621043988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fc6adcea7e0f774f9a63fb524e7eec6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2714577899486110463}
+  m_PrefabAsset: {fileID: 0}
