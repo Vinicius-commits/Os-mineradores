@@ -5,14 +5,14 @@ using UnityEngine;
 public class SpawnMinerio : MonoBehaviour
 {
     [SerializeField] private GameObject[] minerios;
-    [SerializeField] private Vector3 Posicaotop, Posicaobot;
+    [SerializeField] private Transform[] Pos;
     [SerializeField] private int NumMinerios;
     public void Start()
     {
-        for(int i = 0; i < NumMinerios; i++)
+        for (int i = 0; i < NumMinerios; i++) 
         {
             int index = i % minerios.Length;
-            Vector3 pos = new Vector3(Random.Range(Posicaotop.x, Posicaobot.x), 0.5f, Random.Range(Posicaotop.z, Posicaobot.z));
+            Vector3 pos = Pos[i % Pos.Length].position;
             GameObject G = Instantiate(minerios[index], pos, Quaternion.identity);
             G.transform.parent = transform;
         }
