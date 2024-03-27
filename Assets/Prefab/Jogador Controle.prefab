@@ -280,7 +280,7 @@ MonoBehaviour:
     m_ActionName: InputsPlayer/Sprint[/Keyboard/leftShift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1971556353017523762}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Segurar, Assembly-CSharp
         m_MethodName: SegurarObjeto
         m_Mode: 0
@@ -342,7 +342,6 @@ GameObject:
   - component: {fileID: 3120051108343074228}
   - component: {fileID: 1229842690979153959}
   - component: {fileID: 1963881990909150581}
-  - component: {fileID: 1971556353017523762}
   m_Layer: 0
   m_Name: Jogador Controle
   m_TagString: Player
@@ -389,6 +388,8 @@ MonoBehaviour:
     velocidadeAtual: 0
   _forceMode: 0
   _estaNoChao: 1
+  segurando: 0
+  mao: {fileID: 4865370808433395627}
 --- !u!54 &1229842690979153959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -439,16 +440,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1971556353017523762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8505274383528960439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8877bbbbc6a8121499c0121c766a78fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mao: {fileID: 4865370808433395627}

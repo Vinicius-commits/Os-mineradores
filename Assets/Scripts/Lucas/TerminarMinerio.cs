@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TerminarMinerio : MonoBehaviour, IInteractable
+public class TerminarMinerio : Interactable
 {
     [SerializeField] private float timer;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
-    
-    public void Interagir()
+
+    public override void Interagir()
     {
         Mineracao();
     }

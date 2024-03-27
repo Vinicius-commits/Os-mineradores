@@ -19,7 +19,12 @@ public class PlayerMovimentacao : MonoBehaviour
     [Header("Collisions")]
     [SerializeField] bool _estaNoChao;
     [SerializeField] RaycastHit hit;
-    #endregion 
+    #endregion
+
+    #region Interacoes
+    [SerializeField] bool segurando;
+    [SerializeField] Transform mao;
+    #endregion
 
     public void Awake()
     {
@@ -30,6 +35,7 @@ public class PlayerMovimentacao : MonoBehaviour
     {
         ApplyMovement();
         ApplyRotation();
+        Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
     }
 
     public void ApplyMovement()
@@ -68,11 +74,13 @@ public class PlayerMovimentacao : MonoBehaviour
                 return;
             }
 
-            if (hit.collider.CompareTag("Minerio") && hit.collider != null)
-                hit.collider.GetComponent<IInteractable>().Interagir();
-
             if (hit.collider.CompareTag("Pedra") && hit.collider != null)
-                hit.collider.GetComponent<IInteractable>().Interagir();
+            {
+                hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
+            } else if (hit.collider.CompareTag("Minerio") && hit.collider != null)
+            {
+                hit.collider.GetComponent<Interactable>().Interagir();
+            }
         }
     }
 
