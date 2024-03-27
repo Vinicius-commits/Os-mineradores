@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+>>>>>>> 00c056f33ed7365a6db783e350c4a3b37c115a62
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +139,7 @@ GameObject:
   - component: {fileID: 417950418}
   - component: {fileID: 417950417}
   - component: {fileID: 417950416}
+  - component: {fileID: 417950420}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Pedra
@@ -228,6 +233,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &417950420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417950415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8877bbbbc6a8121499c0121c766a78fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675302863
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +351,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &690823597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minerio (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.12146
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.5746312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208336330151243625, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Minerio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+>>>>>>> 00c056f33ed7365a6db783e350c4a3b37c115a62
 --- !u!1 &702604703
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1072,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586676336}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
+--- !u!1001 &1657983255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minerio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4403267
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.298831
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142705730337961607, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208336330151243625, guid: d1bacfea5836cf1428022367fcde2a8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Minerio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+>>>>>>> 00c056f33ed7365a6db783e350c4a3b37c115a62
 --- !u!1 &1819774182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1762,25 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 116
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 1971556353017523762, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: mao
+      value: 
+      objectReference: {fileID: 818826416}
+    - target: {fileID: 4865370808433395627, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472455637541435693, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
+        type: 0}
+>>>>>>> 00c056f33ed7365a6db783e350c4a3b37c115a62
     - target: {fileID: 7898916237484177103, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
