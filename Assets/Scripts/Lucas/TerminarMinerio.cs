@@ -35,14 +35,13 @@ public class TerminarMinerio : Interactable
     public void Quebrar() //verifica se ele ja foi minerado 3 vezes caso sim ele quebra de deixa a pedra sem minerio
     {
         if(ouro)
-        GameManager.Instance.ouro++;
+            GameManager.Instance.ouro++;
         else if(ferro)
-        GameManager.Instance.ferro++;
+            GameManager.Instance.ferro++;
         else if(aluminio)
-        GameManager.Instance.aluminio++;
+            GameManager.Instance.aluminio++;
         else if(niobio)
-        GameManager.Instance.niobio++;
-        
+            GameManager.Instance.niobio++;
         contador++;
         minerando = false;
         if(contador >= 3)
