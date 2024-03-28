@@ -8,6 +8,7 @@ public class TerminarMinerio : Interactable
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
     [SerializeField] private bool ouro , ferro , aluminio , niobio;
+    [SerializeField] private GameObject pedra;
 
     public override void Interagir()
     {
@@ -45,6 +46,7 @@ public class TerminarMinerio : Interactable
         contador++;
         minerando = false;
         if(contador >= 3)
+            pedra.SetActive(true);
             Destroy(this.gameObject);
     }
 }
