@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: a0cbca2a6b1f7234aa423e71da59691c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GamePrototype.unity
     guid: 0faf931bad3c227458b0797d1f75f783
   - enabled: 1

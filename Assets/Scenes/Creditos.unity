@@ -451,9 +451,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jogo Criado Para o Museu de Mineirais por: Arthur Reis, Arthur Oliveira,
-    Fellipe Texeira, Lucas Henrique Valverde, Nathan Oliveira, Vincius Souza, Vinicius
-    Neves'
+  m_text: 'Jogo Criado Para o Museu dos Minerais por: Arthur Reis, Arthur Oliveira,
+    Gabriel Ribeiro,  Fellipe Texeira, Lucas Henrique Valverde, Nathan Oliveira,
+    Vincius Souza, Vinicius Neves'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f3f5e3dc162cc74e91ba46041878acb, type: 2}
   m_sharedMaterial: {fileID: -4305935508021996782, guid: 2f3f5e3dc162cc74e91ba46041878acb,
