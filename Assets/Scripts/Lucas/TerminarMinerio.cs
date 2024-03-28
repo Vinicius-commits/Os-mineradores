@@ -46,7 +46,9 @@ public class TerminarMinerio : Interactable
         contador++;
         minerando = false;
         if(contador >= 3)
+        {
             pedra.SetActive(true);
             Destroy(this.gameObject);
+        }
     }
 }

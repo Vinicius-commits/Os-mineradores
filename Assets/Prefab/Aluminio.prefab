@@ -51,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5282454413015500142
 Transform:
   m_ObjectHideFlags: 0
@@ -263,3 +263,4 @@ MonoBehaviour:
   ferro: 0
   aluminio: 1
   niobio: 0
+  pedra: {fileID: 7510813742109756445}
