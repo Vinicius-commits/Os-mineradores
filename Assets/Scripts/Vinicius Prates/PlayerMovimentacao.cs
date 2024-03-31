@@ -77,7 +77,8 @@ public class PlayerMovimentacao : MonoBehaviour
             if (hit.collider.CompareTag("Pedra") && hit.collider != null)
             {
                 hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
-            } else if (hit.collider.CompareTag("Minerio") && hit.collider != null)
+            }
+            if (hit.collider.CompareTag("Minerio") && hit.collider != null)
             {
                 hit.collider.GetComponent<Interactable>().Interagir();
             }
