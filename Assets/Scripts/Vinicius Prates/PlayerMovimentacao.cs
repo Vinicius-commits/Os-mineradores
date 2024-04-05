@@ -69,11 +69,6 @@ public class PlayerMovimentacao : MonoBehaviour
         {
             Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
 
-            if(hit.collider == null)
-            {
-                return;
-            }
-
             if (hit.collider.CompareTag("Pedra") && hit.collider != null)
             {
                 hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
@@ -82,8 +77,20 @@ public class PlayerMovimentacao : MonoBehaviour
             {
                 hit.collider.GetComponent<Interactable>().Interagir();
             }
+
+            if(segurando == false)
+            {
+                //ativar animação de minerar
+                while(context.performed && hit.collider.CompareTag("Minerio"))
+                {
+                    Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+                    hit.collider.GetComponent<Interactable>().Interagir();
+                }
+            }
         }
     }
+
+    
 
     public bool IsGrounded() => _estaNoChao;
 }
