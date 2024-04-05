@@ -2926,7 +2926,7 @@ PrefabInstance:
     - target: {fileID: 3120051108343074228, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}
       propertyPath: cena
-      value: Jogo2
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 8505274383528960439, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}

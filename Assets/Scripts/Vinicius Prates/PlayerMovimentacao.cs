@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -24,7 +25,10 @@ public class PlayerMovimentacao : MonoBehaviour
     #region Interacoes
     [SerializeField] bool segurando;
     [SerializeField] Transform mao;
+    [SerializeField] string cena;
     #endregion
+
+
 
     public void Awake()
     {
@@ -93,8 +97,16 @@ public class PlayerMovimentacao : MonoBehaviour
     
 
     public bool IsGrounded() => _estaNoChao;
-}
 
+
+     void OnCollisionEnter(Collision other)
+     {
+        if (other.gameObject.CompareTag("Elevador")){
+            SceneManager.LoadScene(cena);
+        }
+     }
+
+}
 [Serializable]
 public struct Movimento
 {

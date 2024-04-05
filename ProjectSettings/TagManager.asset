@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pedra
   - Minerio
+  - Elevador
   layers:
   - Default
   - TransparentFX
