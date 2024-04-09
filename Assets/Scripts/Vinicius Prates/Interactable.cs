@@ -13,4 +13,14 @@ public abstract class Interactable : MonoBehaviour
     {
         segurando = true;
     }
+
+    public virtual bool IsInteragindo()
+    {
+        return false;
+    }
+
+    public virtual bool IsInteragindo(bool value)
+    {
+        return false;
+    }
 }

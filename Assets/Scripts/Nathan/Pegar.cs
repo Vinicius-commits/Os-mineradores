@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Pegar : Interactable
 {
+    [SerializeField] bool isCarregando;
     public override void Interagir(ref bool segurando, Transform mao)
     {
         if(segurando == false)
@@ -17,5 +18,17 @@ public class Pegar : Interactable
             segurando = false;
             this.transform.SetParent(null, true);
         }
+    }
+
+    public override bool IsInteragindo()
+    {
+        return isCarregando;
+    }
+
+    public override bool IsInteragindo(bool value)
+    {
+        Debug.Log("alterando");
+        isCarregando = value;
+        return isCarregando;
     }
 }

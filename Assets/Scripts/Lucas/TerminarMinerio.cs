@@ -19,17 +19,8 @@ public class TerminarMinerio : Interactable
     {
         if (!minerando)
         {
-            //Verifica se o player ta perto do minerio
-            Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
-            foreach (Collider collider in colliders)
-            {
-                //nessa parte eu vou colocar uma barra de UI para mostrar o tempo passando
-                if (collider.CompareTag("Player"))
-                {
-                    minerando = true;
-                    Invoke("Quebrar", timer);
-                }
-            }
+            minerando = true;
+            Invoke("Quebrar", timer);
         }
     }
 
@@ -39,36 +30,51 @@ public class TerminarMinerio : Interactable
         {
             GameManager.Instance.ouro++;
             if(GameManager.Instance.ouro == 4)
-            SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ouro);
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ouro);
         }
 
         else if (ferro)
         {
             GameManager.Instance.ferro++;
             if(GameManager.Instance.ferro == 4)
-            SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ferro);
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ferro);
         }
 
         else if (aluminio)
         {
             GameManager.Instance.aluminio++;
             if(GameManager.Instance.aluminio == 4)
-            SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Aluminio);
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Aluminio);
         }
 
         else if (niobio)
         {
             GameManager.Instance.niobio++;
             if(GameManager.Instance.niobio == 4)
-            SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Niobio);
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Niobio);
         }
 
         contador++;
         minerando = false;
         if (contador >= 3)
         {
-            pedra.SetActive(true);
-            Destroy(this.gameObject);
+            if (pedra != null)
+            {
+                pedra.SetActive(true);
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Debug.LogError("Pedra não definida para " + this.gameObject.name);
+            }
         }
+        else 
+        {
+            if (!minerando)
+            {
+                Mineracao();
+            }
+        }
+        
     }
 }
