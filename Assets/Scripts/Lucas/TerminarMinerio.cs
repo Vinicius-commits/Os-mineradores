@@ -24,33 +24,30 @@ public class TerminarMinerio : Interactable
         }
     }
 
-    public void Quebrar() //verifica se ele ja foi minerado 3 vezes caso sim ele quebra de deixa a pedra sem minerio
+    public void Quebrar()
     {
         if (ouro)
         {
-            GameManager.Instance.ouro++;
-            if(GameManager.Instance.ouro == 4)
+            GameManager.Instance.AtualizarOuro(1);
+            if (GameManager.Instance.ouro == 12)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ouro);
         }
-
         else if (ferro)
         {
-            GameManager.Instance.ferro++;
-            if(GameManager.Instance.ferro == 4)
+            GameManager.Instance.AtualizarFerro(1);
+            if (GameManager.Instance.ferro == 12)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ferro);
         }
-
         else if (aluminio)
         {
-            GameManager.Instance.aluminio++;
-            if(GameManager.Instance.aluminio == 4)
+            GameManager.Instance.AtualizarAluminio(1);
+            if (GameManager.Instance.aluminio == 12)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Aluminio);
         }
-
         else if (niobio)
         {
-            GameManager.Instance.niobio++;
-            if(GameManager.Instance.niobio == 4)
+            GameManager.Instance.AtualizarNiobio(1);
+            if (GameManager.Instance.niobio == 12)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Niobio);
         }
 
@@ -68,13 +65,12 @@ public class TerminarMinerio : Interactable
                 Debug.LogError("Pedra não definida para " + this.gameObject.name);
             }
         }
-        else 
+        else
         {
             if (!minerando)
             {
                 Mineracao();
             }
         }
-        
     }
 }

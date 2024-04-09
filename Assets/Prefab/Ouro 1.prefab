@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4958354587267907421
+--- !u!1 &4009576256814327498
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,80 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8142705730337961607}
+  - component: {fileID: 7742250819617296756}
+  - component: {fileID: 4175577925664421762}
+  - component: {fileID: 8410767752733617383}
+  - component: {fileID: 5850496951257596665}
+  - component: {fileID: 7482556570053226951}
   m_Layer: 0
-  m_Name: Aluminio
-  m_TagString: Untagged
+  m_Name: ComMinerio
+  m_TagString: Minerio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8142705730337961607
+--- !u!4 &7742250819617296756
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958354587267907421}
+  m_GameObject: {fileID: 4009576256814327498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.13, y: 0.62, z: -4.53}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5626358217380782454}
-  - {fileID: 5282454413015500142}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7510813742109756445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5282454413015500142}
-  - component: {fileID: 4277425901496924323}
-  - component: {fileID: 7123335554834911858}
-  - component: {fileID: 7574273406765848168}
-  m_Layer: 0
-  m_Name: SemMinerio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5282454413015500142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7510813742109756445}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7442778, y: -0, z: -0, w: 0.66787034}
-  m_LocalPosition: {x: 0.21727991, y: -0.20530364, z: 0.014363766}
-  m_LocalScale: {x: 0.48895967, y: 0.48895967, z: 0.48895967}
+  m_LocalPosition: {x: 0.039395, y: -0.51, z: 0.000010014}
+  m_LocalScale: {x: 0.6907934, y: 0.70431566, z: 0.9239361}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8142705730337961607}
-  m_LocalEulerAnglesHint: {x: 96.194, y: 0, z: 0}
---- !u!33 &4277425901496924323
+  m_Father: {fileID: 1714577287199043819}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4175577925664421762
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7510813742109756445}
-  m_Mesh: {fileID: 6651119627239530983, guid: ba95d0dd87cac4245a0b576474d5baa5, type: 3}
---- !u!23 &7123335554834911858
+  m_GameObject: {fileID: 4009576256814327498}
+  m_Mesh: {fileID: 2072670527802610124, guid: 352a079c1a93b5a4e8d7d309d8a93e3c, type: 3}
+--- !u!23 &8410767752733617383
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7510813742109756445}
+  m_GameObject: {fileID: 4009576256814327498}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -95,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19a00b5b1ff96ab4e955afbafb78e9b7, type: 2}
+  - {fileID: 2100000, guid: b850e57f11d37fa4681e6b05c006ca0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,13 +85,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7574273406765848168
+--- !u!65 &5850496951257596665
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7510813742109756445}
+  m_GameObject: {fileID: 4009576256814327498}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -136,9 +104,33 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &9208336330151243625
+  m_Size: {x: 1.9574127, y: 2.8943732, z: 1.1877971}
+  m_Center: {x: 0.28638452, y: 1.1802784, z: 0.07788892}
+--- !u!114 &7482556570053226951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4009576256814327498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060b2b5d67cfb3d4cb841d5bf5d92c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1.5
+  contador: 0
+  minerando: 0
+  ouro: 1
+  ferro: 0
+  aluminio: 0
+  niobio: 0
+  pedra: {fileID: 4125122401333452259}
+  ouroHUDText: {fileID: 0}
+  ferroHUDText: {fileID: 0}
+  aluminioHUDText: {fileID: 0}
+  niobioHUDText: {fileID: 0}
+--- !u!1 &4096600819363747540
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,46 +138,83 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5626358217380782454}
-  - component: {fileID: 4522657858480106659}
-  - component: {fileID: 6700427406436589626}
-  - component: {fileID: 4993403474005346447}
+  - component: {fileID: 1714577287199043819}
   m_Layer: 0
-  m_Name: ComMinerio
-  m_TagString: Minerio
+  m_Name: Ouro 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &5626358217380782454
-RectTransform:
+--- !u!4 &1714577287199043819
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208336330151243625}
+  m_GameObject: {fileID: 4096600819363747540}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0265, y: 1.2312866, z: 1.0265}
+  m_LocalPosition: {x: 13.443493, y: 0, z: 16.469908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7742250819617296756}
+  - {fileID: 503079568170586786}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4125122401333452259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503079568170586786}
+  - component: {fileID: 7559969135565171876}
+  - component: {fileID: 756948384789212923}
+  - component: {fileID: 2289501169519336510}
+  m_Layer: 0
+  m_Name: SemMinerio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &503079568170586786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125122401333452259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.045923, y: -0.52, z: 0.019981}
+  m_LocalScale: {x: 0.6086657, y: 0.6086657, z: 0.6086657}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8142705730337961607}
+  m_Father: {fileID: 1714577287199043819}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &4522657858480106659
+--- !u!33 &7559969135565171876
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125122401333452259}
+  m_Mesh: {fileID: 2072670527802610124, guid: 2f142714542124b41a629dabd54021cb, type: 3}
+--- !u!23 &756948384789212923
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208336330151243625}
+  m_GameObject: {fileID: 4125122401333452259}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -196,7 +225,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2100000, guid: cfaca94005d0fd641a504421e5e24dfb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -218,13 +247,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6700427406436589626
+--- !u!65 &2289501169519336510
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208336330151243625}
+  m_GameObject: {fileID: 4125122401333452259}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -237,29 +266,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6242166, y: 1.2825096, z: 1.7363163}
-  m_Center: {x: 0.06876559, y: -0.05283518, z: 0.0111951055}
---- !u!114 &4993403474005346447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9208336330151243625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 060b2b5d67cfb3d4cb841d5bf5d92c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 1.5
-  contador: 0
-  minerando: 0
-  ouro: 0
-  ferro: 0
-  aluminio: 1
-  niobio: 0
-  pedra: {fileID: 7510813742109756445}
-  ouroHUDText: {fileID: 0}
-  ferroHUDText: {fileID: 0}
-  aluminioHUDText: {fileID: 0}
-  niobioHUDText: {fileID: 0}
+  m_Size: {x: 1.8377824, y: 2.6233304, z: 1.5664238}
+  m_Center: {x: -0.017630853, y: 1.1335484, z: -0.05339882}
