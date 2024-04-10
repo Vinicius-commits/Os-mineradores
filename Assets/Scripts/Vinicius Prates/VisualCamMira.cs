@@ -14,7 +14,7 @@ public class VisualCamMira : MonoBehaviour
 
     void FixedUpdate()
     {
-        rePosition = new Vector3(_playerTransform.position.x + (_realocateDistanceX * _realocateSpeedX), _playerTransform.position.y + (_realocateDistanceY * _realocateSpeedY), _playerTransform.position.z + (_realocateDistanceZ * _realocateSpeedZ));
+        rePosition = new Vector3(_playerTransform.localPosition.x + (_realocateDistanceX * _realocateSpeedX), _playerTransform.localPosition.y + (_realocateDistanceY * _realocateSpeedY), _playerTransform.localPosition.z + (_realocateDistanceZ * _realocateSpeedZ));
         transform.position = rePosition;
     }
 
