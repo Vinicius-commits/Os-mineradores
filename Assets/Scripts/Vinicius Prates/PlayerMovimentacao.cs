@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using System.Net.Http.Headers;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovimentacao : MonoBehaviour
@@ -16,8 +15,9 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] Transform cameraPlayer;
     [SerializeField] Movimento _movimento = new Movimento();
     [SerializeField] ForceMode _forceMode;
+    Vector3 forward;
     #endregion
-    
+
     #region Colisions
     [Header("Collisions")]
     [SerializeField] bool _estaNoChao;
@@ -47,7 +47,7 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void ApplyMovement()
     {
-        var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;        
+        var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
 
@@ -75,7 +75,7 @@ public class PlayerMovimentacao : MonoBehaviour
         if (context.started)
         {
             isButtonPressed = true;
-            StartCoroutine(ContinuousInteraction());
+            StartCoroutine(InteracaoContinua());
         }
         
         if (context.canceled)
@@ -84,7 +84,7 @@ public class PlayerMovimentacao : MonoBehaviour
         }
     }
 
-    private IEnumerator ContinuousInteraction()
+    private IEnumerator InteracaoContinua()
     {
         while (isButtonPressed)
         {
