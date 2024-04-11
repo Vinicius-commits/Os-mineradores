@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovimentacao : MonoBehaviour
 {
-    #region Movement
+    #region Movimento
     [Header("Movimentation")]
     [SerializeField] Rigidbody _rigidBody;
     [SerializeField] Vector3 _inputAcoes;
@@ -18,7 +18,7 @@ public class PlayerMovimentacao : MonoBehaviour
     Vector3 forward;
     #endregion
 
-    #region Colisions
+    #region Colisoes
     [Header("Collisions")]
     [SerializeField] bool _estaNoChao;
     [SerializeField] RaycastHit hit;
@@ -30,8 +30,6 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] Transform mao;
     [SerializeField] string cena;
     #endregion
-
-
 
     public void Awake()
     {
@@ -68,6 +66,7 @@ public class PlayerMovimentacao : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputAcoes = context.ReadValue<Vector3>();
+        _inputAcoes = Matrix4x4.Rotate(cameraPlayer.rotation) * _inputAcoes;
     }
 
     public void Interaction(InputAction.CallbackContext context)
