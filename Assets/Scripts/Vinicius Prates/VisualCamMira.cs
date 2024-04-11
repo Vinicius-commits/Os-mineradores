@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[ExecuteInEditMode]
 public class VisualCamMira : MonoBehaviour
 {
     [SerializeField] Transform _playerTransform;
