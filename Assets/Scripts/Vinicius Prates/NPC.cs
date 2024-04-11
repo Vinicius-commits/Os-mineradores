@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class NPC : Interactable
 {
     [SerializeField] Vector3 destino;
     [SerializeField] GameObject pedidos;
@@ -29,5 +29,8 @@ public class NPC : MonoBehaviour
         pedidos.SetActive(pedidos.activeSelf);
     }
 
-    
+    public override void Interagir()
+    {
+        InteragirPedidos();
+    }
 }

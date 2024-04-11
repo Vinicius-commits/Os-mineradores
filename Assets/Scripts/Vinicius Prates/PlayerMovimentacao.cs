@@ -98,6 +98,9 @@ public class PlayerMovimentacao : MonoBehaviour
                 else if (hit.collider.CompareTag("Minerio"))
                 {
                     hit.collider.GetComponent<Interactable>().Interagir();
+                } else if(hit.collider.CompareTag("NPC"))
+                {
+                    hit.collider.GetComponent<Interactable>().Interagir();
                 }
 
                 if (!segurando && hit.collider.CompareTag("Minerio"))

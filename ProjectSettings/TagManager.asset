@@ -11,6 +11,7 @@ TagManager:
   - Ferro
   - Aluminio
   - Niobio
+  - NPC
   layers:
   - Default
   - TransparentFX
