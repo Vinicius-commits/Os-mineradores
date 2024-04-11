@@ -7,6 +7,10 @@ TagManager:
   - Pedra
   - Minerio
   - Elevador
+  - Ouro
+  - Ferro
+  - Aluminio
+  - Niobio
   layers:
   - Default
   - TransparentFX
