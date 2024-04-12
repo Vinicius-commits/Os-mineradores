@@ -282,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 2451159797820950116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 8199464865161977020}
   - component: {fileID: 8329819368683594279}
   - component: {fileID: 156055083787855040}
+  - component: {fileID: 8141331102390279632}
   m_Layer: 0
   m_Name: NPC Controle (1)
   m_TagString: NPC
@@ -367,7 +368,7 @@ Transform:
   m_GameObject: {fileID: 3020881538360728150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.483411, y: 1.19, z: -1}
+  m_LocalPosition: {x: 13.483411, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -449,6 +450,22 @@ MonoBehaviour:
   panel: {fileID: 7464483631441263834}
   fadeInSpeed: 0.5
   fadeOutSpeed: 0.5
+--- !u!114 &8141331102390279632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3020881538360728150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d455d42542b744b277254dea85461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagProcurada: Ouro
+  objetoMaisProximo: {fileID: 0}
+  minerio: {fileID: 4429071399211449394}
+  agente: {fileID: 8199464865161977020}
 --- !u!1 &3460151714738458448
 GameObject:
   m_ObjectHideFlags: 0

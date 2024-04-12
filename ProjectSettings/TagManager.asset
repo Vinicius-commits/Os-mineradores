@@ -12,6 +12,8 @@ TagManager:
   - Aluminio
   - Niobio
   - NPC
+  - carro
+  - SemMinerio
   layers:
   - Default
   - TransparentFX

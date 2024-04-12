@@ -5,10 +5,40 @@ using UnityEngine;
 public class TerminarMinerio : Interactable
 {
     [SerializeField] private float timer;
+    [SerializeField] private float timernpc;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
     [SerializeField] private bool ouro, ferro, aluminio, niobio;
     [SerializeField] private GameObject pedra;
+    [SerializeField] private bool npc;
+    [SerializeField] private Transform pai;
+    [SerializeField] private GameObject paiObj;
+    [SerializeField] private GameObject npcObj;
+
+    void Start()
+    {
+        pai = transform.parent;
+        paiObj = pai.gameObject;
+    }
+
+    void Update()
+    {
+        // Cria uma esfera de detecção centrada na posição do objeto atual e com o raio especificado NPC
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 1.0f);
+
+        // Itera sobre todos os colliders encontrados NPC
+        foreach (Collider collider in colliders)
+        {
+            // Verifica se o collider pertence à tag desejada NPC
+            if (collider.CompareTag("NPC"))
+            {
+                npcObj = collider.gameObject;
+                Invoke("Mineracao", 2f);
+                npc = true;
+
+            }
+        }
+    }
 
     public override void Interagir()
     {
@@ -20,7 +50,16 @@ public class TerminarMinerio : Interactable
         if (!minerando)
         {
             minerando = true;
-            Invoke("Quebrar", timer);
+            if (npc)
+            {   
+                float distancia = Vector3.Distance(npcObj.transform.position, transform.position);
+                Debug.Log("" + distancia);
+                if(distancia < 2)
+                Invoke("Quebrar", timernpc);
+            }
+
+            else
+                Invoke("Quebrar", timer);
         }
     }
 
@@ -52,11 +91,13 @@ public class TerminarMinerio : Interactable
         }
 
         contador++;
+        Debug.LogError(contador);
         minerando = false;
         if (contador >= 3)
         {
             if (pedra != null)
             {
+                paiObj.tag = "SemMinerio";
                 pedra.SetActive(true);
                 Destroy(this.gameObject);
             }

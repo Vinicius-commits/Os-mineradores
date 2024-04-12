@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1.5
+  timernpc: 5
   contador: 0
   minerando: 0
   ouro: 0
@@ -303,3 +304,4 @@ MonoBehaviour:
   aluminio: 0
   niobio: 1
   pedra: {fileID: 7510813742109756445}
+  npc: 0
