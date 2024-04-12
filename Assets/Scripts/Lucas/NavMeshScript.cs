@@ -11,20 +11,16 @@ public class NavMeshScript : MonoBehaviour
     void Start()
     {
         StartCoroutine(AtrasarExecucao());
-
-
-
     }
+
     public IEnumerator AtrasarExecucao()
     {
-
         yield return new WaitForSeconds(1f); // Atrasa por 1 segundo
         EncontrarObjetoMaisProximo(0, 0);
     }
 
     public void EncontrarObjetoMaisProximo(int tag, int agente)
     {
-
         GameObject[] objetosComTag = GameObject.FindGameObjectsWithTag(tagsProcuradas[tag]);
         float menorDistancia = Mathf.Infinity;
         Vector3 posicaoAtual = transform.position;
@@ -41,8 +37,6 @@ public class NavMeshScript : MonoBehaviour
 
         IrPara();
     }
-
-
 
     void IrPara()
     {
