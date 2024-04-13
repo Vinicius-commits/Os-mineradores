@@ -12,46 +12,51 @@ public class NPCInteraction : MonoBehaviour
     private bool playerInRange = false;
     private bool panelActive = false;
 
-    private void OnCollisionEnter(Collision collision)
+    public bool IsPanelActive
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            playerInRange = true;
-        }
+        get => panelActive;
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            playerInRange = false;
-            DeactivatePanel();
-        }
-    }
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     if (collision.gameObject.CompareTag("Player"))
+    //     {
+    //         playerInRange = true;
+    //     }
+    // }
 
-    private void Update()
-    {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
-            if (!panelActive)
-            {
-                ActivatePanel();
-            }
-            else
-            {
-                DeactivatePanel();
-            }
-        }
-    }
+    // private void OnCollisionExit(Collision collision)
+    // {
+    //     if (collision.gameObject.CompareTag("Player"))
+    //     {
+    //         playerInRange = false;
+    //         DeactivatePanel();
+    //     }
+    // }
 
-    private void ActivatePanel()
+    // private void Update()
+    // {
+    //     if (playerInRange && Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         if (!panelActive)
+    //         {
+    //             ActivatePanel();
+    //         }
+    //         else
+    //         {
+    //             DeactivatePanel();
+    //         }
+    //     }
+    // }
+
+    public void ActivatePanel()
     {
         panel.SetActive(true);
         StartCoroutine(FadeInPanel());
         panelActive = true;
     }
 
-    private void DeactivatePanel()
+    public void DeactivatePanel()
     {
         StartCoroutine(FadeOutPanel());
         panelActive = false;

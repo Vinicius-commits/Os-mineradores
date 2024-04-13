@@ -388,8 +388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08652fd72525a340a761508ab24bba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destino: {x: 0, y: 0, z: 0}
-  pedidos: {fileID: 3460151714738458448}
+  interacoes: {fileID: 156055083787855040}
+  mineracao: {fileID: 8141331102390279632}
 --- !u!195 &8199464865161977020
 NavMeshAgent:
   m_ObjectHideFlags: 0

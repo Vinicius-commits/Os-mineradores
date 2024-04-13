@@ -16,7 +16,7 @@ public class NpcMineracao : MonoBehaviour
     void Update()
     {
         if(minerio == null)
-        EncontrarObjetoMaisProximo();
+            EncontrarObjetoMaisProximo();
     }
 
     public IEnumerator AtrasarExecucao()

@@ -4,33 +4,14 @@ using UnityEngine;
 
 public class NPC : Interactable
 {
-    [SerializeField] Vector3 destino;
-    [SerializeField] GameObject pedidos;
-
-    public Vector3 Destino
-    {
-        get { return destino; }
-    }
-
-    #region SetDestino
-    public void SetDestino(Transform novoDestino)
-    {
-        destino = novoDestino.position;
-    }
-
-    public void SetDestino(Vector3 novoDestino)
-    {
-        destino = novoDestino;
-    }
-    #endregion
-
-    public void InteragirPedidos()
-    {
-        pedidos.SetActive(pedidos.activeSelf);
-    }
+    [SerializeField] NPCInteraction interacoes;
+    [SerializeField] NpcMineracao mineracao;
 
     public override void Interagir()
     {
-        InteragirPedidos();
+        if (interacoes.IsPanelActive)
+            interacoes.ActivatePanel();
+        else
+            interacoes.DeactivatePanel();
     }
 }
