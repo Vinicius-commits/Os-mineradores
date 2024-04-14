@@ -53,13 +53,11 @@ public class NPCInteraction : MonoBehaviour
     {
         panel.SetActive(true);
         StartCoroutine(FadeInPanel());
-        panelActive = true;
     }
 
     public void DeactivatePanel()
     {
         StartCoroutine(FadeOutPanel());
-        panelActive = false;
     }
 
     private IEnumerator FadeInPanel()
@@ -73,6 +71,7 @@ public class NPCInteraction : MonoBehaviour
             canvasGroup.alpha = alpha;
             yield return null;
         }
+        panelActive = true;
     }
 
     private IEnumerator FadeOutPanel()
@@ -87,6 +86,7 @@ public class NPCInteraction : MonoBehaviour
             yield return null;
         }
 
+        panelActive = false;
         panel.SetActive(false);
     }
 }

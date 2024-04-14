@@ -8,15 +8,24 @@ public class NpcMineracao : MonoBehaviour
     [SerializeField] private string tagProcurada;
     [SerializeField] private GameObject objetoMaisProximo;
     [SerializeField] private Transform minerio;
+    [SerializeField] Transform descansoPosition;
+    [SerializeField] bool estaDescansando = false;
     [SerializeField] private NavMeshAgent agente;
+
+    public void SairDoDesacanso()
+    {
+        estaDescansando = false;
+        StartCoroutine(AtrasarExecucao());
+    }
 
     void Start()
     {
         StartCoroutine(AtrasarExecucao());
     }
+
     void FixedUpdate()
     {
-        if(minerio == null)
+        if(minerio == null && !estaDescansando)
             EncontrarObjetoMaisProximo();
     }
 
@@ -53,8 +62,20 @@ public class NpcMineracao : MonoBehaviour
         agente.SetDestination(irPara);
     }
 
+    public void Descansar()
+    {
+        estaDescansando = true;
+        agente.SetDestination(descansoPosition.position);
+        StopCoroutine(AtrasarExecucao());
+        minerio = null;
+    }
+
     public void MudarTag(string tag)
     {
         tagProcurada = tag;
+        if(estaDescansando == true)
+        {
+            SairDoDesacanso();
+        }
     }
 }

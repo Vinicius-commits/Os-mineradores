@@ -11,9 +11,9 @@ TagManager:
   - Ferro
   - Aluminio
   - Niobio
-  - NPC
   - carro
   - SemMinerio
+  - Interagivel
   layers:
   - Default
   - TransparentFX

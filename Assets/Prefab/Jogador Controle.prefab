@@ -369,8 +369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidBody: {fileID: 1229842690979153959}
   _inputAcoes: {x: 0, y: 0, z: 0}
+  cameraPlayer: {fileID: 0}
   _movimento:
-    velocidade: 45500
+    velocidade: 60000
     multiplicarCorrida: 2
     aceleracao: 0
     estaCorrendo: 0
@@ -378,7 +379,9 @@ MonoBehaviour:
   _forceMode: 0
   _estaNoChao: 1
   segurando: 0
+  isButtonPressed: 0
   mao: {fileID: 4865370808433395627}
+  cena: 
 --- !u!54 &1229842690979153959
 Rigidbody:
   m_ObjectHideFlags: 0
