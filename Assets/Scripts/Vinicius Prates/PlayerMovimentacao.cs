@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovimentacao : MonoBehaviour
 {
     #region Movimento
-    [Header("Movimentation")]
+    [Header("Movimentacao")]
     [SerializeField] Rigidbody _rigidBody;
     [SerializeField] Vector3 _inputAcoes;
     [SerializeField] Transform cameraPlayer;
@@ -19,12 +19,13 @@ public class PlayerMovimentacao : MonoBehaviour
     #endregion
 
     #region Colisoes
-    [Header("Collisions")]
+    [Header("Colisoes")]
     [SerializeField] bool _estaNoChao;
     [SerializeField] RaycastHit hit;
     #endregion
 
     #region Interacoes
+    [Header("Intereacoes")]
     [SerializeField] bool segurando;
     [SerializeField] bool isButtonPressed;
     [SerializeField] Transform mao;
@@ -128,13 +129,12 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public bool IsGrounded() => _estaNoChao;
 
-
-     void OnCollisionEnter(Collision other)
-     {
+    void OnCollisionEnter(Collision other)
+    {
         if (other.gameObject.CompareTag("Elevador")){
             SceneManager.LoadScene(cena);
         }
-     }
+    }
 
 }
 [Serializable]

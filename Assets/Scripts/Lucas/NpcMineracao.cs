@@ -9,11 +9,12 @@ public class NpcMineracao : MonoBehaviour
     [SerializeField] private GameObject objetoMaisProximo;
     [SerializeField] private Transform minerio;
     [SerializeField] private NavMeshAgent agente;
+
     void Start()
     {
         StartCoroutine(AtrasarExecucao());
     }
-    void Update()
+    void FixedUpdate()
     {
         if(minerio == null)
             EncontrarObjetoMaisProximo();
@@ -38,7 +39,6 @@ public class NpcMineracao : MonoBehaviour
             {
                 menorDistancia = distancia;
                 objetoMaisProximo = objeto;
-                
             }
         }
 
@@ -53,7 +53,7 @@ public class NpcMineracao : MonoBehaviour
         agente.SetDestination(irPara);
     }
 
-    void MudarTag(string tag)
+    public void MudarTag(string tag)
     {
         tagProcurada = tag;
     }

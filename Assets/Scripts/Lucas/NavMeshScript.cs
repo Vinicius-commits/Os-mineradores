@@ -8,6 +8,9 @@ public class NavMeshScript : MonoBehaviour
     [SerializeField] private string[] tagsProcuradas;
     [SerializeField] private GameObject objetoMaisProximo;
     [SerializeField] private NavMeshAgent[] agentes;
+    [SerializeField] int tagIndex = 0;
+    [SerializeField] int agenteIndex = 0;
+
     void Start()
     {
         StartCoroutine(AtrasarExecucao());
@@ -15,8 +18,13 @@ public class NavMeshScript : MonoBehaviour
 
     public IEnumerator AtrasarExecucao()
     {
-        yield return new WaitForSeconds(1f); // Atrasa por 1 segundo
-        EncontrarObjetoMaisProximo(0, 0);
+        yield return new WaitForSeconds(1f); //Atrasa por 1 segundo
+        if(agentes[agenteIndex].GetComponent<NpcMineracao>() != null)
+        {
+            
+        }
+        //tagIndex = agentes[agenteIndex].GetComponent<Interactable>();
+        EncontrarObjetoMaisProximo(tagIndex, agenteIndex);
     }
 
     public void EncontrarObjetoMaisProximo(int tag, int agente)
