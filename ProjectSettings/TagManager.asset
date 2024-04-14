@@ -14,6 +14,7 @@ TagManager:
   - carro
   - SemMinerio
   - Interagivel
+  - NPC
   layers:
   - Default
   - TransparentFX
