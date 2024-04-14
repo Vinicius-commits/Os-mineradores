@@ -91,7 +91,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5282454413015500142
 Transform:
   m_ObjectHideFlags: 0
@@ -176,8 +176,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.911644, z: 3.504685}
-  m_Center: {x: 0, y: 0.48150423, z: -0.22810347}
+  m_Size: {x: 1, y: 2.645096, z: 3.504685}
+  m_Center: {x: 0, y: 0.47271743, z: -0.22810347}
 --- !u!114 &5606988069032822050
 MonoBehaviour:
   m_ObjectHideFlags: 0

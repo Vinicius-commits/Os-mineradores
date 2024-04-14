@@ -32,6 +32,9 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] string cena;
     #endregion
 
+    #region Animacoes
+    [SerializeField] Animator animator;
+    #endregion
     public void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
@@ -46,6 +49,7 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void ApplyMovement()
     {
+        animator.Play("Run");
         var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
@@ -56,6 +60,10 @@ public class PlayerMovimentacao : MonoBehaviour
         {
             var _viewAngle = Mathf.Atan2(_inputAcoes.x, _inputAcoes.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0.0f, _viewAngle, 0.0f);
+        }
+        else if(!(animator.GetCurrentAnimatorClipInfo(0).ToString() == "Idle") && isButtonPressed)
+        {
+            animator.Play("Idle");
         }
     }
 
@@ -109,6 +117,7 @@ public class PlayerMovimentacao : MonoBehaviour
                 {
                     segurando = true;
                     Interactable obj = hit.collider.GetComponent<Interactable>();
+                    animator.Play("Minerando");
 
                     while (isButtonPressed && obj.CompareTag("Minerio"))
                     {
@@ -119,6 +128,7 @@ public class PlayerMovimentacao : MonoBehaviour
                         }
                         yield return null;
                     }
+                    animator.Play("Idle");
                 }
             }
 
