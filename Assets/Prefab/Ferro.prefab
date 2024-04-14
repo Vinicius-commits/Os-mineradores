@@ -52,7 +52,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.58954656, y: 0.49175793, z: 0.476326}
   m_Center: {x: 0.098006785, y: -0.25412104, z: 0.07580328}
@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 4277425901496924323}
   - component: {fileID: 7123335554834911858}
   - component: {fileID: 7574273406765848168}
+  - component: {fileID: 7705517041303767029}
   m_Layer: 0
   m_Name: SemMinerio
   m_TagString: Pedra
@@ -175,8 +176,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.5932162, y: 2.4897616, z: 3.4829323}
+  m_Center: {x: 0.3414035, y: 0.31036696, z: -0.2689845}
+--- !u!114 &7705517041303767029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510813742109756445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8877bbbbc6a8121499c0121c766a78fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCarregando: 0
 --- !u!1 &9208336330151243625
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,3 +319,6 @@ MonoBehaviour:
   niobio: 0
   pedra: {fileID: 7510813742109756445}
   npc: 0
+  pai: {fileID: 0}
+  paiObj: {fileID: 0}
+  npcObj: {fileID: 0}

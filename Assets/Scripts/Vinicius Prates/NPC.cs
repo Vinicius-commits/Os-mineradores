@@ -9,7 +9,7 @@ public class NPC : Interactable
 
     public override void Interagir()
     {
-        if (interacoes.IsPanelActive)
+        if (!interacoes.IsPanelActive)
             interacoes.ActivatePanel();
         else
             interacoes.DeactivatePanel();
