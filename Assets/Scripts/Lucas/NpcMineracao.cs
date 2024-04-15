@@ -28,9 +28,9 @@ public class NpcMineracao : MonoBehaviour
     void FixedUpdate()
     {
         if(minerio == null)
-        EncontrarObjetoMaisProximo();
+            EncontrarObjetoMaisProximo();
         if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
-        EncontrarObjetoMaisProximo();
+            EncontrarObjetoMaisProximo();
             
     }
 
@@ -85,9 +85,9 @@ public class NpcMineracao : MonoBehaviour
 
     public void Descansar()
     {
+        StopCoroutine(AtrasarExecucao());
         estaDescansando = true;
         agente.SetDestination(descansoPosition.position);
-        StopCoroutine(AtrasarExecucao());
         minerio = null;
     }
 

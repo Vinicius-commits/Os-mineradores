@@ -1015,9 +1015,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08652fd72525a340a761508ab24bba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoMineiro: 0
+  mineiroPreset: {fileID: 0}
+  listaMineiros:
+  - {fileID: 11400000, guid: e7717cc4cd9f0dc4d98e7fe501483ca7, type: 2}
+  - {fileID: 11400000, guid: 81f7fcaf6cc233c41be41d51b53c05fa, type: 2}
+  - {fileID: 11400000, guid: 46a70b27d0dffcf4593a8df1d4b11356, type: 2}
+  - {fileID: 11400000, guid: 5ce079896a9f6e541a32c293cb53db9e, type: 2}
   interacoes: {fileID: 156055083787855040}
   mineracao: {fileID: 8141331102390279632}
-  mineiroPreset: {fileID: 0}
   mineiroImage: {fileID: 0}
   mineiroNome: {fileID: 0}
   mineiroMesh: {fileID: 0}
@@ -1104,6 +1110,7 @@ MonoBehaviour:
   descansoPosition: {fileID: 0}
   estaDescansando: 0
   agente: {fileID: 8199464865161977020}
+  aux: 0
 --- !u!1 &3284791099678677787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,7 +1584,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1843,7 +1850,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
