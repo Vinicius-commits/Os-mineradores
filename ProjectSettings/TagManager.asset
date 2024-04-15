@@ -16,6 +16,7 @@ TagManager:
   - Interagivel
   - NPC
   - Minerando
+  - Descanso
   layers:
   - Default
   - TransparentFX
