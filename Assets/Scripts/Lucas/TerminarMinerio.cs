@@ -10,10 +10,11 @@ public class TerminarMinerio : Interactable
     [SerializeField] private bool minerando;
     [SerializeField] private bool ouro, ferro, aluminio, niobio;
     [SerializeField] private GameObject pedra;
-    [SerializeField] private bool npc;
+    public bool npc = false;
     [SerializeField] private Transform pai;
     [SerializeField] private GameObject paiObj;
     [SerializeField] private GameObject npcObj;
+    
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class TerminarMinerio : Interactable
         paiObj = pai.gameObject;
     }
 
-    void Update()
+    public void Update()
     {
         // Cria uma esfera de detecção centrada na posição do objeto atual e com o raio especificado NPC
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.0f);
@@ -33,6 +34,7 @@ public class TerminarMinerio : Interactable
             if (collider.CompareTag("NPC"))
             {
                 npcObj = collider.gameObject;
+                
                 Invoke("Mineracao", 2f);
                 npc = true;
 
@@ -49,6 +51,7 @@ public class TerminarMinerio : Interactable
     {
         if (!minerando)
         {
+            this.gameObject.tag = "Minerando";
             minerando = true;
             if (npc)
             {   

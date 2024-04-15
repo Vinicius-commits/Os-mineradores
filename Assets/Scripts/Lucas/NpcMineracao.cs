@@ -5,13 +5,14 @@ using UnityEngine.AI;
 
 public class NpcMineracao : MonoBehaviour
 {
-    [SerializeField] private string[] tagProcurada;
+    [SerializeField] private List<string> tagProcurada;
     [SerializeField] public string minerioTag;
     [SerializeField] private GameObject objetoMaisProximo;
     [SerializeField] private Transform minerio;
     [SerializeField] Transform descansoPosition;
     [SerializeField] bool estaDescansando = false;
     [SerializeField] private NavMeshAgent agente;
+    [SerializeField] private int aux;
 
     public void SairDoDesacanso()
     {
@@ -26,8 +27,11 @@ public class NpcMineracao : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(minerio == null && !estaDescansando)
-            EncontrarObjetoMaisProximo();
+        if(minerio == null)
+        EncontrarObjetoMaisProximo();
+        if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
+        EncontrarObjetoMaisProximo();
+            
     }
 
     public IEnumerator AtrasarExecucao()
@@ -38,12 +42,28 @@ public class NpcMineracao : MonoBehaviour
 
     public void EncontrarObjetoMaisProximo()
     {
+        
         GameObject[] objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
+        if(objetosComTag == null)
+        {
+            if(tagProcurada[aux+1] is not null)
+            {
+                minerioTag = tagProcurada[aux+1];
+                aux++;
+                objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
+            }
+            
+            else
+            {
+                minerioTag = tagProcurada[0];
+                aux = 0;
+                objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
+            }
+        }   
         float menorDistancia = Mathf.Infinity;
         Vector3 posicaoAtual = transform.position;
-
         foreach (GameObject objeto in objetosComTag)
-        {
+        {            
             float distancia = Vector3.Distance(agente.transform.position, posicaoAtual);
             if (distancia < menorDistancia)
             {
@@ -73,6 +93,7 @@ public class NpcMineracao : MonoBehaviour
 
     public void MudarTag(int tag)
     {
+        aux = tag;
         minerioTag = tagProcurada[tag];
         if(estaDescansando == true)
         {

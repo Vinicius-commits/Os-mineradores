@@ -15,6 +15,7 @@ TagManager:
   - SemMinerio
   - Interagivel
   - NPC
+  - Minerando
   layers:
   - Default
   - TransparentFX
