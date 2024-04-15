@@ -46,6 +46,8 @@ public class PlayerMovimentacao : MonoBehaviour
         ApplyMovement();
         ApplyRotation();
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
+        Debug.DrawRay(transform.position, new Vector3(-0.3f, 0, 1) * 2, Color.red);
+        Debug.DrawRay(transform.position, new Vector3(0.3f, 0, 1) * 2, Color.red);
     }
 
     public void ApplyMovement()
@@ -99,6 +101,8 @@ public class PlayerMovimentacao : MonoBehaviour
         while (isButtonPressed)
         {
             Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+            Physics.Raycast(transform.position, new Vector3(0.3f, 0, 1), out hit, 2.0f);
+            Physics.Raycast(transform.position, new Vector3(-0.3f, 0, 1), out hit, 2.0f);
 
             if (hit.collider != null)
             {
