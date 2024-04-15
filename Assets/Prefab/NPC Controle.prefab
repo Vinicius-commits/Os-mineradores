@@ -1093,7 +1093,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d455d42542b744b277254dea85461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagProcurada: Ouro
+  tagProcurada:
+  - Aluminio
+  - Ferro
+  - Niobio
+  - Ouro
+  minerioTag: Ouro
   objetoMaisProximo: {fileID: 0}
   minerio: {fileID: 4429071399211449394}
   descansoPosition: {fileID: 0}
@@ -1564,7 +1569,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3833110833281851901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8141331102390279632}
+        m_TargetAssemblyTypeName: NpcMineracao, Assembly-CSharp
+        m_MethodName: MudarTag
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5467589463529773399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1702,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3502164585813892510}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8141331102390279632}
+        m_TargetAssemblyTypeName: NpcMineracao, Assembly-CSharp
+        m_MethodName: MudarTag
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5674961775623869974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,7 +1835,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3675904932484053102}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8141331102390279632}
+        m_TargetAssemblyTypeName: NpcMineracao, Assembly-CSharp
+        m_MethodName: MudarTag
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5714080013107964343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,7 +2343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4734165623565366617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2597,4 +2638,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3859208266643298411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8141331102390279632}
+        m_TargetAssemblyTypeName: NpcMineracao, Assembly-CSharp
+        m_MethodName: MudarTag
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

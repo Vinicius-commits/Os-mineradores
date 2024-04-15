@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class NpcMineracao : MonoBehaviour
 {
-    [SerializeField] private string tagProcurada;
+    [SerializeField] private string[] tagProcurada;
+    [SerializeField] public string minerioTag;
     [SerializeField] private GameObject objetoMaisProximo;
     [SerializeField] private Transform minerio;
     [SerializeField] Transform descansoPosition;
@@ -37,7 +38,7 @@ public class NpcMineracao : MonoBehaviour
 
     public void EncontrarObjetoMaisProximo()
     {
-        GameObject[] objetosComTag = GameObject.FindGameObjectsWithTag(tagProcurada);
+        GameObject[] objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
         float menorDistancia = Mathf.Infinity;
         Vector3 posicaoAtual = transform.position;
 
@@ -70,9 +71,9 @@ public class NpcMineracao : MonoBehaviour
         minerio = null;
     }
 
-    public void MudarTag(string tag)
+    public void MudarTag(int tag)
     {
-        tagProcurada = tag;
+        minerioTag = tagProcurada[tag];
         if(estaDescansando == true)
         {
             SairDoDesacanso();

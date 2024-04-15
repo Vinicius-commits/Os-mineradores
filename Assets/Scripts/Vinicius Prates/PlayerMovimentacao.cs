@@ -108,7 +108,7 @@ public class PlayerMovimentacao : MonoBehaviour
                 {
                     hit.collider.GetComponent<Interactable>().Interagir();
                 }
-                else if (hit.collider.CompareTag("Interagivel"))
+                else if (hit.collider.CompareTag("NPC"))
                 {
                     hit.collider.GetComponent<Interactable>().Interagir();
                 }
