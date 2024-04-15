@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,7 +15,7 @@ public class NpcMineracao : MonoBehaviour
     [SerializeField] private NavMeshAgent agente;
     [SerializeField] private int aux;
 
-    public void SairDoDesacanso()
+    public void SairDoDescanso()
     {
         estaDescansando = false;
         StartCoroutine(AtrasarExecucao());
@@ -29,15 +30,18 @@ public class NpcMineracao : MonoBehaviour
     {
         if(minerio == null)
             EncontrarObjetoMaisProximo();
-        if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
-            EncontrarObjetoMaisProximo();
+        // if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
+        //     EncontrarObjetoMaisProximo();
             
     }
 
     public IEnumerator AtrasarExecucao()
     {
-        yield return new WaitForSeconds(1f); // Atrasa por 1 segundo
-        EncontrarObjetoMaisProximo();
+        if(minerio != null)
+        {
+            yield return new WaitForSeconds(1f); // Atrasa por 1 segundo
+            EncontrarObjetoMaisProximo();
+        }
     }
 
     public void EncontrarObjetoMaisProximo()
@@ -86,9 +90,9 @@ public class NpcMineracao : MonoBehaviour
     public void Descansar()
     {
         StopCoroutine(AtrasarExecucao());
+        minerioTag = tagProcurada.Last();
         estaDescansando = true;
-        agente.SetDestination(descansoPosition.position);
-        minerio = null;
+        
     }
 
     public void MudarTag(int tag)
@@ -97,7 +101,7 @@ public class NpcMineracao : MonoBehaviour
         minerioTag = tagProcurada[tag];
         if(estaDescansando == true)
         {
-            SairDoDesacanso();
+            SairDoDescanso();
         }
     }
 }

@@ -147,6 +147,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: tipoMineiro
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: mineiroPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 81f7fcaf6cc233c41be41d51b53c05fa,
+        type: 2}
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -345,6 +356,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: tipoMineiro
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: mineiroPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ce079896a9f6e541a32c293cb53db9e,
+        type: 2}
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,6 +415,11 @@ PrefabInstance:
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464483631441263834, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8141331102390279632, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
@@ -951,6 +978,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: tipoMineiro
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: mineiroPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 46a70b27d0dffcf4593a8df1d4b11356,
+        type: 2}
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2912,7 +2950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605925248}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21117792, y: 4.006106e-17, z: -6.89619e-17, w: 0.9774476}
+  m_LocalRotation: {x: 0.21117792, y: -4.006106e-17, z: 6.89619e-17, w: 0.9774476}
   m_LocalPosition: {x: 0, y: 4.2, z: -7.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3334,6 +3372,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: mineiroPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: e7717cc4cd9f0dc4d98e7fe501483ca7,
+        type: 2}
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3394,6 +3438,11 @@ PrefabInstance:
       propertyPath: descansoPosition
       value: 
       objectReference: {fileID: 1181760791}
+    - target: {fileID: 8329819368683594279, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4599,7 +4648,6 @@ GameObject:
   m_Component:
   - component: {fileID: 913632739}
   - component: {fileID: 913632738}
-  - component: {fileID: 913632737}
   m_Layer: 0
   m_Name: NavMash
   m_TagString: Untagged
@@ -4607,28 +4655,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &913632737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913632736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d03b14d0b041f498af0492d152ea9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagsProcuradas:
-  - Ouro
-  - Ferro
-  - Aluminio
-  - Niobio
-  objetoMaisProximo: {fileID: 0}
-  agentes:
-  - {fileID: 0}
-  tagIndex: 0
-  agenteIndex: 0
 --- !u!114 &913632738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5367,7 +5393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21117792, y: 4.006106e-17, z: -6.89619e-17, w: 0.9774476}
+  m_LocalRotation: {x: 0.21117792, y: -4.006106e-17, z: 6.89619e-17, w: 0.9774476}
   m_LocalPosition: {x: 0, y: 4.2, z: -7.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7656,6 +7682,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: tipoMineiro
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422207738147910685, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
+        type: 3}
+      propertyPath: mineiroPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ce079896a9f6e541a32c293cb53db9e,
+        type: 2}
     - target: {fileID: 4415215818498319061, guid: 2af8ce1e1d9eefc48b3ecafeb1d4298f,
         type: 3}
       propertyPath: m_LocalPosition.x

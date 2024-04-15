@@ -1024,9 +1024,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ce079896a9f6e541a32c293cb53db9e, type: 2}
   interacoes: {fileID: 156055083787855040}
   mineracao: {fileID: 8141331102390279632}
-  mineiroImage: {fileID: 0}
-  mineiroNome: {fileID: 0}
-  mineiroMesh: {fileID: 0}
+  mineiroImage: {fileID: 6133575867366441600}
+  mineiroNome: {fileID: 6793444457412634650}
+  mineiroMesh: {fileID: 3095529016942940449}
 --- !u!195 &8199464865161977020
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1071,7 +1071,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2.0267203
   m_Direction: 1
-  m_Center: {x: 0, y: -0.004158616, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &156055083787855040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1104,7 @@ MonoBehaviour:
   - Ferro
   - Niobio
   - Ouro
+  - Descanso
   minerioTag: Ouro
   objetoMaisProximo: {fileID: 0}
   minerio: {fileID: 4429071399211449394}
