@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 7632256128665907361}
   m_Layer: 0
   m_Name: SemMinerio
-  m_TagString: Pedra
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,3 +322,5 @@ MonoBehaviour:
   pai: {fileID: 0}
   paiObj: {fileID: 0}
   npcObj: {fileID: 0}
+  distancia: 0
+  tagAntes: 

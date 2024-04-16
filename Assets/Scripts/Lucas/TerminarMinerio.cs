@@ -43,7 +43,7 @@ public class TerminarMinerio : Interactable
             }
             if(npcObj != npcObj)
             distancia = Vector3.Distance(npcObj.transform.position, transform.position);
-            if(distancia > 3)
+            if(distancia > 3 && npc == true)
             {
                 CancelInvoke("Quebrar");
                 npc = false;
@@ -75,7 +75,10 @@ public class TerminarMinerio : Interactable
             }
 
             else
+            {
                 Invoke("Quebrar", timer);
+            }
+                
         }
     }
 
