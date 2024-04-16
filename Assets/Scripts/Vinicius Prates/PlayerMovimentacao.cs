@@ -43,18 +43,21 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if ((_inputAcoes.x == 0 && _inputAcoes.z == 0))
+        {
+            return;
+        }
         ApplyMovement();
         ApplyRotation();
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
-        Debug.DrawRay(transform.position, new Vector3(-0.3f, 0, 1) * 2, Color.red);
-        Debug.DrawRay(transform.position, new Vector3(0.3f, 0, 1) * 2, Color.red);
+        Debug.DrawRay(transform.position, new Vector3(-0.2f, 0, 1) * 2, Color.red);
+        Debug.DrawRay(transform.position, new Vector3(0.2f, 0, 1) * 2, Color.red);
     }
 
     public void ApplyMovement()
     {
         var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
-        animator.Play("Run");
     }
 
     public void ApplyRotation()
@@ -63,11 +66,6 @@ public class PlayerMovimentacao : MonoBehaviour
         {
             var _viewAngle = Mathf.Atan2(_inputAcoes.x, _inputAcoes.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0.0f, _viewAngle, 0.0f);
-        }
-        
-        else if(!(animator.GetCurrentAnimatorClipInfo(0).ToString() == "Idle") && !isButtonPressed)
-        {
-            animator.Play("Idle");
         }
     }
 
@@ -100,8 +98,8 @@ public class PlayerMovimentacao : MonoBehaviour
     {
         while (isButtonPressed)
         {
-            Vector3 vectorEsquerda = transform.forward + new Vector3(-0.3f, 0, 0);
-            Vector3 vectorDireita = transform.forward + new Vector3(0.3f, 0, 0);
+            Vector3 vectorEsquerda = transform.forward + new Vector3(-0.2f, 0, 0);
+            Vector3 vectorDireita = transform.forward + new Vector3(0.2f, 0, 0);
             Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
             Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
             Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
@@ -125,7 +123,6 @@ public class PlayerMovimentacao : MonoBehaviour
                 {
                     segurando = true;
                     Interactable obj = hit.collider.GetComponent<Interactable>();
-                    animator.Play("Minerando");
 
                     while (isButtonPressed && obj.CompareTag("Minerio"))
                     {
@@ -136,7 +133,6 @@ public class PlayerMovimentacao : MonoBehaviour
                         }
                         yield return null;
                     }
-                    animator.Play("Idle");
                 }
             }
 

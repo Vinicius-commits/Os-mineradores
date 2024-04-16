@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     public int aluminio = 0;
     public int niobio = 0;
 
+
     // Evento para notificar sobre as mudanças nos valores de minério
     public event Action<int> OnMinerioAtualizado;
 

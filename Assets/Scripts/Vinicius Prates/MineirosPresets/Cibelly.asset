@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Cibelly
   m_EditorClassIdentifier: 
   nome: Cibelly
-  corpoTipo: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  corpoTipo: {fileID: -7135422360030380547, guid: 108789a254965e24c8b4e689841677b0,
+    type: 3}
   mineiroIcon: {fileID: 21300000, guid: 844363b9965b59642a7ff9af61b21373, type: 3}

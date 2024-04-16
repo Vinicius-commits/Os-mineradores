@@ -11,10 +11,17 @@ public class PainelBotao: MonoBehaviour
     public GameObject panelToFadeIn; 
     private bool fading = false; 
 
-    private void Update()
-    {
+    // private void Update()
+    // {
         
-        if (Input.GetKeyDown(KeyCode.Space) && !fading)
+    //     if (Input.GetKeyDown(KeyCode.Space) && !fading)
+    //     {
+    //     }
+    // }
+
+    public void StartChangePanel()
+    {
+        if(!fading)
         {
             StartCoroutine(ChangePanel());
         }
