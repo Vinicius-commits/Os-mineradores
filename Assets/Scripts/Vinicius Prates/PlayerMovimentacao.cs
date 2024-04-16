@@ -100,9 +100,11 @@ public class PlayerMovimentacao : MonoBehaviour
     {
         while (isButtonPressed)
         {
+            Vector3 vectorEsquerda = transform.forward + new Vector3(-0.3f, 0, 0);
+            Vector3 vectorDireita = transform.forward + new Vector3(0.3f, 0, 0);
             Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
-            Physics.Raycast(transform.position, new Vector3(0.3f, 0, 1), out hit, 2.0f);
-            Physics.Raycast(transform.position, new Vector3(-0.3f, 0, 1), out hit, 2.0f);
+            Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
+            Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
 
             if (hit.collider != null)
             {

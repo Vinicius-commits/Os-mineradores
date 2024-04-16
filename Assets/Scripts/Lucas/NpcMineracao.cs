@@ -32,7 +32,6 @@ public class NpcMineracao : MonoBehaviour
             EncontrarObjetoMaisProximo();
         // if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
         //     EncontrarObjetoMaisProximo();
-            
     }
 
     public IEnumerator AtrasarExecucao()
@@ -46,7 +45,6 @@ public class NpcMineracao : MonoBehaviour
 
     public void EncontrarObjetoMaisProximo()
     {
-        
         GameObject[] objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
         if(objetosComTag == null)
         {
@@ -56,7 +54,6 @@ public class NpcMineracao : MonoBehaviour
                 aux++;
                 objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
             }
-            
             else
             {
                 minerioTag = tagProcurada[0];
@@ -64,8 +61,10 @@ public class NpcMineracao : MonoBehaviour
                 objetosComTag = GameObject.FindGameObjectsWithTag(minerioTag);
             }
         }   
+
         float menorDistancia = Mathf.Infinity;
         Vector3 posicaoAtual = transform.position;
+        
         foreach (GameObject objeto in objetosComTag)
         {            
             float distancia = Vector3.Distance(agente.transform.position, posicaoAtual);
@@ -93,7 +92,6 @@ public class NpcMineracao : MonoBehaviour
         minerioTag = tagProcurada.Last();
         EncontrarObjetoMaisProximo();
         estaDescansando = true;
-        
     }
 
     public void MudarTag(int tag)

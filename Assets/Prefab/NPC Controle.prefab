@@ -1105,7 +1105,7 @@ MonoBehaviour:
   - Niobio
   - Ouro
   - Descanso
-  minerioTag: Ouro
+  minerioTag: Descanso
   objetoMaisProximo: {fileID: 0}
   minerio: {fileID: 4429071399211449394}
   descansoPosition: {fileID: 0}
