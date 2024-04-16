@@ -14,6 +14,8 @@ public class TerminarMinerio : Interactable
     [SerializeField] private Transform pai;
     [SerializeField] private GameObject paiObj;
     [SerializeField] private GameObject npcObj;
+    [SerializeField] private float distancia = 0;
+    [SerializeField] private string tagAntes;
     
 
     void Start()
@@ -39,7 +41,17 @@ public class TerminarMinerio : Interactable
                 npc = true;
 
             }
+            if(npcObj != npcObj)
+            distancia = Vector3.Distance(npcObj.transform.position, transform.position);
+            if(distancia > 3)
+            {
+                CancelInvoke("Quebrar");
+                npc = false;
+                this.gameObject.tag = tagAntes;
+            }
+             
         }
+        
     }
 
     public override void Interagir()
@@ -51,11 +63,12 @@ public class TerminarMinerio : Interactable
     {
         if (!minerando)
         {
-            this.gameObject.tag = "Minerando";
+            tagAntes = transform.parent.gameObject.tag;
+            transform.parent.gameObject.tag = "Minerando";
             minerando = true;
             if (npc)
             {   
-                float distancia = Vector3.Distance(npcObj.transform.position, transform.position);
+                distancia = Vector3.Distance(npcObj.transform.position, transform.position);
                 Debug.Log("" + distancia);
                 if(distancia < 2)
                 Invoke("Quebrar", timernpc);

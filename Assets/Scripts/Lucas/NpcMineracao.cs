@@ -91,6 +91,7 @@ public class NpcMineracao : MonoBehaviour
     {
         StopCoroutine(AtrasarExecucao());
         minerioTag = tagProcurada.Last();
+        EncontrarObjetoMaisProximo();
         estaDescansando = true;
         
     }
@@ -99,6 +100,7 @@ public class NpcMineracao : MonoBehaviour
     {
         aux = tag;
         minerioTag = tagProcurada[tag];
+        EncontrarObjetoMaisProximo();
         if(estaDescansando == true)
         {
             SairDoDescanso();
