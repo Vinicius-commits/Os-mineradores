@@ -39,6 +39,8 @@ public class PlayerMovimentacao : MonoBehaviour
     public void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void FixedUpdate()

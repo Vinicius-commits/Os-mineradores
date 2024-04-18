@@ -40,18 +40,23 @@ public class NPC : Interactable
             case TiposMineiros.None:
                 mineiroPreset = null;
                 break;
+
             case TiposMineiros.Alexandre:
                 mineiroPreset = listaMineiros[0];
                 break;
+
             case TiposMineiros.Cibelly:
                 mineiroPreset = listaMineiros[1];
                 break;
+
             case TiposMineiros.Paola:
                 mineiroPreset= listaMineiros[2];
                 break;
+
             case TiposMineiros.Samuel:
                 mineiroPreset= listaMineiros[3];
                 break;
+                
         }
         if(mineiroPreset != null)
         {

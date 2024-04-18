@@ -30,8 +30,6 @@ public class NpcMineracao : MonoBehaviour
     {
         if(minerio == null)
             EncontrarObjetoMaisProximo();
-        // if(objetoMaisProximo != null && objetoMaisProximo.tag == "Minerando")
-        //     EncontrarObjetoMaisProximo();
     }
 
     public IEnumerator AtrasarExecucao()

@@ -7,10 +7,26 @@ using UnityEngine.InputSystem;
 [ExecuteInEditMode]
 public class VisualCamSeguir : MonoBehaviour
 {
+    #region Realocate
     [SerializeField] Transform _playerTransform;
-    [SerializeField] float _realocateDistanceX, _realocateSpeedX = 1.0f; 
-    [SerializeField] float _realocateDistanceY, _realocateSpeedY = 1.0f;
-    [SerializeField] float _realocateDistanceZ, _realocateSpeedZ = 1.0f;
+
+    [Header("Realocate X")]
+    [SerializeField] float _realocateDistanceX;
+    [SerializeField] float _realocateSpeedX = 1.0f;
+
+    [Header("Realocate Y")]
+    [SerializeField] float _realocateDistanceY;
+    [SerializeField] float _realocateSpeedY = 1.0f;
+
+    [Header("Realocate Z")]
+    [SerializeField] float _realocateDistanceZ;
+    [SerializeField] float _realocateSpeedZ = 1.0f;
+
+    [Header("Realocate Speed")]
+    [SerializeField] float _speedUp = 1.5f;
+    [SerializeField] float _normalSpeed = 1.0f;
+    #endregion
+
     Vector3 rePosition;
 
     void FixedUpdate()
@@ -21,14 +37,15 @@ public class VisualCamSeguir : MonoBehaviour
 
     public void ChangeRealocateSpeed(InputAction.CallbackContext context)
     {
-        if(context.started || context.performed) {
-            _realocateSpeedX = 1f;
-            _realocateSpeedZ = 1f;
+        if(context.started || context.performed) 
+        {
+            _realocateSpeedX = _speedUp;
+            _realocateSpeedZ = _speedUp;
         }
         else if(context.canceled)
         {
-            _realocateSpeedX = 1.5f;
-            _realocateSpeedZ = 1.5f;
+            _realocateSpeedX = _normalSpeed;
+            _realocateSpeedZ = _normalSpeed;
         }
 
     }
