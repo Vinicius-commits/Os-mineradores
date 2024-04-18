@@ -284,7 +284,7 @@
                 {
                     "name": "Mouse",
                     "id": "7f2fba72-a408-418b-bb74-8072f90e12c5",
-                    "path": "2DVector(mode=2)",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
