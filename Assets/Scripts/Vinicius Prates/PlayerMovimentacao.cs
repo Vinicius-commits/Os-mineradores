@@ -50,8 +50,6 @@ public class PlayerMovimentacao : MonoBehaviour
         ApplyMovement();
         ApplyRotation();
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
-        Debug.DrawRay(transform.position, new Vector3(-0.2f, 0, 1) * 2, Color.red);
-        Debug.DrawRay(transform.position, new Vector3(0.2f, 0, 1) * 2, Color.red);
     }
 
     public void ApplyMovement()
