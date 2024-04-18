@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Museu.unity
     guid: 189c037782ca1d24e8d9f03f0573f3e6
   - enabled: 1
-    path: Assets/Scenes/Jogo.unity
+    path: Assets/Scenes/Sudeste/Jogo.unity
     guid: 123407371d45afb4faa59c6f92e9c2a0
   - enabled: 1
-    path: Assets/Scenes/Jogo 2.unity
+    path: Assets/Scenes/Sudeste/Jogo 2.unity
     guid: 744261cd2ca5e59448cbbbb231c8f8f0
   - enabled: 1
-    path: Assets/Scenes/Jogo 3.unity
+    path: Assets/Scenes/Sudeste/Jogo 3.unity
     guid: b0d43fb666c805f40ad3d1f109940d37
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
