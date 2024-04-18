@@ -98,11 +98,12 @@ public class PlayerMovimentacao : MonoBehaviour
     {
         while (isButtonPressed)
         {
-            Vector3 vectorEsquerda = transform.forward + new Vector3(-0.2f, 0, 0);
-            Vector3 vectorDireita = transform.forward + new Vector3(0.2f, 0, 0);
-            Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
-            Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
-            Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
+            // Vector3 vectorEsquerda = transform.forward + new Vector3(-0.2f, 0, 0);
+            // Vector3 vectorDireita = transform.forward + new Vector3(0.2f, 0, 0);
+            // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+            // Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
+            // Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
+            Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.25f, transform.forward, out hit, 2.0f);
 
             if (hit.collider != null)
             {
@@ -128,7 +129,8 @@ public class PlayerMovimentacao : MonoBehaviour
                     {
                         if (!obj.IsInteragindo())
                         {
-                            Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+                            // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
+                            Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.5f, transform.forward, out hit, 2.0f);
                             obj.Interagir();
                         }
                         yield return null;

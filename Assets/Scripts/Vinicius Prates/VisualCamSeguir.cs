@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [ExecuteInEditMode]
-public class VisualCamMira : MonoBehaviour
+public class VisualCamSeguir : MonoBehaviour
 {
     [SerializeField] Transform _playerTransform;
     [SerializeField] float _realocateDistanceX, _realocateSpeedX = 1.0f; 
