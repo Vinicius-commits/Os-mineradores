@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AtivarPainelElevador : MonoBehaviour
+public class AtivarPainelElevador : Interactable
 {
     [SerializeField] GameObject painelElevador;
 
-
-    public void OnCollisionEnter(Collision collision)
+    public override void Interagir()
     {
-        if (collision.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.F))
+        painelElevador.SetActive(!painelElevador.activeSelf);
+        Cursor.visible = !Cursor.visible;
+        if(Cursor.lockState == CursorLockMode.None) 
         {
-            painelElevador.SetActive(true);
+            Cursor.lockState = CursorLockMode.Locked;   
+        } else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
-        else
-            painelElevador.SetActive(false);
     }
 }

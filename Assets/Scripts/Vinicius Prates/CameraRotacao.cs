@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 
 public class CameraRotacao : MonoBehaviour
 {
-    [SerializeField] bool booleana;
+    [SerializeField] float _sensibilidade;
 
     public void CamRotacao(InputAction.CallbackContext context)
     {
-        Vector2 inputRotacao = context.ReadValue<Vector2>();
-        Quaternion.Euler(0, inputRotacao.x, 0);
+        float rotacao = context.ReadValue<float>();
+        
     }
 }

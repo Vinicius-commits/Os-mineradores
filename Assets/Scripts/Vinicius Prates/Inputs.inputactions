@@ -2,7 +2,7 @@
     "name": "Inputs",
     "maps": [
         {
-            "name": "InputsPlayer",
+            "name": "MovimentoPlayer",
             "id": "1c8fa060-968c-4596-b95e-59f4394a393a",
             "actions": [
                 {
@@ -10,15 +10,6 @@
                     "type": "PassThrough",
                     "id": "40850b56-41a8-45ec-92d4-b1227c6d4a5f",
                     "expectedControlType": "Vector3",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Elevator",
-                    "type": "Button",
-                    "id": "7fcf43e6-8ae3-47a4-a48c-b961e98beb90",
-                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -33,19 +24,19 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interaction",
+                    "name": "Elevator",
                     "type": "Button",
-                    "id": "6976219d-7eb3-42d6-a0bf-3d6dfc8758a5",
+                    "id": "217d276c-ba19-455d-8f89-80b0fb51caf8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "CameraMovements",
-                    "type": "PassThrough",
-                    "id": "97474b6b-f749-45d0-8ce5-d8777636b082",
-                    "expectedControlType": "Vector2",
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "34f77dc6-951e-439b-8404-80045bb9435d",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -53,7 +44,7 @@
                 {
                     "name": "SpaceBar",
                     "type": "Button",
-                    "id": "a75df174-122b-42c4-b228-419bd8443ceb",
+                    "id": "7a8c566d-e1d8-487c-84de-5b56b004a023",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -217,28 +208,6 @@
                 },
                 {
                     "name": "",
-                    "id": "1162ce19-aa44-4305-b3e9-0bc54523925e",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Elevator",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8d22f663-08b7-4abf-8f23-6f0e2adc20ec",
-                    "path": "<XInputController>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Elevator",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ddbcfaf9-5908-4105-9c70-1d174e7de04f",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -261,7 +230,29 @@
                 },
                 {
                     "name": "",
-                    "id": "7a556210-9591-4621-9885-1d21ef7024a0",
+                    "id": "391d51d6-29fa-4f05-aafa-d0244ac64304",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Elevator",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f53daf11-18d8-400c-b45b-8472203f47fa",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Elevator",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0afc74db-5666-45d2-8a85-4c2a137cabfd",
                     "path": "<XInputController>/rightTrigger",
                     "interactions": "",
                     "processors": "",
@@ -272,7 +263,7 @@
                 },
                 {
                     "name": "",
-                    "id": "807b4ef0-c700-4502-a930-9af2114ebee7",
+                    "id": "dc89767e-b8e2-4d3c-af82-b6b7e5afc2d2",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
@@ -282,178 +273,41 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Mouse",
-                    "id": "7f2fba72-a408-418b-bb74-8072f90e12c5",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "afa8e08b-8f91-4bad-b7e9-dbdcbc2329a6",
-                    "path": "<Mouse>/position/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "1e9ded3f-3835-451a-bd4e-e639dc79dcfe",
-                    "path": "<Mouse>/position/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "84facf72-846e-45be-97ae-506ac119fa9c",
-                    "path": "<Mouse>/position/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "85c97b67-310a-455e-abbe-f780ec5803c0",
-                    "path": "<Mouse>/position/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "JoyStick",
-                    "id": "01c6e470-823e-4be1-871f-07ced4ea2929",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "d586cce5-12b7-4e88-b94f-91d09404146f",
-                    "path": "<XInputController>/rightStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "1f6eeb9c-a866-400d-ba75-cbd20fcd4eba",
-                    "path": "<XInputController>/rightStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "5475dda0-7ca3-4dc0-a544-63cfde42214e",
-                    "path": "<XInputController>/rightStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "3de53755-e89b-427c-8b79-089c570cd3bb",
-                    "path": "<XInputController>/rightStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "CelularTouch",
-                    "id": "066b57ab-0b53-4a1a-8b67-d78db123d1b2",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "0eb13197-72f1-4fec-bfec-db286aaba81c",
-                    "path": "<Touchscreen>/delta/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "a32bc276-45f9-4151-bda1-8f1cab08a9da",
-                    "path": "<Touchscreen>/primaryTouch/delta/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "f5748d25-41f6-484d-acfc-95ea76b35397",
-                    "path": "<Touchscreen>/primaryTouch/delta/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "126da150-8019-4afe-aa12-e0e595952c64",
-                    "path": "<Touchscreen>/primaryTouch/delta/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CameraMovements",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
-                    "id": "c08efce1-6b0e-48ec-b592-1aebf91f3f7f",
+                    "id": "631cccce-171a-4894-9075-ede8ddd1f008",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "SpaceBar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CameraMovimento",
+            "id": "78cbf169-68fa-4a56-a10b-3e105495846a",
+            "actions": [
+                {
+                    "name": "CameraRotationY",
+                    "type": "Value",
+                    "id": "d17bcb1f-7362-46c2-b19e-f982beae3d8a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b4dc029c-cb3f-412b-aceb-eb531e1a3c19",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraRotationY",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

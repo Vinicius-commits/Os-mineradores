@@ -49,7 +49,7 @@ public class PlayerMovimentacao : MonoBehaviour
         }
         ApplyMovement();
         ApplyRotation();
-        Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
+        
     }
 
     public void ApplyMovement()
@@ -80,10 +80,23 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Interaction(InputAction.CallbackContext context)
     {
+        Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.25f, transform.forward, out hit, 2.0f);
         if (context.started)
         {
             isButtonPressed = true;
             StartCoroutine(InteracaoContinua());
+            if (hit.collider.CompareTag("NPC"))
+            {
+                hit.collider.GetComponent<Interactable>().Interagir();
+            }
+            else if (hit.collider.CompareTag("Pedra"))
+            {
+                hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
+            }
+            if (hit.collider.CompareTag("Interagivel"))
+            {
+                hit.collider.GetComponent<Interactable>().Interagir();
+            }
         }
         
         if (context.canceled)
@@ -102,18 +115,9 @@ public class PlayerMovimentacao : MonoBehaviour
             // Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
             // Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
             Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.25f, transform.forward, out hit, 2.0f);
-
             if (hit.collider != null)
             {
-                if (hit.collider.CompareTag("Pedra"))
-                {
-                    hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
-                }
-                else if (hit.collider.CompareTag("Minerio"))
-                {
-                    hit.collider.GetComponent<Interactable>().Interagir();
-                }
-                else if (hit.collider.CompareTag("NPC"))
+                if (hit.collider.CompareTag("Minerio"))
                 {
                     hit.collider.GetComponent<Interactable>().Interagir();
                 }
@@ -131,7 +135,7 @@ public class PlayerMovimentacao : MonoBehaviour
                             Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.5f, transform.forward, out hit, 2.0f);
                             obj.Interagir();
                         }
-                        yield return null;
+                        yield return new WaitForSeconds(0.3f);
                     }
                 }
             }
