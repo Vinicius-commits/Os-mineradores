@@ -13,7 +13,7 @@ public class VisualCamSeguir : MonoBehaviour
     [SerializeField] float _realocateDistanceZ, _realocateSpeedZ = 1.0f;
     Vector3 rePosition;
 
-    void FixedUpdate()
+    void Update()
     {
         rePosition = new Vector3(_playerTransform.localPosition.x + (_realocateDistanceX * _realocateSpeedX), _playerTransform.localPosition.y + (_realocateDistanceY * _realocateSpeedY), _playerTransform.localPosition.z + (_realocateDistanceZ * _realocateSpeedZ));
         transform.position = rePosition;
