@@ -1282,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -619, y: -249}
+  m_AnchoredPosition: {x: -618.99994, y: -249}
   m_SizeDelta: {x: 1591.7119, y: 2176.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7228640582413161178
@@ -2063,6 +2063,9 @@ GameObject:
   - component: {fileID: 6733154431706253888}
   - component: {fileID: 8786141182856939590}
   - component: {fileID: 898002367547925345}
+  - component: {fileID: 7067913933275720237}
+  - component: {fileID: 5826868277791151471}
+  - component: {fileID: 8079447741325237200}
   m_Layer: 5
   m_Name: Descansar
   m_TagString: Untagged
@@ -2184,6 +2187,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7067913933275720237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714080013107964343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5826868277791151471}
+          m_TargetAssemblyTypeName: Pulsador, Assembly-CSharp
+          m_MethodName: ComecaPulsar
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5826868277791151471}
+          m_TargetAssemblyTypeName: Pulsador, Assembly-CSharp
+          m_MethodName: ParaPulsar
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &5826868277791151471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714080013107964343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535c8cc5154b99747ae56be893166e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultScale: {x: 0, y: 0, z: 0}
+  anim: {fileID: 8079447741325237200}
+--- !u!111 &8079447741325237200
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714080013107964343}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d0145b6f11ea1424dbd6268b2f5f459e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d0145b6f11ea1424dbd6268b2f5f459e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6510532023956467741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,7 +2659,7 @@ Canvas:
   m_GameObject: {fileID: 7464483631441263834}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

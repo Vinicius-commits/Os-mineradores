@@ -8,34 +8,45 @@ public class Pulsador : MonoBehaviour
     //la ele
 
     //AINDA TO CRIANDO ISSO AQUI,  N MEXER
-    public Button button; 
-    public float pulseScale = 1.1f; 
-    public float pulseSpeed = 1.0f; 
 
-    private Vector3 defaultScale; 
+    //usando animation fica melhor rei
+    // public float pulseScale = 1.15f; 
+    // public float pulseSpeed = 0;
+    
+    bool _pulsando = false;
 
-    void Start()
+    RectTransform rectTransform;
+    [SerializeField]private Vector3 defaultScale; 
+
+    [SerializeField] Animation anim;
+
+    void Awake()
     {
-        if (button == null)
-        {
-            button = GetComponent<Button>(); 
-        }
-
-        defaultScale = button.transform.localScale; 
+        rectTransform = GetComponent<RectTransform>();
+        defaultScale = rectTransform.localScale; 
     }
 
-    void Update()
+    public void ComecaPulsar()
     {
-        if (button.IsInteractable() && RectTransformUtility.RectangleContainsScreenPoint(button.GetComponent<RectTransform>(), Input.mousePosition))
-        {
-            
-            float scale = Mathf.PingPong(Time.time * pulseSpeed, pulseScale); 
-            button.transform.localScale = defaultScale * scale; 
-        }
-        else
-        {
-            
-            button.transform.localScale = defaultScale; 
-        }
+        // _pulsando = true;
+        // StartCoroutine(Pulsante());
+        anim.Play();
     }
+
+    public void ParaPulsar()
+    {
+        // _pulsando = false;
+        anim.Stop();
+        rectTransform.localScale = defaultScale;
+    }
+
+    // private IEnumerator Pulsante()
+    // {
+    //     while(_pulsando)
+    //     {
+    //         float scale = Mathf.PingPong(Time.time * pulseSpeed, pulseScale); 
+    //         transform.localScale = defaultScale * scale;
+    //         yield return new WaitForSeconds(0.2f);
+    //     }
+    // }
 }

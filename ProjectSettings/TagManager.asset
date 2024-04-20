@@ -21,7 +21,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Render Texture
   - Water
   - UI
   - 
