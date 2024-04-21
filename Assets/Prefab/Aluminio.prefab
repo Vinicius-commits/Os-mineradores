@@ -26,15 +26,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509110792337443372}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.598658, y: -0.00000047683716, z: 13.206985}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 9.598658, y: -0.22, z: 13.206985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5619615583283446634}
   - {fileID: 3005142756093918581}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &2140044242986724137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100,13 +100,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5977194927444358743}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7442778, y: -0, z: -0, w: 0.66787034}
-  m_LocalPosition: {x: 0.21727991, y: -0.20530364, z: 0.014363766}
-  m_LocalScale: {x: 0.48895967, y: 0.48895967, z: 0.48895967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06, y: 0.62, z: 0.01}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4088084005959639710}
-  m_LocalEulerAnglesHint: {x: 96.194, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7238305301854115397
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5977194927444358743}
-  m_Mesh: {fileID: 6651119627239530983, guid: ba95d0dd87cac4245a0b576474d5baa5, type: 3}
+  m_Mesh: {fileID: 2610373590585120683, guid: c90bbcee0de03ed439502f56c70d32c9, type: 3}
 --- !u!23 &7936077621798010728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19a00b5b1ff96ab4e955afbafb78e9b7, type: 2}
+  - {fileID: 2100000, guid: a5ba8954e9958c446a814d330314d731, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -176,8 +176,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.4790823, y: 1.821041, z: 2.631056}
-  m_Center: {x: 0.41242135, y: -0.18709435, z: -0.6854635}
+  m_Size: {x: 2.811343, y: 4.4251347, z: 1.7527075}
+  m_Center: {x: 0.041501783, y: -0.070864186, z: 0.028663483}
 --- !u!114 &7632256128665907361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,13 +219,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7633815067375706979}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0265, y: 1.2312866, z: 1.0265}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.075526, y: 0.37, z: 0.039316}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4088084005959639710}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &4094319414901748370
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7633815067375706979}
-  m_Mesh: {fileID: -3595516496818526440, guid: 76d876a7682485842a559cbf2c12b51a, type: 3}
+  m_Mesh: {fileID: 2610373590585120683, guid: c4b58612a024a1a4e9d57416a2b8a7af, type: 3}
 --- !u!23 &1762849637154582864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19a00b5b1ff96ab4e955afbafb78e9b7, type: 2}
+  - {fileID: 2100000, guid: a5ba8954e9958c446a814d330314d731, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -295,8 +295,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6242166, y: 1.2825096, z: 1.7363163}
-  m_Center: {x: 0.06876559, y: -0.05283518, z: 0.0111951055}
+  m_Size: {x: 5.171251, y: 3.92467, z: 6.327731}
+  m_Center: {x: 0.027930504, y: 0.061274163, z: -0.0831448}
 --- !u!114 &2609785332306520265
 MonoBehaviour:
   m_ObjectHideFlags: 0
