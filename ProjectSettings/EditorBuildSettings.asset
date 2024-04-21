@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GamePrototype.unity
     guid: 0faf931bad3c227458b0797d1f75f783
   - enabled: 1
-    path: Assets/Scenes/MapaBrasil.unity
+    path: Assets/Scenes/MapaBrasilGabriel.unity
     guid: b14b1b494126e8d4a83157c9931afadc
   m_configObjects: {}

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MudarCena : MonoBehaviour
 {
-    string NomeJogo = "Jogo";
     public void MudandoCena(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
