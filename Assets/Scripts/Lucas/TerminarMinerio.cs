@@ -110,7 +110,7 @@ public class TerminarMinerio : Interactable
         }
 
         contador++;
-        Debug.LogError(contador);
+        //Debug.LogError(contador);
         minerando = false;
         if (contador >= 3)
         {
