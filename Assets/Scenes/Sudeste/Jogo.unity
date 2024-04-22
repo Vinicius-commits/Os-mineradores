@@ -3174,7 +3174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605925248}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27340126, y: 0.00000001655082, z: -0.000000004704246, w: 0.9619001}
+  m_LocalRotation: {x: 0.27340126, y: -0.000000016550821, z: 0.000000004704246, w: 0.9619001}
   m_LocalPosition: {x: 0, y: 6.17, z: -8.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6146,7 +6146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27340126, y: 0.00000001655082, z: -0.000000004704246, w: 0.9619001}
+  m_LocalRotation: {x: 0.27340126, y: -0.000000016550821, z: 0.000000004704246, w: 0.9619001}
   m_LocalPosition: {x: 0, y: 6.17, z: -8.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6353,9 +6353,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1077025469}
-          m_TargetAssemblyTypeName: BotoesUI, Assembly-CSharp
-          m_MethodName: TirarImagem
+        - m_Target: {fileID: 1291173309}
+          m_TargetAssemblyTypeName: AtivarPainelElevador, Assembly-CSharp
+          m_MethodName: Interagir
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13053,7 +13053,7 @@ PrefabInstance:
     - target: {fileID: 6383141084711965921, guid: 578b8bb1f3fd446429853f8233061000,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7416878353797306709, guid: 578b8bb1f3fd446429853f8233061000,
         type: 3}

@@ -9,12 +9,13 @@ public class AtivarPainelElevador : Interactable
     public override void Interagir()
     {
         painelElevador.SetActive(!painelElevador.activeSelf);
-        Cursor.visible = !Cursor.visible;
-        if(Cursor.lockState == CursorLockMode.None) 
+        if(!painelElevador.activeSelf) 
         {
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;   
         } else
         {
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
     }
