@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapaBrasilGabriel.unity
     guid: b14b1b494126e8d4a83157c9931afadc
+  - enabled: 1
+    path: Assets/Scenes/MapaBrasilArthur.unity
+    guid: 8ef944f53055c604ba9d56c0ed1fe8e0
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
