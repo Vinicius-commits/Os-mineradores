@@ -11,12 +11,12 @@ public class AtivarPainelElevador : Interactable
         painelElevador.SetActive(!painelElevador.activeSelf);
         if(!painelElevador.activeSelf) 
         {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;   
+            // Cursor.visible = false;
+            // Cursor.lockState = CursorLockMode.Locked;   
         } else
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            // Cursor.visible = true;
+            // Cursor.lockState = CursorLockMode.None;
         }
     }
 }
