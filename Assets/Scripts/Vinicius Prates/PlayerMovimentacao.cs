@@ -80,7 +80,8 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Interaction(InputAction.CallbackContext context)
     {
-        Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.25f, transform.forward, out hit, 2.0f);
+        Physics.CapsuleCast(transform.position, transform.forward * 3.0f, 0.4f, transform.forward, out hit, 2.0f);
+        
         if (context.started)
         {
             isButtonPressed = true;
