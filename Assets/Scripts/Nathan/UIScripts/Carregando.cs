@@ -1,70 +1,62 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
 public class Carregando : MonoBehaviour
 {
     public float fadeDuration = 2f; 
     public GameObject[] spritesToFade; 
-    public GameObject panelToFade;
-    private void Start()
+    public GameObject panelToFadeOut; 
+    public GameObject panelToFadeIn; 
+    private bool fading = false; 
+
+    void Start()
     {
-        StartCoroutine(FadeOutPanel(panelToFade));
-        
-        foreach (GameObject sprite in spritesToFade)
+        StartChangePanel(); // Começa a mudança de painel quando o script é iniciado
+    }
+
+    public void StartChangePanel()
+    {
+        if (!fading)
         {
-            StartCoroutine(FadeOutSprite(sprite));
+            StartCoroutine(ChangePanel());
         }
     }
 
-    
-    private IEnumerator FadeOutPanel(GameObject panelObject)
+    private IEnumerator ChangePanel()
     {
-        CanvasGroup canvasGroup = panelObject.GetComponent<CanvasGroup>();
-        float timer = 0f;
+        fading = true; 
 
+        // Faz o painel antigo desaparecer
+        panelToFadeOut.SetActive(true);
+        CanvasGroup canvasGroupOut = panelToFadeOut.GetComponent<CanvasGroup>();
+
+        float timer = 0f;
         while (timer < fadeDuration)
         {
-            
             float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
-
-            
-            canvasGroup.alpha = alpha;
-
-            
+            canvasGroupOut.alpha = alpha;
             timer += Time.deltaTime;
-
             yield return null;
         }
+        canvasGroupOut.alpha = 0f;
+        panelToFadeOut.SetActive(false); 
 
-        
-        canvasGroup.alpha = 0f;
-        panelObject.SetActive(false); 
-    }
+        // Faz o novo painel aparecer
+        panelToFadeIn.SetActive(true);
+        CanvasGroup canvasGroupIn = panelToFadeIn.GetComponent<CanvasGroup>();
 
-    
-    private IEnumerator FadeOutSprite(GameObject spriteObject)
-    {
-        SpriteRenderer spriteRenderer = spriteObject.GetComponent<SpriteRenderer>();
-        Color originalColor = spriteRenderer.color;
-        float timer = 0f;
-
+        timer = 0f;
         while (timer < fadeDuration)
         {
-            
-            float alpha = Mathf.Lerp(originalColor.a, 0f, timer / fadeDuration);
-
-           
-            spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-
-            
+            float alpha = Mathf.Lerp(0f, 1f, timer / fadeDuration);
+            canvasGroupIn.alpha = alpha;
             timer += Time.deltaTime;
-
-            yield return null; 
+            yield return null;
         }
+        canvasGroupIn.alpha = 1f;
 
-        
-        spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
+        fading = false; 
     }
 }
