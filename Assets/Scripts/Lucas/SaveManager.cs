@@ -10,6 +10,8 @@ public class SaveManager : Singleton<SaveManager>
         public bool OuroBool;
         public bool AluminioBool;
         public bool NiobioBool;
+        public bool ZincoBool;
+        public bool GrafitaBool;
     }
 
     // Método para salvar dados do jogador em um arquivo JSON
@@ -29,6 +31,12 @@ public class SaveManager : Singleton<SaveManager>
                 break;
             case Minerios.Niobio:
                 MuseuMinerios.NiobioBool = true;
+                break;
+            case Minerios.Zinco:
+                MuseuMinerios.ZincoBool = true;
+                break;
+            case Minerios.Grafita:
+                MuseuMinerios.GrafitaBool = true;
                 break;
         }
 
@@ -59,7 +67,9 @@ public class SaveManager : Singleton<SaveManager>
         Ferro,
         Ouro,
         Aluminio,
-        Niobio
+        Niobio,
+        Zinco,
+        Grafita
     }
 
     public SaveManager()

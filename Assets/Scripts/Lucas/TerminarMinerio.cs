@@ -8,7 +8,7 @@ public class TerminarMinerio : Interactable
     [SerializeField] private float timernpc;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
-    [SerializeField] private bool ouro, ferro, aluminio, niobio;
+    [SerializeField] private bool ouro, ferro, aluminio, niobio, zinco, grafita;
     [SerializeField] private GameObject pedra;
     public bool npc = false;
     [SerializeField] private Transform pai;
@@ -107,6 +107,18 @@ public class TerminarMinerio : Interactable
             GameManager.Instance.AtualizarNiobio(1);
             if (GameManager.Instance.niobio == 12)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Niobio);
+        }
+        else if (zinco)
+        {
+            GameManager.Instance.AtualizarZinco(1);
+            if (GameManager.Instance.zinco == 12)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Zinco);
+        }
+        else if (grafita)
+        {
+            GameManager.Instance.AtualizarGrafita(1);
+            if (GameManager.Instance.grafita == 12)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Grafita);
         }
 
         contador++;

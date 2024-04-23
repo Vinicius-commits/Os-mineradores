@@ -17,6 +17,8 @@ TagManager:
   - NPC
   - Minerando
   - Descanso
+  - Zinco
+  - Grafita
   layers:
   - Default
   - TransparentFX

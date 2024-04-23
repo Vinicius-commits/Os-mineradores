@@ -10,7 +10,8 @@ public class GameManager : Singleton<GameManager>
     public int ferro = 0;
     public int aluminio = 0;
     public int niobio = 0;
-
+    public int zinco = 0;
+    public int grafita = 0;
 
     // Evento para notificar sobre as mudanças nos valores de minério
     public event Action<int> OnMinerioAtualizado;
@@ -42,6 +43,13 @@ public class GameManager : Singleton<GameManager>
     {
         AtualizarMinerio(valor, ref niobio);
     }
+    public void AtualizarZinco(int valor)
+    {
+        AtualizarMinerio(valor, ref zinco);
+    }
 
-   
+    public void AtualizarGrafita(int valor)
+    {
+        AtualizarMinerio(valor, ref grafita);
+    }
 }
