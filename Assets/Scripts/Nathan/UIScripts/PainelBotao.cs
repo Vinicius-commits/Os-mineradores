@@ -36,7 +36,6 @@ public class PainelBotao: MonoBehaviour
         CanvasGroup canvasGroupOut = panelToFadeOut.GetComponent<CanvasGroup>();
 
         float timer = 0f;
-
         
         while (timer < fadeDuration)
         {
@@ -46,15 +45,13 @@ public class PainelBotao: MonoBehaviour
             yield return null;
         }
         canvasGroupOut.alpha = 0f;
-        panelToFadeOut.SetActive(false); 
-
+        panelToFadeOut.SetActive(false);
         
         panelToFadeIn.SetActive(true);
         CanvasGroup canvasGroupIn = panelToFadeIn.GetComponent<CanvasGroup>();
 
         timer = 0f;
 
-        
         while (timer < fadeDuration)
         {
             float alpha = Mathf.Lerp(0f, 1f, timer / fadeDuration);

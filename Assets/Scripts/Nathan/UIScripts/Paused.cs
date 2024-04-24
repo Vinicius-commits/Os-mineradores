@@ -14,18 +14,18 @@ public class Paused : MonoBehaviour
         canvasPauseMenu.SetActive(false);
         isPaused = false;
     }
+
     void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
             if (isPaused)
             {
                 Time.timeScale = 1f;
                 canvasPauseMenu.SetActive(false);
                 isPaused = false; 
             }
+
             else 
             {
                 Time.timeScale = 0f; 
@@ -33,5 +33,10 @@ public class Paused : MonoBehaviour
                 isPaused = true; 
             }
         }
+    }
+
+    public void OnPause()
+    {
+
     }
 }

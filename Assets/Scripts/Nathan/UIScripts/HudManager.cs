@@ -11,19 +11,16 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
-        
         GameManager.Instance.OnMinerioAtualizado += AtualizarHUD;
     }
 
     private void OnDestroy()
     {
-        
         GameManager.Instance.OnMinerioAtualizado -= AtualizarHUD;
     }
 
     private void AtualizarHUD(int valor)
     {
-       
         ouroText.text = GameManager.Instance.ouro.ToString();
         ferroText.text = GameManager.Instance.ferro.ToString();
         aluminioText.text = GameManager.Instance.aluminio.ToString();

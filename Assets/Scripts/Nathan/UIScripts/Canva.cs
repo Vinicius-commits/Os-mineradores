@@ -10,7 +10,6 @@ public class Canva : MonoBehaviour
     
     public void ToggleCanvas()
     {
-        
         canvas.SetActive(!canvas.activeSelf);
     }
 }

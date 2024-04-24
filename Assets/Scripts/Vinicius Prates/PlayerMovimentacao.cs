@@ -41,7 +41,7 @@ public class PlayerMovimentacao : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody>();
     }
 
-    public void FixedUpdate()
+    public void Update()
     {
         if ((_inputAcoes.x == 0 && _inputAcoes.z == 0))
         {

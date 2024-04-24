@@ -36,22 +36,20 @@ public class TerminarMinerio : Interactable
             if (collider.CompareTag("NPC"))
             {
                 npcObj = collider.gameObject;
-                
                 Invoke("Mineracao", 2f);
                 npc = true;
-
             }
+            
             if(npcObj != npcObj)
                 distancia = Vector3.Distance(npcObj.transform.position, transform.position);
+            
             if(distancia > 3 && npc == true)
             {
                 CancelInvoke("Quebrar");
                 npc = false;
                 this.gameObject.tag = tagAntes;
-            }
-             
+            }    
         }
-        
     }
 
     public override void Interagir()
@@ -77,8 +75,7 @@ public class TerminarMinerio : Interactable
             else
             {
                 Invoke("Quebrar", timer);
-            }
-                
+            }   
         }
     }
 
