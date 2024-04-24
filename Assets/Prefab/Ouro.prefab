@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5555420975840524747}
   m_Layer: 0
   m_Name: SemMinerio
-  m_TagString: Pedra
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,6 +349,8 @@ MonoBehaviour:
   ferro: 0
   aluminio: 0
   niobio: 0
+  zinco: 0
+  grafita: 0
   pedra: {fileID: 7510813742109756445}
   npc: 0
   pai: {fileID: 0}

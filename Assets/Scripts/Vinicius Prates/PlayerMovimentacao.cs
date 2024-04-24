@@ -115,7 +115,7 @@ public class PlayerMovimentacao : MonoBehaviour
             // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
             // Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
             // Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
-            Physics.CapsuleCast(transform.position, transform.forward * 2.0f, 0.25f, transform.forward, out hit, 2.0f);
+            Physics.CapsuleCast(transform.position, transform.position + (transform.forward), 0.4f, transform.forward, out hit, 2.0f);
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Minerio"))
