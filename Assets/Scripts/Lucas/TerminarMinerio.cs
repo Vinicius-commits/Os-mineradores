@@ -24,7 +24,7 @@ public class TerminarMinerio : Interactable
         paiObj = pai.gameObject;
     }
 
-    public void Update()
+    /*public void Update()
     {
         // Cria uma esfera de detecção centrada na posição do objeto atual e com o raio especificado NPC
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.0f);
@@ -50,7 +50,7 @@ public class TerminarMinerio : Interactable
                 this.gameObject.tag = tagAntes;
             }    
         }
-    }
+    }*/
 
     public override void Interagir()
     {
