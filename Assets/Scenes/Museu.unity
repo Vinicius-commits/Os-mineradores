@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17675835, g: 0.22125609, b: 0.30355096, a: 1}
+  m_IndirectSpecularColor: {r: 0.17675802, g: 0.22125572, b: 0.30355036, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3731,12 +3731,11 @@ Transform:
   - {fileID: 1907758603}
   - {fileID: 779035897}
   - {fileID: 1208946452}
-  - {fileID: 1891859318}
   - {fileID: 158314967}
   - {fileID: 997751269}
-  - {fileID: 1539250918}
   - {fileID: 1236670281}
   - {fileID: 280248875}
+  - {fileID: 1539250918}
   - {fileID: 882542510}
   - {fileID: 770178977}
   - {fileID: 1002196219}
@@ -6287,57 +6286,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a8dad96f8be67c41a2ca34b6a99b969, type: 3}
---- !u!1 &1891859317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1891859318}
-  - component: {fileID: 1891859319}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1891859318
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891859317}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 7.7819557, z: 34.65}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1290055026}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1891859319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891859317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bab914112cf7584bb9f86f4e4e15fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 0}
-  _realocateDistanceX: 0
-  _realocateSpeedX: 1
-  _realocateDistanceY: 9.5
-  _realocateSpeedY: 1
-  _realocateDistanceZ: -4.45
-  _realocateSpeedZ: 1
 --- !u!1 &1907758600
 GameObject:
   m_ObjectHideFlags: 0
