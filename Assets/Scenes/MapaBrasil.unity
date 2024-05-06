@@ -2613,7 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: Jogo
+  nomeDaCena: Norte1
 --- !u!114 &1773293296
 MonoBehaviour:
   m_ObjectHideFlags: 0
