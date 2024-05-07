@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Norte/Norte1.unity
     guid: 2241eddda4574b14baf6de715cfa91e4
+  - enabled: 1
+    path: Assets/Scenes/Norte/Norte2.unity
+    guid: 480f3d8d4fe77034f8e7d3734d97b469
+  - enabled: 1
+    path: Assets/Scenes/Norte/Norte3.unity
+    guid: aa2b1a4eb6a6abc46865a05b97f74e43
   m_configObjects: {}
