@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2879197979449088619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512268469299341022}
+  m_Layer: 0
+  m_Name: CapsuleCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1512268469299341022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879197979449088619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.138, z: -1.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8760680942153757784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4167384442110642467
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +400,7 @@ Transform:
   - {fileID: 3278284152001286706}
   - {fileID: 7213013472457510339}
   - {fileID: 5488320631694416963}
+  - {fileID: 1512268469299341022}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3120051108343074228
@@ -394,11 +426,12 @@ MonoBehaviour:
     velocidadeAtual: 0
   _forceMode: 5
   _estaNoChao: 1
+  rayCastInicio: {fileID: 1512268469299341022}
   segurando: 0
   isButtonPressed: 0
   mao: {fileID: 4865370808433395627}
   cena: Jogo 2
-  animator: {fileID: 4638946642239445808}
+  anim: {fileID: 4638946642239445808}
 --- !u!54 &1229842690979153959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -653,8 +686,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848176424688197743}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 67fb4f81b8c3659408b0d38d05d5578b, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 16d6c6d0275815d489512659da995a2f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 7b4b9e4475f0c8b41b4173f79cc68a50, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

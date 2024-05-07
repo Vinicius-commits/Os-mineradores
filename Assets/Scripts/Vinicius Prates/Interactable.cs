@@ -8,6 +8,10 @@ public abstract class Interactable : MonoBehaviour
     {
         return;
     }
+    public virtual void Cancelar()
+    {
+        return;
+    }
 
     public virtual void Interagir(ref bool segurando, Transform mao)
     {

@@ -78,6 +78,15 @@ public class TerminarMinerio : Interactable
             }   
         }
     }
+    public override void Cancelar()
+    {
+        CancelQuebrara();
+    }
+    public void CancelQuebrara()
+    {
+        CancelInvoke("Quebrar");
+        minerando = false;
+    }
 
     public void Quebrar()
     {
@@ -136,10 +145,10 @@ public class TerminarMinerio : Interactable
         }
         else
         {
-            if (!minerando)
+           /* if (!minerando)
             {
                 Mineracao();
-            }
+            }*/
         }
     }
 }

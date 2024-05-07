@@ -310,6 +310,17 @@
                     "action": "CameraRotationY",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84b37508-4a46-464f-9cb1-04bed218abd3",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraRotationY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
