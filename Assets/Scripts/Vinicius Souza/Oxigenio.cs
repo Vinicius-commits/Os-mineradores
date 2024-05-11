@@ -4,20 +4,30 @@ using UnityEngine;
 
 public class Oxigenio : MonoBehaviour
 {
-    [SerializeField] float Area;
-    [SerializeField] GameObject Player;
-    private OxigenioPlayer player;
-    private void OnDrawGizmosSelected()
+    private void OnTriggerStay(Collider collider)
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, Area);
-    }
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        if(collider.gameObject == Player)
+        if(collider.CompareTag("Player") && OxigenioPlayer.OxigenioAtual < 1.3)
         {
-            player.oxigenioatual += 6 * Time.deltaTime;
+            StartCoroutine("RecuperarOxigenio");
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            StopCoroutine("RecuperarOxigenio");
+        }
+    }
+
+    IEnumerator RecuperarOxigenio()
+    {
+        for (float oxigenio = OxigenioPlayer.OxigenioAtual; oxigenio <= 1; oxigenio += 0.06f)
+        {
+            OxigenioPlayer.OxigenioAtual = oxigenio;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        OxigenioPlayer.OxigenioAtual = 1;
+    }
+
+
 }

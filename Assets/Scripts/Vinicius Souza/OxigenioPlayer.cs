@@ -6,14 +6,9 @@ using UnityEngine.SceneManagement;
 public class OxigenioPlayer : MonoBehaviour
 {
     [SerializeField] float OxigenioTotal;
-    [SerializeField] float OxigenioAtual;
-    [SerializeField] float Tempo;
+    [SerializeField] public static float OxigenioAtual;
+    private float Tempo = 0.02f;
 
-    public float oxigenioatual
-    {
-        get { return OxigenioAtual; }
-        set {  OxigenioAtual = value; }
-    }
     private void Start()
     {
         OxigenioAtual = OxigenioTotal;
@@ -21,9 +16,9 @@ public class OxigenioPlayer : MonoBehaviour
     void Update()
     {
         OxigenioAtual -= Tempo * Time.deltaTime;
-        if (OxigenioAtual <= 0) 
+        if( OxigenioAtual <= 0)
         {
-            SceneManager.LoadScene("Fase1");
+            SceneManager.LoadScene("Fase 2");
         }
     }
 }
