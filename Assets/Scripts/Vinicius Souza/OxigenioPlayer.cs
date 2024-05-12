@@ -13,7 +13,7 @@ public class OxigenioPlayer : MonoBehaviour
     {
         OxigenioAtual = OxigenioTotal;
     }
-    void Update()
+    void FixedUpdate()
     {
         OxigenioAtual -= Tempo * Time.deltaTime;
         if( OxigenioAtual <= 0)
