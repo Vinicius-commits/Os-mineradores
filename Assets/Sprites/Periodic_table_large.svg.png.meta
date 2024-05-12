@@ -189,7 +189,7 @@ TextureImporter:
         width: 50
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: c15d67676608f5d4398e4148d9e63b23
       internalID: -1425842240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Periodic_table_large.svg_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 360
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273b3dfe051b76743951b2e82d34cbca
+      internalID: 620186143
       vertices: []
       indices: 
       edges: []
@@ -217,6 +238,7 @@ TextureImporter:
       Periodic_table_large.svg_2: -834785091
       Periodic_table_large.svg_3: 1365635762
       Periodic_table_large.svg_4: -1425842240
+      Periodic_table_large.svg_5: 620186143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
