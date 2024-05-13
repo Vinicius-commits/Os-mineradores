@@ -1646,8 +1646,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.3477259, z: -0.032671988}
   m_LocalScale: {x: 2.19216, y: 2.19216, z: 2.19216}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1025189564}
+  m_Children: []
   m_Father: {fileID: 1668864313}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &353005374
@@ -3711,7 +3710,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Baiar
+  m_text: "Ouro nativo no quartzo \xE9 uma forma\xE7\xE3o mineral onde pequenas part\xEDculas
+    ou inclus\xF5es de ouro est\xE3o presentes dentro de cristais de quartzo. O ouro
+    nativo \xE9 ouro que ocorre na natureza em sua forma pura e n\xE3o combinado
+    com outros elementos. O quartzo \xE9 um mineral comum, composto principalmente
+    de di\xF3xido de sil\xEDcio, e \xE9 frequentemente encontrado em veios de minerais
+    met\xE1licos. Quando o ouro \xE9 depositado em \xE1reas onde o quartzo est\xE1
+    presente, ele pode se infiltrar nos espa\xE7os dentro do quartzo durante o processo
+    geol\xF3gico de forma\xE7\xE3o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4497,32 +4503,32 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 353005373}
+    m_TransformParent: {fileID: 1415725290}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.58
+      value: 0.57999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.58
+      value: 0.57999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.58
+      value: 0.57999986
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.049
+      value: 0.037932314
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: -0.24999972
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
@@ -4537,17 +4543,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
         type: 3}
@@ -5218,7 +5224,7 @@ GameObject:
   - component: {fileID: 1185564590}
   - component: {fileID: 1185564592}
   m_Layer: 0
-  m_Name: Baia (2)
+  m_Name: Ouro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5233,14 +5239,14 @@ RectTransform:
   m_GameObject: {fileID: 1185564588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4957485, y: 2.4957485, z: 2.4957485}
+  m_LocalScale: {x: 3.1311662, y: 3.1311662, z: 3.1311662}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1459320829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1457, y: 443}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -395, y: 256}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1185564590
@@ -5263,7 +5269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0af03613cc41cef4097c09cf03a56cc5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b3ff3c0107a0ae4f9852d31335a1e65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5840,7 +5846,7 @@ GameObject:
   - component: {fileID: 1243778234}
   - component: {fileID: 1243778236}
   m_Layer: 0
-  m_Name: Baia (1)
+  m_Name: Ourof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5855,15 +5861,15 @@ RectTransform:
   m_GameObject: {fileID: 1243778232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4957485, y: 2.4957485, z: 2.4957485}
+  m_LocalScale: {x: 3.166356, y: 3.166356, z: 3.166356}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1459320829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 222, y: 437}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 193, y: 437}
+  m_SizeDelta: {x: 112.7247, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1243778234
 MonoBehaviour:
@@ -5885,7 +5891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0af03613cc41cef4097c09cf03a56cc5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14d00a0d35ff583489d9200087044352, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7015,7 +7021,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.3477259, z: -0.032671988}
   m_LocalScale: {x: 2.19216, y: 2.19216, z: 2.19216}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1025189564}
   m_Father: {fileID: 1021197639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1415725291
@@ -7522,7 +7529,7 @@ GameObject:
   - component: {fileID: 1459320830}
   - component: {fileID: 1459320832}
   m_Layer: 5
-  m_Name: "Explica\xE7aoFerro"
+  m_Name: "Explica\xE7aoOuro"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8716,9 +8723,8 @@ MonoBehaviour:
   panelToShow: {fileID: 1459320828}
   imagesToShow:
   - {fileID: 1832285680}
-  - {fileID: 1243778232}
   - {fileID: 1185564588}
-  - {fileID: 1776519444}
+  - {fileID: 1243778232}
   fadeInSpeed: 0.5
   fadeOutSpeed: 0.5
 --- !u!65 &1668864317
@@ -9716,12 +9722,12 @@ GameObject:
   - component: {fileID: 1776519446}
   - component: {fileID: 1776519448}
   m_Layer: 0
-  m_Name: Baia (3)
+  m_Name: Ourof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1776519445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10312,7 +10318,7 @@ GameObject:
   - component: {fileID: 1832285682}
   - component: {fileID: 1832285684}
   m_Layer: 0
-  m_Name: Baia
+  m_Name: Ouro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10327,14 +10333,14 @@ RectTransform:
   m_GameObject: {fileID: 1832285680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4957485, y: 2.4957485, z: 2.4957485}
+  m_LocalScale: {x: 3.678234, y: 3.678234, z: 3.678234}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1459320829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 222, y: 767}
+  m_AnchoredPosition: {x: 176, y: 823}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1832285682
@@ -10357,7 +10363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0af03613cc41cef4097c09cf03a56cc5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9a3929dcdaa1824b86a5a062a595384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
