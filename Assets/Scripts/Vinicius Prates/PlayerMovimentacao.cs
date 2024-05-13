@@ -11,6 +11,7 @@ public class PlayerMovimentacao : MonoBehaviour
     #region Movimento
     [Header("Movimentacao")]
     [SerializeField] Rigidbody _rigidBody;
+    [SerializeField] Vector3 _inputAcoes2D;
     [SerializeField] Vector3 _inputAcoes;
     [SerializeField] Transform cameraPlayer;
     [SerializeField] Movimento _movimento = new Movimento();
@@ -80,7 +81,9 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        _inputAcoes = context.ReadValue<Vector3>();
+        _inputAcoes2D = context.ReadValue<Vector2>();
+        Debug.Log("" + _inputAcoes2D.x);
+        _inputAcoes = new Vector3(_inputAcoes2D.x,0,_inputAcoes2D.y);
         _inputAcoes = Matrix4x4.Rotate(cameraPlayer.rotation) * _inputAcoes;
     }
 
