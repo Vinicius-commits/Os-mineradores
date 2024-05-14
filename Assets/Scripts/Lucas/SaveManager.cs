@@ -3,16 +3,12 @@ using System.IO;
 
 public class SaveManager : Singleton<SaveManager>
 {
-    [System.Serializable]
-    public class Museu
-    {
-        public bool FerroBool;
-        public bool OuroBool;
-        public bool AluminioBool;
-        public bool NiobioBool;
-        public bool ZincoBool;
-        public bool GrafitaBool;
-    }
+     public bool FerroBool;
+    public bool OuroBool;
+    public bool AluminioBool;
+    public bool NiobioBool;
+    public bool ZincoBool;
+    public bool GrafitaBool;
 
     // Método para salvar dados do jogador em um arquivo JSON
     public void SaveMuseu(Minerios minerio)
@@ -22,21 +18,27 @@ public class SaveManager : Singleton<SaveManager>
         {
             case Minerios.Ferro:
                 MuseuMinerios.FerroBool = true;
+                FerroBool = true;
                 break;
             case Minerios.Ouro:
                 MuseuMinerios.OuroBool = true;
+                OuroBool = true;
                 break;
             case Minerios.Aluminio:
                 MuseuMinerios.AluminioBool = true;
+                AluminioBool = true;
                 break;
             case Minerios.Niobio:
                 MuseuMinerios.NiobioBool = true;
+                NiobioBool = true;
                 break;
             case Minerios.Zinco:
                 MuseuMinerios.ZincoBool = true;
+                ZincoBool = true;
                 break;
             case Minerios.Grafita:
                 MuseuMinerios.GrafitaBool = true;
+                GrafitaBool = true;
                 break;
         }
 
@@ -80,7 +82,19 @@ public class SaveManager : Singleton<SaveManager>
     // Toda vez q tu der play ele carrega tudo dnv
     public void Start() 
     {
+        
         LoadMuseu();
     }
 
 }
+
+[System.Serializable]
+    public class Museu
+    {
+        public bool FerroBool;
+        public bool OuroBool;
+        public bool AluminioBool;
+        public bool NiobioBool;
+        public bool ZincoBool;
+        public bool GrafitaBool;
+    }

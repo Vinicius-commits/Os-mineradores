@@ -90,44 +90,45 @@ public class TerminarMinerio : Interactable
 
     public void Quebrar()
     {
+        contador++;
         if (ouro)
         {
             GameManager.Instance.AtualizarOuro(1);
-            if (GameManager.Instance.ouro == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ouro);
         }
         else if (ferro)
         {
             GameManager.Instance.AtualizarFerro(1);
-            if (GameManager.Instance.ferro == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Ferro);
         }
         else if (aluminio)
         {
             GameManager.Instance.AtualizarAluminio(1);
-            if (GameManager.Instance.aluminio == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Aluminio);
         }
         else if (niobio)
         {
             GameManager.Instance.AtualizarNiobio(1);
-            if (GameManager.Instance.niobio == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Niobio);
         }
         else if (zinco)
         {
             GameManager.Instance.AtualizarZinco(1);
-            if (GameManager.Instance.zinco == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Zinco);
         }
         else if (grafita)
         {
             GameManager.Instance.AtualizarGrafita(1);
-            if (GameManager.Instance.grafita == 12)
+            if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Grafita);
         }
 
-        contador++;
+        
         //Debug.LogError(contador);
         minerando = false;
         if (contador >= 3)

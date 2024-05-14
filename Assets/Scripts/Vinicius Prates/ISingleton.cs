@@ -15,6 +15,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour, new()
                 _instance = new T();
                 GameObject singletonGameObject = new GameObject("PatternGameObject");
                 _instance = singletonGameObject.AddComponent<T>();
+                DontDestroyOnLoad(singletonGameObject);
             }
 
             return _instance;

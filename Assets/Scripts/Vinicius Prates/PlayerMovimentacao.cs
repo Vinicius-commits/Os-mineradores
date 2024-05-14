@@ -89,7 +89,7 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Interaction(InputAction.CallbackContext context)
     {
-        Physics.CapsuleCast(rayCastInicio.position, transform.forward * 3.0f, 0.4f, transform.forward, out hit, 2.0f);
+        Physics.BoxCast(transform.position, new Vector3(0.4f, 0.4f, 0.4f), transform.forward, out hit, Quaternion.identity, 2.0f);
 
         if (context.started)
         {
@@ -124,7 +124,7 @@ public class PlayerMovimentacao : MonoBehaviour
             // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
             // Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
             // Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
-            Physics.CapsuleCast(rayCastInicio.position, transform.position + (transform.forward), 0.4f, transform.forward, out hit, 2.0f);
+            Physics.BoxCast(transform.position, new Vector3(0.4f, 0.4f, 0.4f), transform.forward, out hit, Quaternion.identity, 2.0f);
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Minerio"))
