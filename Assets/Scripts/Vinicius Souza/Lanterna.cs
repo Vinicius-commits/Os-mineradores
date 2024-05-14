@@ -35,7 +35,6 @@ public class Lanterna : MonoBehaviour
 
     void Recarregar()
     {
-        gameManager.grafita -= 1;
         gameManager.AtualizarGrafita(-1);
         BateriaAtual = 1;
     }
