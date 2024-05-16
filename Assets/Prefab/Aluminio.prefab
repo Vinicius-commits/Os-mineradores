@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.6074, y: 0.62, z: 13.208}
-  m_LocalScale: {x: 0.66412, y: 0.66412, z: 0.66412}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5619615583283446634}
@@ -317,6 +317,8 @@ MonoBehaviour:
   ferro: 0
   aluminio: 1
   niobio: 0
+  zinco: 0
+  grafita: 0
   pedra: {fileID: 5977194927444358743}
   npc: 0
   pai: {fileID: 0}
