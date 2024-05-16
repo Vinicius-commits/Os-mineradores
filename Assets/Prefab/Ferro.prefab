@@ -317,6 +317,8 @@ MonoBehaviour:
   ferro: 1
   aluminio: 0
   niobio: 0
+  zinco: 0
+  grafita: 0
   pedra: {fileID: 7510813742109756445}
   npc: 0
   pai: {fileID: 0}
