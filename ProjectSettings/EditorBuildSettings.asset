@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 16f931ad58e9c8746a7d09c7d9d2bb55
   - enabled: 1
-    path: Assets/Scenes/Museu.unity
+    path: Assets/Scenes/Museu/Museu.unity
     guid: 189c037782ca1d24e8d9f03f0573f3e6
   - enabled: 1
     path: Assets/Scenes/Sudeste/Jogo.unity
