@@ -11,11 +11,12 @@ public class PlayerMovimentacao : MonoBehaviour
     #region Movimento
     [Header("Movimentacao")]
     [SerializeField] Rigidbody _rigidBody;
-    [SerializeField] Vector3 _inputAcoes2D;
+    [SerializeField] Vector2 _inputAcoes2D;
     [SerializeField] Vector3 _inputAcoes;
     [SerializeField] Transform cameraPlayer;
     [SerializeField] Movimento _movimento = new Movimento();
     [SerializeField] ForceMode _forceMode;
+    
     Vector3 forward;
     [SerializeField] bool _minerando;
     #endregion
@@ -67,10 +68,23 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void ApplyRotation()
     {
-        if (!(_inputAcoes.x == 0 && _inputAcoes.z == 0))
+       Vector3 forward = cameraPlayer.TransformDirection(Vector3.forward); // Armazena um vetor que indica a dire��o "para frente"
+
+        Vector3 right = cameraPlayer.TransformDirection(Vector3.right); // Armazena um vetor que indica a dire��o "para o lado direito"
+
+
+        /* Faz um calculo para indicar a dire��o que o personagem deve seguir, levando em considera��o as entradas no joystick e a posi��o da c�mera. 
+           Por exemplo, se quisermos ir para frente, nossa dire��o n�o � X=0, Y=0, Z=1, pois essa dire��o est� no eixo global, se nossa c�mera estiver
+           virada para a esquerda, ir para frente signica ir na dire��o X=-1, Y=0, Z=0. Por isso, a linha abaixo basicamente faz essa convers�o de dire��o,
+           indicando um Vector de dire��o baseada na rota��o atual da c�mera.
+        */
+        Vector3 targetDirection = _inputAcoes2D.x * right + _inputAcoes2D.y * forward;
+
+
+        if (_inputAcoes2D != Vector2.zero && targetDirection.magnitude > 0.1f) // Verifica se o Input � diferente de 0 e se a magnitude(intesidade) do input � maior do que 0.1, em uma escala de 0 a 1. Ou seja, desconsidera pequenos movimentos no joystick.
         {
-            var _viewAngle = Mathf.Atan2(_inputAcoes.x, _inputAcoes.z) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0.0f, _viewAngle, 0.0f);
+            Quaternion freeRotation = Quaternion.LookRotation(targetDirection.normalized); // Cria uma rota��o com as dire��es forward. Ou seja, retorna uma rota��o indicando a dire��o alvo.
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), 10 * Time.deltaTime); // Aplica a rota��o ao personagem. O m�todo Quaternion.Slerp aplica uma suaviza��o na rota��o, para que ela n�o aconte�a de forma abrupta
         }
     }
 
