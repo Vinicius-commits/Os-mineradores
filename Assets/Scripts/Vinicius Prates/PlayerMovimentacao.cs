@@ -48,7 +48,12 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Update()
     {
-        anim.SetFloat("Speed", _rigidBody.velocity.magnitude);
+        if(_movimento.estaCorrendo)
+        anim.SetBool("Correr", true);
+        else
+        anim.SetBool("Correr", false);
+        if(_rigidBody.velocity.magnitude < 0.1)
+        anim.SetBool("Andar", false);
         if ((_inputAcoes.x == 0 && _inputAcoes.z == 0))
         {
             return;
@@ -62,6 +67,7 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void ApplyMovement()
     {
+        anim.SetBool("Andar", true);
         var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
     }
