@@ -1817,10 +1817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
+  - {fileID: 4179496521396274251, guid: 2238390bffab306408787c8ac945edf4, type: 3}
   - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4958354587267907421, guid: f3a455e59293341408ea99ebc0ba4758, type: 3}
-  - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+  - {fileID: 4179496521396274251, guid: a99a9175f79f0cf4ab50ca3ab2d70ffa, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -5250,6 +5249,14 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  gipsita: 0
+  turmalina: 0
+  tungstenio: 0
+  uranio: 0
+  opala: 0
+  magnesita: 0
+  cobre: 0
+  fluorita: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -44,4 +44,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Norte/Norte3.unity
     guid: aa2b1a4eb6a6abc46865a05b97f74e43
+  - enabled: 1
+    path: Assets/Scenes/CentroOeste/CentroOeste 1.unity
+    guid: d2d749a5f59db654eb35df5d3e96c116
+  - enabled: 1
+    path: Assets/Scenes/Nordeste/Nordeste1.unity
+    guid: 70ec093848afc75468fb189bbd5cad0b
+  - enabled: 1
+    path: Assets/Scenes/Nordeste/Nordeste2.unity
+    guid: b46bb55e9f0967e4aa03dc59413cb757
+  - enabled: 1
+    path: Assets/Scenes/Nordeste/Nordeste3.unity
+    guid: 61670f98ea778e94c9491560e53dfea1
+  - enabled: 1
+    path: Assets/Scenes/Sul/Sul 1.unity
+    guid: a4efd1c26ab07bf488ac131ce83848d5
+  - enabled: 1
+    path: Assets/Scenes/Sul/Sul 2.unity
+    guid: c5bcf4a1156dd6247bf53a825f9a3fec
+  - enabled: 1
+    path: Assets/Scenes/Sul/Sul 3.unity
+    guid: 2eb43d6ff53e96d419acd27c1147aded
   m_configObjects: {}

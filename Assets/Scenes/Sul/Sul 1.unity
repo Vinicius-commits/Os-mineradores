@@ -1323,11 +1323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
+  - {fileID: 4179496521396274251, guid: 651053097ebbd8a4db2c4d1df4cf6657, type: 3}
   - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
   - {fileID: 4958354587267907421, guid: f3a455e59293341408ea99ebc0ba4758, type: 3}
   - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
-  - {fileID: 7897526066515320501, guid: 74b2236b522c23e428c3a317f504fbba, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -3796,6 +3795,14 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  gipsita: 0
+  turmalina: 0
+  tungstenio: 0
+  uranio: 0
+  opala: 0
+  magnesita: 0
+  cobre: 0
+  fluorita: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5657,7 +5664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1187413229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10327,6 +10334,16 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2005953278407115663, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: nomeDaCena
+      value: Sul 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231318680899753547, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2231318680899753547, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10447,6 +10464,13 @@ PrefabInstance:
       propertyPath: audio
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4546562143092508421, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_text
+      value: 'Menu
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 5993471272419355264, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10472,6 +10496,26 @@ PrefabInstance:
       propertyPath: audio2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7236563169707324216, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: nomeDaCena
+      value: Sul 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363772993463573969, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5844768586325469253}
+    - target: {fileID: 7363772993463573969, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363772993463573969, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MudaCena, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7968031408565877420, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_Name
@@ -10492,6 +10536,31 @@ PrefabInstance:
       propertyPath: audio2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9065861678271405469, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -11.9014
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065861678271405469, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 61.4913
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065861678271405469, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065861678271405469, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.9507
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065861678271405469, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30.7456
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2700959790307558162, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
     - {fileID: 2272556980215848137, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
@@ -10504,10 +10573,34 @@ PrefabInstance:
     - {fileID: 6034014848132115556, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
     - {fileID: 4753866693988491457, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
     - {fileID: 1051307238244751942, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2507705375492281583, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 558101576739168633, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5844768586325469253}
   m_SourcePrefab: {fileID: 100100000, guid: 0b1e5ec932807204fae9b6fc09d36b50, type: 3}
+--- !u!1 &5844768586325469252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 558101576739168633, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+    type: 3}
+  m_PrefabInstance: {fileID: 5844768586325469251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5844768586325469253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844768586325469252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Menu
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

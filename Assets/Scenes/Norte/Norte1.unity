@@ -1829,8 +1829,8 @@ MonoBehaviour:
   minerios:
   - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
   - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4958354587267907421, guid: f3a455e59293341408ea99ebc0ba4758, type: 3}
-  - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+  - {fileID: 4179496521396274251, guid: 2238390bffab306408787c8ac945edf4, type: 3}
+  - {fileID: 4179496521396274251, guid: a99a9175f79f0cf4ab50ca3ab2d70ffa, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -4892,8 +4892,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778458888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4887611, y: -0.043385305, z: 0.043223795, w: 0.87026554}
-  m_LocalPosition: {x: 0.1669494, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.4887611, y: -0.043385293, z: 0.04322378, w: 0.8702654}
+  m_LocalPosition: {x: 0.16694942, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5496,6 +5496,14 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  gipsita: 0
+  turmalina: 0
+  tungstenio: 0
+  uranio: 0
+  opala: 0
+  magnesita: 0
+  cobre: 0
+  fluorita: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5673,8 +5681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892663653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.43795806, y: -0.04579665, z: 0.04065983, w: 0.896907}
-  m_LocalPosition: {x: 0.16694923, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.43795812, y: -0.045796745, z: 0.04065992, w: 0.89690703}
+  m_LocalPosition: {x: 0.16694924, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6494,8 +6502,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979285691}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48876104, y: -0.04338529, z: 0.04322377, w: 0.87026554}
-  m_LocalPosition: {x: 0.1669494, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.48876104, y: -0.04338529, z: 0.043223776, w: 0.87026554}
+  m_LocalPosition: {x: 0.16694942, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13914,7 +13922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1949841573
 RectTransform:
   m_ObjectHideFlags: 0

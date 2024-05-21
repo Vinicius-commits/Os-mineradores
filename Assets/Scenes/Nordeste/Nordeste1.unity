@@ -1336,10 +1336,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
-  - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4958354587267907421, guid: f3a455e59293341408ea99ebc0ba4758, type: 3}
-  - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+  - {fileID: 4179496521396274251, guid: 3d2203585ed5249439d6fcbf3d95b055, type: 3}
+  - {fileID: 4179496521396274251, guid: a09e6287e6ef3f14c9bccd015279e9a0, type: 3}
+  - {fileID: 4179496521396274251, guid: 45ccf752894f21e479035a8654ced657, type: 3}
+  - {fileID: 4179496521396274251, guid: 17f096c88532de5439be161b0819142b, type: 3}
+  - {fileID: 4179496521396274251, guid: 9b0be7c653ede8b45a77b9e5fb1d919d, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -2482,6 +2483,21 @@ PrefabInstance:
       propertyPath: nomeDaCena
       value: Nordeste3
       objectReference: {fileID: 0}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 544553142}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MudaCena, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2802514256680504533, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
       propertyPath: m_Name
@@ -2490,7 +2506,12 @@ PrefabInstance:
     - target: {fileID: 2802514256680504533, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496053896635029822, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_text
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 3735935676573176607, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
@@ -2501,6 +2522,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636035596599984350, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 113.1381
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636035596599984350, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636035596599984350, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -389.73633
       objectReference: {fileID: 0}
     - target: {fileID: 6027564968544384502, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
@@ -2629,9 +2665,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7043465469236720318, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5750643634895460096, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4247633185913130019, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 544553142}
   m_SourcePrefab: {fileID: 100100000, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
 --- !u!1 &544553140 stripped
 GameObject:
@@ -2639,6 +2680,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 544553139}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &544553141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4247633185913130019, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &544553142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544553141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Menu
 --- !u!1 &549937084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4603,6 +4663,14 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  gipsita: 0
+  turmalina: 0
+  tungstenio: 0
+  uranio: 0
+  opala: 0
+  magnesita: 0
+  cobre: 0
+  fluorita: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
