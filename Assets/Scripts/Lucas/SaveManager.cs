@@ -3,12 +3,20 @@ using System.IO;
 
 public class SaveManager : Singleton<SaveManager>
 {
-     public bool FerroBool;
+    public bool FerroBool;
     public bool OuroBool;
     public bool AluminioBool;
     public bool NiobioBool;
     public bool ZincoBool;
     public bool GrafitaBool;
+    public bool GipsitaBool;
+    public bool TurmalinaBool;
+    public bool CobreBool;
+    public bool TungstenioBool;
+    public bool UranioBool;
+    public bool OpalaBool;
+    public bool MagnesitaBool;
+    public bool ManganesBool;
 
     // Método para salvar dados do jogador em um arquivo JSON
     public void SaveMuseu(Minerios minerio)
@@ -39,6 +47,38 @@ public class SaveManager : Singleton<SaveManager>
             case Minerios.Grafita:
                 MuseuMinerios.GrafitaBool = true;
                 GrafitaBool = true;
+                break;
+            case Minerios.Opala:
+                MuseuMinerios.OpalaBool = true;
+                OpalaBool = true;
+                break;
+            case Minerios.Cobre:
+                MuseuMinerios.CobreBool = true;
+                CobreBool = true;
+                break;
+            case Minerios.Manganes:
+                MuseuMinerios.ManganesBool = true;
+                ManganesBool = true;
+                break;
+            case Minerios.Magnesita:
+                MuseuMinerios.MagnesitaBool = true;
+                MagnesitaBool = true;
+                break;
+            case Minerios.Tungstenio:
+                MuseuMinerios.TungstenioBool = true;
+                TungstenioBool = true;
+                break;
+            case Minerios.Turmalina:
+                MuseuMinerios.TurmalinaBool = true;
+                TurmalinaBool = true;
+                break;
+            case Minerios.Uranio:
+                MuseuMinerios.UranioBool = true;
+                UranioBool = true;
+                break;
+            case Minerios.Gipsita:
+                MuseuMinerios.GipsitaBool = true;
+                GipsitaBool = true;
                 break;
         }
 
@@ -71,7 +111,15 @@ public class SaveManager : Singleton<SaveManager>
         Aluminio,
         Niobio,
         Zinco,
-        Grafita
+        Grafita,
+        Magnesita,
+        Uranio,
+        Cobre,
+        Turmalina,
+        Tungstenio,
+        Manganes,
+        Gipsita,
+        Opala
     }
 
     public SaveManager()
@@ -97,4 +145,12 @@ public class SaveManager : Singleton<SaveManager>
         public bool NiobioBool;
         public bool ZincoBool;
         public bool GrafitaBool;
-    }
+        public bool OpalaBool;
+        public bool TurmalinaBool;
+        public bool TungstenioBool;
+        public bool GipsitaBool;
+        public bool MagnesitaBool;
+        public bool ManganesBool;
+        public bool UranioBool;
+        public bool CobreBool;
+}

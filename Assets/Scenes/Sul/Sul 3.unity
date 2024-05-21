@@ -2761,7 +2761,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: afba9de3f837f5d4db63b99bda46cfc1, type: 2}
+      objectReference: {fileID: 2100000, guid: c8c76081a07739c42ab1a9bb8852e735, type: 2}
     - target: {fileID: -5754084199372789682, guid: 8d9cac79f24c74949b05a72c065186ee,
         type: 3}
       propertyPath: m_Mesh
@@ -3796,6 +3796,14 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  gipsita: 0
+  turmalina: 0
+  tungstenio: 0
+  uranio: 0
+  opala: 0
+  magnesita: 0
+  cobre: 0
+  fluorita: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10064,7 +10072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080674311}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1354872, y: -0, z: -0, w: 0.9907791}
+  m_LocalRotation: {x: 0.2734012, y: -0, z: -0, w: 0.9619001}
   m_LocalPosition: {x: 0, y: 6.17, z: -8.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
