@@ -45,12 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Norte/Norte3.unity
     guid: aa2b1a4eb6a6abc46865a05b97f74e43
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/Scenes/CentroOeste/CentroOeste 1.unity
     guid: d2d749a5f59db654eb35df5d3e96c116
   - enabled: 1
-=======
->>>>>>> a32d020eb10dbbf3978bc283a6b891be12886fe5
     path: Assets/Scenes/Nordeste/Nordeste1.unity
     guid: 70ec093848afc75468fb189bbd5cad0b
   - enabled: 1
