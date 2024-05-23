@@ -8861,11 +8861,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5844768586325469254}
     - target: {fileID: 1757421349704465915, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757421349704465915, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757421349704465915, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MudaCena, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2005953278407115663, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
@@ -9137,6 +9147,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDaCena: Menu
+--- !u!114 &5844768586325469254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2005953278407115663, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+    type: 3}
+  m_PrefabInstance: {fileID: 5844768586325469251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

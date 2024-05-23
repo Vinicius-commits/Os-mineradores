@@ -2505,10 +2505,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7043465469236720318, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 5252239836129915979, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 2594055482649035101, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 4990406263572093312, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5750643634895460096, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5900449678366147412, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 544553144}
     - targetCorrespondingSourceObject: {fileID: 4247633185913130019, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
       insertIndex: -1
@@ -2539,6 +2546,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDaCena: Menu
+--- !u!1 &544553143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5900449678366147412, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &544553144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544553143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: 
 --- !u!1 &549937084
 GameObject:
   m_ObjectHideFlags: 0

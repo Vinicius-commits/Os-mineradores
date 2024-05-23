@@ -3945,7 +3945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: Sul1
+  nomeDaCena: Sul 1
 --- !u!114 &1309991439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,7 +6521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: CentroOeste
+  nomeDaCena: CentraOester 1
 --- !u!114 &2027574618
 MonoBehaviour:
   m_ObjectHideFlags: 0

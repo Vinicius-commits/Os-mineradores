@@ -48,6 +48,12 @@ EditorBuildSettings:
     path: Assets/Scenes/CentroOeste/CentroOeste 1.unity
     guid: d2d749a5f59db654eb35df5d3e96c116
   - enabled: 1
+    path: Assets/Scenes/CentroOeste/CentroOeste 2.unity
+    guid: cb58d4fce8fa90c44b4390ca516e235d
+  - enabled: 1
+    path: Assets/Scenes/CentroOeste/CentroOeste 3.unity
+    guid: fbe3ef7fc4463f245b1d534e26e7a506
+  - enabled: 1
     path: Assets/Scenes/Nordeste/Nordeste1.unity
     guid: 70ec093848afc75468fb189bbd5cad0b
   - enabled: 1

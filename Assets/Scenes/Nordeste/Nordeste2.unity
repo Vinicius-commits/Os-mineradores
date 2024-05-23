@@ -2320,6 +2320,21 @@ PrefabInstance:
       propertyPath: nomeDaCena
       value: Nordeste3
       objectReference: {fileID: 0}
+    - target: {fileID: 1971929959362583801, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 544553141}
+    - target: {fileID: 1971929959362583801, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971929959362583801, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MudaCena, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2802514256680504533, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
       propertyPath: m_Name
@@ -2347,6 +2362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5770018149894441858, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770018149894441858, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
       propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
@@ -2354,6 +2374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 544553143}
+    - target: {fileID: 5770018149894441858, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
       objectReference: {fileID: 0}
     - target: {fileID: 6027564968544384502, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
@@ -2369,6 +2394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1411784496}
+    - target: {fileID: 6235120447590539314, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
       objectReference: {fileID: 0}
     - target: {fileID: 7043465469236720318, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
@@ -2483,6 +2513,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7043465469236720318, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     - {fileID: 6027564968544384502, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 4990406263572093312, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 5252239836129915979, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 2594055482649035101, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2490,6 +2523,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1411784496}
+    - targetCorrespondingSourceObject: {fileID: 4437800777701499596, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 544553143}
   m_SourcePrefab: {fileID: 100100000, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
 --- !u!1 &544553140 stripped
 GameObject:
@@ -2497,6 +2534,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 544553139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &544553141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 720324494139332859, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &544553142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4437800777701499596, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &544553143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544553142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Nordeste2
 --- !u!1 &549937084
 GameObject:
   m_ObjectHideFlags: 0

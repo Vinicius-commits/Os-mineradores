@@ -4892,8 +4892,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778458888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4887611, y: -0.043385293, z: 0.04322378, w: 0.8702654}
-  m_LocalPosition: {x: 0.16694942, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.4887611, y: -0.043385293, z: 0.04322378, w: 0.87026554}
+  m_LocalPosition: {x: 0.16694951, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5681,8 +5681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892663653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.43795812, y: -0.045796745, z: 0.04065992, w: 0.89690703}
-  m_LocalPosition: {x: 0.16694924, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.43795812, y: -0.045796778, z: 0.040659953, w: 0.8969069}
+  m_LocalPosition: {x: 0.16694933, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6502,8 +6502,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979285691}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48876104, y: -0.04338529, z: 0.043223776, w: 0.87026554}
-  m_LocalPosition: {x: 0.16694942, y: 4.2887945, z: 6.0762935}
+  m_LocalRotation: {x: 0.4887611, y: -0.043385316, z: 0.043223795, w: 0.87026554}
+  m_LocalPosition: {x: 0.16694951, y: 4.2887945, z: 6.0762935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15004,6 +15004,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7167203282240136546}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2077177793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077177792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: 
 --- !u!4 &2081261910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85077ed293e1c2849b0bc90f686930af,
@@ -15956,6 +15969,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 366
       objectReference: {fileID: 0}
+    - target: {fileID: 8220218560030145325, guid: 578b8bb1f3fd446429853f8233061000,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8548736313139020231, guid: 578b8bb1f3fd446429853f8233061000,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16009,7 +16027,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3428194349719526240, guid: 578b8bb1f3fd446429853f8233061000,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2077177793}
   m_SourcePrefab: {fileID: 100100000, guid: 578b8bb1f3fd446429853f8233061000, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -3092,7 +3092,9 @@ PrefabInstance:
       propertyPath: nomeDaCena
       value: Norte2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4990406263572093312, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 5252239836129915979, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
