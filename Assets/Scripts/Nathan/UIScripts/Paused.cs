@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Paused : MonoBehaviour
 {
-    public GameObject canvasPauseMenu; 
-    private bool isPaused = false; 
+    public GameObject canvasPauseMenu;
+    private bool isPaused = false;
 
     void Start()
     {
@@ -23,14 +23,18 @@ public class Paused : MonoBehaviour
             {
                 Time.timeScale = 1f;
                 canvasPauseMenu.SetActive(false);
-                isPaused = false; 
+                isPaused = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
 
-            else 
+            else
             {
-                Time.timeScale = 0f; 
-                canvasPauseMenu.SetActive(true); 
-                isPaused = true; 
+                Time.timeScale = 0f;
+                canvasPauseMenu.SetActive(true);
+                isPaused = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
     }

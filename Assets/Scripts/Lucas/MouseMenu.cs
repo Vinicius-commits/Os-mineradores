@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mouse : MonoBehaviour
+public class MouseMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
          // Travar o mouse no centro da tela
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
 
         // Esconder o cursor
-        Cursor.visible = false;
+        Cursor.visible = true;
     }
 }

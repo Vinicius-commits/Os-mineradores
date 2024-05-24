@@ -4622,6 +4622,7 @@ GameObject:
   - component: {fileID: 863807743}
   - component: {fileID: 863807744}
   - component: {fileID: 863807745}
+  - component: {fileID: 863807746}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4699,6 +4700,18 @@ MonoBehaviour:
   ferroText: {fileID: 967959304}
   aluminioText: {fileID: 1919433236}
   niobioText: {fileID: 1264556340}
+--- !u!114 &863807746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863807739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910ffa8c89b3c5f47b529f62729a8e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &866567944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85077ed293e1c2849b0bc90f686930af,
