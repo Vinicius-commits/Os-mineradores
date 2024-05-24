@@ -10,18 +10,28 @@ public class Lanterna : MonoBehaviour
     private float Tempo = 0.01f;
     private GameManager gameManager;
     [SerializeField] GameObject lanterna;
+    [SerializeField] Light luz;
 
     private void Start()
     {
         BateriaAtual = BateriaTotal;
+        luz = GetComponentInChildren<Light>();
     }
     void FixedUpdate()
     {
         BateriaAtual -= Tempo * Time.deltaTime;
         if (BateriaAtual <= 0)
         {
-            lanterna.SetActive(false);
             Tempo = 0f;
+            if (luz.intensity > 0)
+            {
+                StartCoroutine(DiminuirIntensidadeGradualmente(6f));
+            }
+
+            if (luz.intensity <= 0)
+            {
+                lanterna.SetActive(false);
+            }
         }
         else
         {
@@ -31,11 +41,29 @@ public class Lanterna : MonoBehaviour
         {
             Recarregar();
         }
+        
     }
 
     void Recarregar()
     {
-        gameManager.AtualizarGrafita(-1);
-        BateriaAtual = 1;
+        if(gameManager.grafita >= 1)
+        {
+            BateriaAtual = 1;
+            gameManager.grafita -= 1;
+        }
+    }
+    IEnumerator DiminuirIntensidadeGradualmente(float duracao)
+    {
+        float intensidadeInicial = luz.intensity;
+        float tempoPassado = 0f;
+
+        while (tempoPassado < duracao)
+        {
+            luz.intensity = Mathf.Lerp(intensidadeInicial, 0, tempoPassado / duracao);
+            tempoPassado += Time.deltaTime;
+            yield return null;
+        }
+
+        luz.intensity = 0;
     }
 }
