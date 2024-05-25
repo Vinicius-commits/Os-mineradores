@@ -70,6 +70,7 @@ public class PlayerMovimentacao : MonoBehaviour
         anim.SetBool("Andar", true);
         var targetSpeed = _movimento.estaCorrendo ? _movimento.velocidade * _movimento.multiplicarCorrida : _movimento.velocidade;
         _rigidBody.AddForce((_inputAcoes * targetSpeed * Time.deltaTime), _forceMode);
+        Debug.Log(_inputAcoes2D.y);
     }
 
     public void ApplyRotation()
@@ -87,10 +88,10 @@ public class PlayerMovimentacao : MonoBehaviour
         Vector3 targetDirection = _inputAcoes2D.x * right + _inputAcoes2D.y * forward;
 
 
-        if (_inputAcoes2D != Vector2.zero && targetDirection.magnitude > 0.1f) // Verifica se o Input � diferente de 0 e se a magnitude(intesidade) do input � maior do que 0.1, em uma escala de 0 a 1. Ou seja, desconsidera pequenos movimentos no joystick.
+        if (_inputAcoes2D != Vector2.zero && targetDirection.magnitude > 0.1f && _inputAcoes2D.x != 0) // Verifica se o Input � diferente de 0 e se a magnitude(intesidade) do input � maior do que 0.1, em uma escala de 0 a 1. Ou seja, desconsidera pequenos movimentos no joystick.
         {
             Quaternion freeRotation = Quaternion.LookRotation(targetDirection.normalized); // Cria uma rota��o com as dire��es forward. Ou seja, retorna uma rota��o indicando a dire��o alvo.
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), 1 * Time.deltaTime); // Aplica a rota��o ao personagem. O m�todo Quaternion.Slerp aplica uma suaviza��o na rota��o, para que ela n�o aconte�a de forma abrupta
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), 2 * Time.deltaTime); // Aplica a rota��o ao personagem. O m�todo Quaternion.Slerp aplica uma suaviza��o na rota��o, para que ela n�o aconte�a de forma abrupta
         }
     }
 
@@ -102,7 +103,6 @@ public class PlayerMovimentacao : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputAcoes2D = context.ReadValue<Vector2>();
-        Debug.Log("" + _inputAcoes2D.x);
         _inputAcoes = new Vector3(_inputAcoes2D.x,0,_inputAcoes2D.y);
         _inputAcoes = Matrix4x4.Rotate(cameraPlayer.rotation) * _inputAcoes;
     }
