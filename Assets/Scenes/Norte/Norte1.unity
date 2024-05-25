@@ -3245,8 +3245,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778458888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.002832477, y: 0.85834426, z: -0.51296186, w: 0.010361105}
-  m_LocalPosition: {x: -0.09966089, y: 5.897957, z: 11.849939}
+  m_LocalRotation: {x: 0.002832476, y: 0.85834426, z: -0.51296186, w: 0.0103611015}
+  m_LocalPosition: {x: -0.09966084, y: 5.897957, z: 11.849939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3565,7 +3565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d89589af46d7e47936f22dceb4c0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 0.5
+  fadeDuration: 0.2
   spritesToFade:
   - {fileID: 87952870}
   - {fileID: 0}
@@ -3772,8 +3772,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892663653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0022325907, y: 0.8863957, z: -0.46280384, w: 0.010506832}
-  m_LocalPosition: {x: -0.09966214, y: 5.897957, z: 11.849939}
+  m_LocalRotation: {x: 0.0022325895, y: 0.8863957, z: -0.46280384, w: 0.0105068255}
+  m_LocalPosition: {x: -0.099662095, y: 5.897957, z: 11.849939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10051,7 +10051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1949841573
 RectTransform:
   m_ObjectHideFlags: 0

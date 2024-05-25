@@ -5142,7 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d89589af46d7e47936f22dceb4c0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 0.5
+  fadeDuration: 0.2
   spritesToFade:
   - {fileID: 87952870}
   - {fileID: 0}

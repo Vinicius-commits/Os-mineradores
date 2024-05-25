@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1ebe1e24d4b204886ee336591d60a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 5
+  fadeDuration: 2
   spritesToFade:
   - {fileID: 499736154}
   - {fileID: 1785462314}
@@ -6093,7 +6093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1187413229
 MonoBehaviour:
   m_ObjectHideFlags: 0

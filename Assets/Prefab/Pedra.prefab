@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 4588726293798596585}
   - component: {fileID: 7370057665827047166}
   - component: {fileID: 7621031625372923293}
+  - component: {fileID: 5748166364043155648}
   m_Layer: 0
   m_Name: Pedra
   m_TagString: Pedra
@@ -206,3 +207,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc07afd3271a7f46a48f92e3f71157e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5748166364043155648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541729441470416443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e297cb9a71bbfe40ace2ae3223a5bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 100

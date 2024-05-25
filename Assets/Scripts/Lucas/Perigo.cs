@@ -20,7 +20,6 @@ public class Perigo : MonoBehaviour
 
     void SpawnRNG()
     {
-        
         rng = Random.Range(0, spawn.Length);
         while(rng == rngaux)
         {
@@ -28,7 +27,8 @@ public class Perigo : MonoBehaviour
         }
         rngaux = rng;
         
-        Instantiate(perigo,spawn[rng].position, Quaternion.identity);    
+        GameObject novoPerigo = Instantiate(perigo, spawn[rng].position, Quaternion.identity);
+        
     }
 }
 
