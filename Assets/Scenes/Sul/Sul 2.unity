@@ -11016,22 +11016,22 @@ PrefabInstance:
     - target: {fileID: 1106877189298826413, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 71.6554
+      value: 190.2348
       objectReference: {fileID: 0}
     - target: {fileID: 1106877189298826413, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1106877189298826413, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 197.8479
+      value: 446
       objectReference: {fileID: 0}
     - target: {fileID: 1106877189298826413, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -455.3968
+      value: -287.58136
       objectReference: {fileID: 0}
     - target: {fileID: 1757421349704465915, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}
@@ -11072,6 +11072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507705375492281583, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+        type: 3}
+      propertyPath: m_Name
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 2626467530883158399, guid: 0b1e5ec932807204fae9b6fc09d36b50,
         type: 3}

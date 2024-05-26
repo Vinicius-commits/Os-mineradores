@@ -16,7 +16,7 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] Transform cameraPlayer;
     [SerializeField] Movimento _movimento = new Movimento();
     [SerializeField] ForceMode _forceMode;
-    
+
     Vector3 forward;
     [SerializeField] bool _minerando;
     #endregion
@@ -48,12 +48,12 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void Update()
     {
-        if(_movimento.estaCorrendo)
-        anim.SetBool("Correr", true);
+        if (_movimento.estaCorrendo)
+            anim.SetBool("Correr", true);
         else
-        anim.SetBool("Correr", false);
-        if(_rigidBody.velocity.magnitude < 0.1)
-        anim.SetBool("Andar", false);
+            anim.SetBool("Correr", false);
+        if (_rigidBody.velocity.magnitude < 0.1)
+            anim.SetBool("Andar", false);
         if ((_inputAcoes.x == 0 && _inputAcoes.z == 0))
         {
             return;
@@ -75,7 +75,7 @@ public class PlayerMovimentacao : MonoBehaviour
 
     public void ApplyRotation()
     {
-       Vector3 forward = cameraPlayer.TransformDirection(Vector3.forward); // Armazena um vetor que indica a dire��o "para frente"
+        Vector3 forward = cameraPlayer.TransformDirection(Vector3.forward); // Armazena um vetor que indica a dire��o "para frente"
 
         Vector3 right = cameraPlayer.TransformDirection(Vector3.right); // Armazena um vetor que indica a dire��o "para o lado direito"
 
@@ -103,30 +103,37 @@ public class PlayerMovimentacao : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputAcoes2D = context.ReadValue<Vector2>();
-        _inputAcoes = new Vector3(_inputAcoes2D.x,0,_inputAcoes2D.y);
+        _inputAcoes = new Vector3(_inputAcoes2D.x, 0, _inputAcoes2D.y);
         _inputAcoes = Matrix4x4.Rotate(cameraPlayer.rotation) * _inputAcoes;
     }
 
     public void Interaction(InputAction.CallbackContext context)
     {
-        Physics.BoxCast(transform.position, new Vector3(0.4f, 0.4f, 0.4f), transform.forward, out hit, Quaternion.identity, 2.0f);
+        Physics.BoxCast(transform.position, new Vector3(2f, 2f, 0.1f), transform.forward, out hit, transform.rotation, 1.0f);
 
         if (context.started)
         {
+
             isButtonPressed = true;
-            StartCoroutine(InteracaoContinua());
-            /* if (hit.collider.CompareTag("NPC"))
-             {
-                 hit.collider.GetComponent<Interactable>().Interagir();
-             }*/
-            if (hit.collider.CompareTag("Pedra"))
+            if (hit.collider.CompareTag("Minerio"))
+            {
+                hit.collider.GetComponent<Interactable>().Interagir();
+                objInt = hit.collider.GetComponent<Interactable>();
+                if (objInt != null)
+                {
+                    StartCoroutine(InteracaoContinua());
+                }
+
+            }
+            else if (hit.collider.CompareTag("Pedra"))
             {
                 hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
             }
-            if (hit.collider.CompareTag("Interagivel"))
+            else if (hit.collider.CompareTag("Interagivel"))
             {
                 hit.collider.GetComponent<Interactable>().Interagir();
             }
+
         }
 
         if (context.canceled)
@@ -137,58 +144,23 @@ public class PlayerMovimentacao : MonoBehaviour
 
     private IEnumerator InteracaoContinua()
     {
-        while (isButtonPressed)
+        while (isButtonPressed && objInt != null)
         {
-            // Vector3 vectorEsquerda = transform.forward + new Vector3(-0.2f, 0, 0);
-            // Vector3 vectorDireita = transform.forward + new Vector3(0.2f, 0, 0);
-            // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
-            // Physics.Raycast(transform.position, vectorEsquerda, out hit, 2.0f);
-            // Physics.Raycast(transform.position, vectorDireita, out hit, 2.0f);
-            Physics.BoxCast(transform.position, new Vector3(0.5f, 0.5f, 0.5f), transform.forward, out hit, Quaternion.identity, 2.0f);
-            if (hit.collider != null)
+            _minerando = true;
+            anim.SetBool("Batendo", true);
+            if (objInt is not null)
             {
-                if (hit.collider.CompareTag("Minerio"))
-                {
-                    hit.collider.GetComponent<Interactable>().Interagir();
-                    
-                    _minerando = true;
-                    objInt = hit.collider.GetComponent<Interactable>();
-                    anim.SetBool("Batendo", true);
-                    Debug.Log("Colidiu");
-                    objInt.Interagir();
-                }
-
-                if (!segurando && hit.collider.CompareTag("Minerio"))
-                {
-                    segurando = true;
-                   
-
-
-                    while (isButtonPressed && objInt.CompareTag("Minerio"))
-                    {
-                        if (!objInt.IsInteragindo())
-                        {
-                            Debug.Log("Minerando");
-                            // Physics.Raycast(transform.position, transform.forward, out hit, 2.0f);
-                            Physics.BoxCast(transform.position, new Vector3(0.5f, 0.5f, 0.5f), transform.forward, out hit, Quaternion.identity, 2.0f);
-                            objInt.Interagir();
-                        }
-                        if (objInt != null)
-                            objInt.Cancelar();
-                        yield return new WaitForSeconds(0.3f);
-
-                    }
-                    if (objInt != null)
-                        objInt.Cancelar();
-                }
+                objInt.Interagir();
             }
-            yield return null;
+            Debug.Log("Colidiu");
+            yield return new WaitForSeconds(1f);
         }
+
         anim.SetBool("Batendo", false);
         _minerando = false;
-        if(objInt != null)
-        objInt.Cancelar();
-       // objInt = null;
+        if (objInt is not null)
+            objInt.Cancelar();
+        yield return null;
 
 
     }
@@ -202,6 +174,25 @@ public class PlayerMovimentacao : MonoBehaviour
         if (other.gameObject.CompareTag("Elevador"))
         {
             SceneManager.LoadScene(cena);
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        float maxDistance = 10f;
+        RaycastHit hit;
+
+        bool isHit = Physics.BoxCast(transform.position, new Vector3(2f, 2f, 0.1f), transform.forward, out hit, transform.rotation, 1.0f);
+        if (isHit)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, new Vector3(2f, 2f, 0.1f));
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, transform.forward * 2.0f);
         }
     }
 
