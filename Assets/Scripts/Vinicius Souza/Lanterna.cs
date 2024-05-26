@@ -7,7 +7,7 @@ public class Lanterna : MonoBehaviour
 {
     [SerializeField] float BateriaTotal;
     [SerializeField] public static float BateriaAtual;
-    private float Tempo = 0.91f;
+    private float Tempo = 0.01f;
     private GameManager gameManager;
     [SerializeField] GameObject lanterna;
     [SerializeField] Light luz;

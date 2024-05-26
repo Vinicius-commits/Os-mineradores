@@ -6521,7 +6521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: CentraOester 1
+  nomeDaCena: CentroOeste 1
 --- !u!114 &2027574618
 MonoBehaviour:
   m_ObjectHideFlags: 0
