@@ -5560,7 +5560,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5429947849033098038, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1622935976}
   m_SourcePrefab: {fileID: 100100000, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd, type: 3}
 --- !u!4 &1622935974 stripped
 Transform:
@@ -5568,6 +5572,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1622935973}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1622935975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5429947849033098038, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1622935973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1622935976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622935975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae59b843fe90e3146bed5b445f265a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Jogo2
 --- !u!1 &1705835212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3646975638032841222, guid: b6bf6ffb1922840499b19c8ca6f1f39f,

@@ -7023,8 +7023,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5429947849033098038, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2082423921}
   m_SourcePrefab: {fileID: 100100000, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd, type: 3}
+--- !u!1 &2082423920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5429947849033098038, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082423919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2082423921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082423920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae59b843fe90e3146bed5b445f265a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Jogo3
 --- !u!1001 &2129734812
 PrefabInstance:
   m_ObjectHideFlags: 0
