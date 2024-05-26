@@ -6900,6 +6900,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: JogadorCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 3e27f8f8-3e66-4536-b034-d3829353d2c8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: 041891f9-24c9-4588-8c80-c8637285fbae
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: MovimentoPlayer/Agua[/Keyboard/r,/XInputControllerWindows/buttonEast]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: MovimentoPlayer/Pausa[/Keyboard/escape,/XInputControllerWindows/start]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 863807743}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Paused, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6485076954592816254, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
       propertyPath: m_LocalPosition.x

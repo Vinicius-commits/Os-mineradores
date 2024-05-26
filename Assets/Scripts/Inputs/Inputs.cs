@@ -71,6 +71,24 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Agua"",
+                    ""type"": ""Button"",
+                    ""id"": ""3e27f8f8-3e66-4536-b034-d3829353d2c8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pausa"",
+                    ""type"": ""Button"",
+                    ""id"": ""041891f9-24c9-4588-8c80-c8637285fbae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -227,6 +245,50 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""SpaceBar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3c1dd60f-4697-4541-a8f7-99590635ca41"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Agua"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c39eb1db-32ef-43ab-a077-f5ebe95c282b"",
+                    ""path"": ""<XInputController>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Agua"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""134b8e2d-ab75-4dfe-807e-f781192ee34f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pausa"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""138dd83c-8f22-4ba5-9032-2be9d3c4a46c"",
+                    ""path"": ""<XInputController>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pausa"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -279,6 +341,8 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_MovimentoPlayer_Elevator = m_MovimentoPlayer.FindAction("Elevator", throwIfNotFound: true);
         m_MovimentoPlayer_Interaction = m_MovimentoPlayer.FindAction("Interaction", throwIfNotFound: true);
         m_MovimentoPlayer_SpaceBar = m_MovimentoPlayer.FindAction("SpaceBar", throwIfNotFound: true);
+        m_MovimentoPlayer_Agua = m_MovimentoPlayer.FindAction("Agua", throwIfNotFound: true);
+        m_MovimentoPlayer_Pausa = m_MovimentoPlayer.FindAction("Pausa", throwIfNotFound: true);
         // CameraMovimento
         m_CameraMovimento = asset.FindActionMap("CameraMovimento", throwIfNotFound: true);
         m_CameraMovimento_CameraRotationY = m_CameraMovimento.FindAction("CameraRotationY", throwIfNotFound: true);
@@ -348,6 +412,8 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_MovimentoPlayer_Elevator;
     private readonly InputAction m_MovimentoPlayer_Interaction;
     private readonly InputAction m_MovimentoPlayer_SpaceBar;
+    private readonly InputAction m_MovimentoPlayer_Agua;
+    private readonly InputAction m_MovimentoPlayer_Pausa;
     public struct MovimentoPlayerActions
     {
         private @Inputs m_Wrapper;
@@ -357,6 +423,8 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         public InputAction @Elevator => m_Wrapper.m_MovimentoPlayer_Elevator;
         public InputAction @Interaction => m_Wrapper.m_MovimentoPlayer_Interaction;
         public InputAction @SpaceBar => m_Wrapper.m_MovimentoPlayer_SpaceBar;
+        public InputAction @Agua => m_Wrapper.m_MovimentoPlayer_Agua;
+        public InputAction @Pausa => m_Wrapper.m_MovimentoPlayer_Pausa;
         public InputActionMap Get() { return m_Wrapper.m_MovimentoPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -381,6 +449,12 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @SpaceBar.started += instance.OnSpaceBar;
             @SpaceBar.performed += instance.OnSpaceBar;
             @SpaceBar.canceled += instance.OnSpaceBar;
+            @Agua.started += instance.OnAgua;
+            @Agua.performed += instance.OnAgua;
+            @Agua.canceled += instance.OnAgua;
+            @Pausa.started += instance.OnPausa;
+            @Pausa.performed += instance.OnPausa;
+            @Pausa.canceled += instance.OnPausa;
         }
 
         private void UnregisterCallbacks(IMovimentoPlayerActions instance)
@@ -400,6 +474,12 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @SpaceBar.started -= instance.OnSpaceBar;
             @SpaceBar.performed -= instance.OnSpaceBar;
             @SpaceBar.canceled -= instance.OnSpaceBar;
+            @Agua.started -= instance.OnAgua;
+            @Agua.performed -= instance.OnAgua;
+            @Agua.canceled -= instance.OnAgua;
+            @Pausa.started -= instance.OnPausa;
+            @Pausa.performed -= instance.OnPausa;
+            @Pausa.canceled -= instance.OnPausa;
         }
 
         public void RemoveCallbacks(IMovimentoPlayerActions instance)
@@ -470,6 +550,8 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         void OnElevator(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
         void OnSpaceBar(InputAction.CallbackContext context);
+        void OnAgua(InputAction.CallbackContext context);
+        void OnPausa(InputAction.CallbackContext context);
     }
     public interface ICameraMovimentoActions
     {

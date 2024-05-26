@@ -3332,7 +3332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466321422}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.029781185, y: 1e-45, z: -0, w: 0.9995565}
+  m_LocalRotation: {x: -0.029781193, y: 1e-45, z: -0, w: 0.9995565}
   m_LocalPosition: {x: 0, y: 0.54542124, z: 0.39372003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6343,7 +6343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826338616}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0011406319, y: -0.000000008150315, z: 0.0000000017507406,
+  m_LocalRotation: {x: -0.0011406319, y: 0.000000008411324, z: -0.0000000018068067,
     w: 0.99999934}
   m_LocalPosition: {x: 0, y: 0.54542124, z: 0.39372003}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -17616,7 +17616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1949841573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17977,7 +17977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982803564}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.027691336, y: -1e-45, z: 1e-45, w: 0.99961656}
+  m_LocalRotation: {x: 0.027691336, y: -1e-45, z: -0, w: 0.99961656}
   m_LocalPosition: {x: 0, y: 0.54542124, z: 0.39372003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19097,9 +19097,19 @@ PrefabInstance:
       objectReference: {fileID: 548314889}
     - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: _forceMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: cameraPlayer
       value: 
       objectReference: {fileID: 1042048717}
+    - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: _movimento.velocidade
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4187830220291951425, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
       propertyPath: m_Enabled
@@ -19122,13 +19132,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 3e27f8f8-3e66-4536-b034-d3829353d2c8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionId
+      value: 041891f9-24c9-4588-8c80-c8637285fbae
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: MovimentoPlayer/Agua[/Keyboard/r,/XInputControllerWindows/buttonEast]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_ActionName
+      value: MovimentoPlayer/Pausa[/Keyboard/escape,/XInputControllerWindows/start]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
@@ -19142,7 +19187,17 @@ PrefabInstance:
       objectReference: {fileID: 863807742}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 863807743}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
@@ -19152,12 +19207,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CameraRotacao, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Paused, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6485076954592816254, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,

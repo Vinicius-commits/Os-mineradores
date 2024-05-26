@@ -17,7 +17,7 @@ public class Paused : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
             {
@@ -35,12 +35,32 @@ public class Paused : MonoBehaviour
                 isPaused = true;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-            }
+            }*/
         }
-    }
+
 
     public void OnPause()
     {
 
+    }
+    public void Pausa()
+    {
+         if (isPaused)
+            {
+                Time.timeScale = 1f;
+                canvasPauseMenu.SetActive(false);
+                isPaused = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+
+            else
+            {
+                Time.timeScale = 0f;
+                canvasPauseMenu.SetActive(true);
+                isPaused = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
     }
 }

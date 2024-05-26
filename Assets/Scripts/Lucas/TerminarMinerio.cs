@@ -61,8 +61,8 @@ public class TerminarMinerio : Interactable
     {
         if (!minerando)
         {
-            tagAntes = transform.parent.gameObject.tag;
-            transform.parent.gameObject.tag = "Minerando";
+            //tagAntes = transform.parent.gameObject.tag;
+            //transform.parent.gameObject.tag = "Minerando";
             minerando = true;
             if (npc)
             {   
@@ -135,7 +135,7 @@ public class TerminarMinerio : Interactable
         {
             if (pedra != null)
             {
-                paiObj.tag = "SemMinerio";
+                //paiObj.tag = "SemMinerio";
                 pedra.SetActive(true);
                 Destroy(this.gameObject);
             }
