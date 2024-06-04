@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6485076954592816254}
-  - component: {fileID: 6957991630206556728}
   m_Layer: 0
   m_Name: Camera Visual Controle
   m_TagString: Untagged
@@ -57,31 +56,12 @@ Transform:
   m_GameObject: {fileID: 4603959119479645971}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.841675, y: 6.17, z: -3.1485877}
+  m_LocalPosition: {x: 0, y: 6.17, z: 1.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3215380924284068719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6957991630206556728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4603959119479645971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bab914112cf7584bb9f86f4e4e15fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 4956195820704724697}
-  _realocateDistanceX: 0
-  _realocateSpeedX: 1
-  _realocateDistanceY: 5.17
-  _realocateSpeedY: 1
-  _realocateDistanceZ: 1.64
-  _realocateSpeedZ: 1
 --- !u!1 &4921209980544375150
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,8 +104,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3215380924284068719}
-  - component: {fileID: 4187830220291951425}
-  - component: {fileID: 7130286917571761798}
   m_Layer: 0
   m_Name: Cam Visual
   m_TagString: Untagged
@@ -149,87 +127,6 @@ Transform:
   - {fileID: 6485076954592816254}
   m_Father: {fileID: 9164623153855175589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4187830220291951425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6393534114765793335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85eb133b52c872940aef9473e5f0a415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sensibilidade: 1.7
-  _rotacao: 0
---- !u!114 &7130286917571761798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6393534114765793335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ccda1b155042ac14ba127e1a1a0f1054,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 40850b56-41a8-45ec-92d4-b1227c6d4a5f
-    m_ActionName: MovimentoPlayer/Move[/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 8a7463d3-a903-4acb-82e2-095b644fab8b
-    m_ActionName: MovimentoPlayer/Sprint[/Keyboard/leftShift]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 217d276c-ba19-455d-8f89-80b0fb51caf8
-    m_ActionName: MovimentoPlayer/Elevator[/Keyboard/f]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 34f77dc6-951e-439b-8404-80045bb9435d
-    m_ActionName: MovimentoPlayer/Interaction[/Keyboard/e]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7a8c566d-e1d8-487c-84de-5b56b004a023
-    m_ActionName: MovimentoPlayer/SpaceBar[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4187830220291951425}
-        m_TargetAssemblyTypeName: CameraRotacao, Assembly-CSharp
-        m_MethodName: CamRotacao
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: d17bcb1f-7362-46c2-b19e-f982beae3d8a
-    m_ActionName: CameraMovimento/CameraRotationY[/Mouse/delta/x]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: CameraMovimento
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1001 &4419088078161478273
 PrefabInstance:
   m_ObjectHideFlags: 0

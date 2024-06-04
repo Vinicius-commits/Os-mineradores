@@ -291,7 +291,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3120051108343074228}
         m_TargetAssemblyTypeName: PlayerMovimentacao, Assembly-CSharp
-        m_MethodName: Move
+        m_MethodName: MoverPersonagem
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3120051108343074228}
         m_TargetAssemblyTypeName: PlayerMovimentacao, Assembly-CSharp
-        m_MethodName: Sprint
+        m_MethodName: Correr
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -359,6 +359,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7a8c566d-e1d8-487c-84de-5b56b004a023
     m_ActionName: MovimentoPlayer/SpaceBar[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e27f8f8-3e66-4536-b034-d3829353d2c8
+    m_ActionName: MovimentoPlayer/Agua[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 041891f9-24c9-4588-8c80-c8637285fbae
+    m_ActionName: MovimentoPlayer/Pausa[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: MovimentoPlayer
@@ -374,8 +382,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8760680942153757784}
   - component: {fileID: 3120051108343074228}
-  - component: {fileID: 1229842690979153959}
   - component: {fileID: 1963881990909150581}
+  - component: {fileID: 2821246263411881450}
   m_Layer: 0
   m_Name: Jogador Controle
   m_TagString: Player
@@ -416,17 +424,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab9ec431bb19e147859ca11165120c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidBody: {fileID: 1229842690979153959}
-  _inputAcoes2D: {x: 0, y: 0}
-  _inputAcoes: {x: 0, y: 0, z: 0}
-  cameraPlayer: {fileID: 0}
-  _movimento:
-    velocidade: 2000
-    multiplicarCorrida: 2
-    aceleracao: 0
-    estaCorrendo: 0
-    velocidadeAtual: 0
-  _forceMode: 5
+  velocidade: 6
+  velocidadeCorrida: 12
+  myCamera: {fileID: 0}
+  animator: {fileID: 0}
   _minerando: 0
   _estaNoChao: 1
   rayCastInicio: {fileID: 1512268469299341022}
@@ -436,33 +437,6 @@ MonoBehaviour:
   cena: Jogo 2
   objInt: {fileID: 0}
   anim: {fileID: 5252276987795805296}
---- !u!54 &1229842690979153959
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8505274383528960439}
-  serializedVersion: 4
-  m_Mass: 80
-  m_Drag: 4
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
 --- !u!136 &1963881990909150581
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -480,12 +454,38 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2.8590488
   m_Direction: 1
   m_Center: {x: 0, y: 0.42952442, z: 0}
+--- !u!143 &2821246263411881450
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505274383528960439}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2.85
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &8705251603419562778
 GameObject:
   m_ObjectHideFlags: 0
