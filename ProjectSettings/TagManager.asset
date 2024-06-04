@@ -21,6 +21,15 @@ TagManager:
   - Grafita
   - Pedestal
   - Porta
+  - Cobre
+  - Fluorita
+  - Gipsita
+  - Magnesita
+  - Manganes
+  - Opala
+  - Tungstenio
+  - Turmalina
+  - Uranio
   layers:
   - Default
   - TransparentFX

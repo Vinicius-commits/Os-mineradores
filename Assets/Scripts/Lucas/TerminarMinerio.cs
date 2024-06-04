@@ -8,7 +8,7 @@ public class TerminarMinerio : Interactable
     [SerializeField] private float timernpc;
     [SerializeField] private int contador;
     [SerializeField] private bool minerando;
-    [SerializeField] private bool ouro, ferro, aluminio, niobio, zinco, grafita;
+    [SerializeField] private bool ouro, ferro, aluminio, niobio, zinco, grafita, cobre, gipsita, magnesita, manganes, opala, tungstenio, turmalina, uranio, fluorita;
     [SerializeField] private GameObject pedra;
     public bool npc = false;
     [SerializeField] private Transform pai;
@@ -127,8 +127,62 @@ public class TerminarMinerio : Interactable
             if (contador >= 3)
                 SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Grafita);
         }
+        else if (cobre)
+        {
+            GameManager.Instance.AtualizarCobre(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Cobre);
+        }
+        else if (gipsita)
+        {
+            GameManager.Instance.AtualizarGipsita(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Gipsita);
+        }
+        else if (tungstenio)
+        {
+            GameManager.Instance.AtualizarTungstenio(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Tungstenio);
+        }
+        else if (turmalina)
+        {
+            GameManager.Instance.AtualizarTurmalina(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Turmalina);
+        }
+        else if (uranio)
+        {
+            GameManager.Instance.AtualizarUranio(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Uranio);
+        }
+        else if (opala)
+        {
+            GameManager.Instance.AtualizarOpala(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Opala);
+        }
+        else if (magnesita)
+        {
+            GameManager.Instance.AtualizarMagnesita(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Magnesita);
+        }
+        else if (manganes)
+        {
+            GameManager.Instance.AtualizarManganes(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Manganes);
+        }
+        else if (fluorita)
+        {
+            GameManager.Instance.AtualizarFluorita(1);
+            if (contador >= 3)
+                SaveManager.Instance.SaveMuseu(SaveManager.Minerios.Fluorita);
+        }
 
-        
+
         //Debug.LogError(contador);
         minerando = false;
         if (contador >= 3)

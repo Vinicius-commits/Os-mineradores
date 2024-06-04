@@ -1174,10 +1174,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
+  - {fileID: 4958354587267907421, guid: c5e436e7f5dd1c74aa1e8c286470846d, type: 3}
   - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4179496521396274251, guid: 2238390bffab306408787c8ac945edf4, type: 3}
-  - {fileID: 4179496521396274251, guid: a99a9175f79f0cf4ab50ca3ab2d70ffa, type: 3}
+  - {fileID: 4958354587267907421, guid: a9a4b0ac89fd829449b71b104f33bb22, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -3719,6 +3718,7 @@ MonoBehaviour:
   magnesita: 0
   cobre: 0
   fluorita: 0
+  manganes: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3878,7 +3878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892663653}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.009901151, y: -0.000000018842956, z: 0.000000003875215,
+  m_LocalRotation: {x: -0.009901151, y: 0.000000018842956, z: -0.000000003875215,
     w: 0.999951}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}

@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8142705730337961607}
-  - component: {fileID: 3997071706525800768}
-  - component: {fileID: -1752594783657993533}
   m_Layer: 0
   m_Name: Ouro
   m_TagString: Ouro
@@ -35,74 +33,6 @@ Transform:
   - {fileID: 5282454413015500142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3997071706525800768
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958354587267907421}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.58954656, y: 0.49175793, z: 0.476326}
-  m_Center: {x: 0.098006785, y: -0.25412104, z: 0.07580328}
---- !u!208 &-1752594783657993533
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958354587267907421}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
---- !u!1 &5107457209562053770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 346973825804492393}
-  m_Layer: 0
-  m_Name: Aux
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &346973825804492393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5107457209562053770}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5626358217380782454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7510813742109756445
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +45,7 @@ GameObject:
   - component: {fileID: 4277425901496924323}
   - component: {fileID: 7123335554834911858}
   - component: {fileID: 7574273406765848168}
-  - component: {fileID: 5555420975840524747}
+  - component: {fileID: 7705517041303767029}
   m_Layer: 0
   m_Name: SemMinerio
   m_TagString: Untagged
@@ -132,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 7510813742109756445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.044043, y: 0, z: 0.030123}
-  m_LocalScale: {x: 0.49568516, y: 0.49568516, z: 0.49568516}
+  m_LocalPosition: {x: -0.202, y: -0.729, z: 0}
+  m_LocalScale: {x: 0.4317462, y: 0.5, z: 0.4317462}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8142705730337961607}
@@ -207,9 +137,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.830711, y: 4.1554065, z: 2.274418}
-  m_Center: {x: 0.053132307, y: 0.03225178, z: 0.0619179}
---- !u!114 &5555420975840524747
+  m_Size: {x: 5.2401104, y: 5.6142464, z: 3.0760498}
+  m_Center: {x: -0.20521614, y: 0.70736194, z: -0.06554346}
+--- !u!114 &7705517041303767029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,11 +181,10 @@ Transform:
   m_GameObject: {fileID: 9208336330151243625}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.072139, y: 0, z: 0.014095}
-  m_LocalScale: {x: 0.599208, y: 0.6109375, z: 0.8014407}
+  m_LocalPosition: {x: -0.21875, y: 0, z: -0.18}
+  m_LocalScale: {x: 0.54627305, y: 0.65529, z: 0.54627305}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 346973825804492393}
+  m_Children: []
   m_Father: {fileID: 8142705730337961607}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &422709357718286942
@@ -327,8 +256,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.0851855, y: 5.4922767, z: 6.4979606}
-  m_Center: {x: 0.08797266, y: -0.11867264, z: -0.26730093}
+  m_Size: {x: 4.417304, y: 6.020623, z: 6.087318}
+  m_Center: {x: 0.21907201, y: 0.08134152, z: -0.0036962596}
 --- !u!114 &4993403474005346447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,6 +280,15 @@ MonoBehaviour:
   niobio: 0
   zinco: 0
   grafita: 0
+  cobre: 0
+  gipsita: 0
+  magnesita: 0
+  manganes: 0
+  opala: 0
+  tungstenio: 0
+  turmalina: 0
+  uranio: 0
+  fluorita: 0
   pedra: {fileID: 7510813742109756445}
   npc: 0
   pai: {fileID: 0}

@@ -17,6 +17,7 @@ public class SaveManager : Singleton<SaveManager>
     public bool OpalaBool;
     public bool MagnesitaBool;
     public bool ManganesBool;
+    public bool FluoritaBool;
 
     // Método para salvar dados do jogador em um arquivo JSON
     public void SaveMuseu(Minerios minerio)
@@ -80,6 +81,10 @@ public class SaveManager : Singleton<SaveManager>
                 MuseuMinerios.GipsitaBool = true;
                 GipsitaBool = true;
                 break;
+            case Minerios.Fluorita:
+                MuseuMinerios.FluoritaBool = true;
+                FluoritaBool = true;
+                break;
         }
 
 
@@ -119,7 +124,8 @@ public class SaveManager : Singleton<SaveManager>
         Tungstenio,
         Manganes,
         Gipsita,
-        Opala
+        Opala,
+        Fluorita
     }
 
     public SaveManager()
@@ -153,4 +159,5 @@ public class SaveManager : Singleton<SaveManager>
         public bool ManganesBool;
         public bool UranioBool;
         public bool CobreBool;
+        public bool FluoritaBool;
 }

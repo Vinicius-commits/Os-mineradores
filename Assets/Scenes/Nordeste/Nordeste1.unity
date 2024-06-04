@@ -1482,11 +1482,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 4179496521396274251, guid: 3d2203585ed5249439d6fcbf3d95b055, type: 3}
-  - {fileID: 4179496521396274251, guid: a09e6287e6ef3f14c9bccd015279e9a0, type: 3}
-  - {fileID: 4179496521396274251, guid: 45ccf752894f21e479035a8654ced657, type: 3}
-  - {fileID: 4179496521396274251, guid: 17f096c88532de5439be161b0819142b, type: 3}
-  - {fileID: 4179496521396274251, guid: 9b0be7c653ede8b45a77b9e5fb1d919d, type: 3}
+  - {fileID: 4958354587267907421, guid: b8612dfac0edef44ebe47dee9b2087b7, type: 3}
+  - {fileID: 4958354587267907421, guid: ce48ebbdc63ad054a9260b52a52b3934, type: 3}
+  - {fileID: 4958354587267907421, guid: d0afb2a7c9f4b9743abc88b4da4c82c1, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -4449,7 +4447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827600597}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742532, y: -0.0000000041868677, z: 9.868455e-10, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742532, y: 0.0000000041868677, z: -9.868455e-10, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4768,6 +4766,7 @@ MonoBehaviour:
   magnesita: 0
   cobre: 0
   fluorita: 0
+  manganes: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5796,7 +5795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.0000000042679744, z: 5.3676785e-10, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.0000000042679744, z: -5.3676785e-10, w: 0.99218404}
   m_LocalPosition: {x: -9.59, y: 6.26, z: -7.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7264,7 +7263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242024239}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.009901151, y: -0.000000018842956, z: 0.000000003875215,
+  m_LocalRotation: {x: -0.009901151, y: 0.000000018842956, z: -0.000000003875215,
     w: 0.999951}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}

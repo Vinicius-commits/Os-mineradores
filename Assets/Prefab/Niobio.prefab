@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8142705730337961607}
-  - component: {fileID: 5678708079805969848}
-  - component: {fileID: 5436770655861416334}
   m_Layer: 0
   m_Name: Niobio
   m_TagString: Niobio
@@ -28,50 +26,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5626358217380782454}
   - {fileID: 5282454413015500142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5678708079805969848
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958354587267907421}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.58954656, y: 0.49175793, z: 0.476326}
-  m_Center: {x: 0.098006785, y: -0.25412104, z: 0.07580328}
---- !u!208 &5436770655861416334
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958354587267907421}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &7510813742109756445
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +45,7 @@ GameObject:
   - component: {fileID: 4277425901496924323}
   - component: {fileID: 7123335554834911858}
   - component: {fileID: 7574273406765848168}
-  - component: {fileID: 5606988069032822050}
+  - component: {fileID: 7705517041303767029}
   m_Layer: 0
   m_Name: SemMinerio
   m_TagString: Untagged
@@ -101,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 7510813742109756445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42272, y: 0, z: 0.14841}
-  m_LocalScale: {x: 0.71931416, y: 0.71931416, z: 0.71931416}
+  m_LocalPosition: {x: 0, y: -0.73, z: 0}
+  m_LocalScale: {x: 0.4317462, y: 0.5, z: 0.4317462}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8142705730337961607}
@@ -176,9 +137,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.989438, y: 6.045264, z: 2.79409}
-  m_Center: {x: -0.22657374, y: 0.6771067, z: 0.12719363}
---- !u!114 &5606988069032822050
+  m_Size: {x: 5.265426, y: 5.819911, z: 3.2873778}
+  m_Center: {x: -0.01498447, y: 0.8101943, z: 0.040122047}
+--- !u!114 &7705517041303767029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,7 +182,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0265, y: 1.2312866, z: 1.0265}
+  m_LocalScale: {x: 0.54627305, y: 0.65529, z: 0.54627305}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8142705730337961607}
@@ -295,8 +256,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.378496, y: 6.672128, z: 6.7004175}
-  m_Center: {x: 0.36223876, y: 0.0019615092, z: 0.045166444}
+  m_Size: {x: 4.342689, y: 6.0259266, z: 6.1001887}
+  m_Center: {x: 0.19045687, y: 0.07868915, z: 0.04497432}
 --- !u!114 &4993403474005346447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +280,15 @@ MonoBehaviour:
   niobio: 1
   zinco: 0
   grafita: 0
+  cobre: 0
+  gipsita: 0
+  magnesita: 0
+  manganes: 0
+  opala: 0
+  tungstenio: 0
+  turmalina: 0
+  uranio: 0
+  fluorita: 0
   pedra: {fileID: 7510813742109756445}
   npc: 0
   pai: {fileID: 0}

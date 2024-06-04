@@ -1290,11 +1290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
-  - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4179496521396274251, guid: 3f8667640186e9c46bf932f9971d3641, type: 3}
-  - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
-  - {fileID: 7897526066515320501, guid: 74b2236b522c23e428c3a317f504fbba, type: 3}
+  - {fileID: 4958354587267907421, guid: 3bb6aa91b3e4bfe4b8ab192110babec4, type: 3}
+  - {fileID: 4958354587267907421, guid: 7425493f042add7479f39fe22b5dce6f, type: 3}
+  - {fileID: 4958354587267907421, guid: bcc51e5aa42e6d0489e3523ea47812aa, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -3840,6 +3838,7 @@ MonoBehaviour:
   magnesita: 0
   cobre: 0
   fluorita: 0
+  manganes: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0

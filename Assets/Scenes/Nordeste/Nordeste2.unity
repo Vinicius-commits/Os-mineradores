@@ -1572,10 +1572,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minerios:
-  - {fileID: 509110792337443372, guid: 97070765de9f2bd40bed44c2b1ebc0bd, type: 3}
-  - {fileID: 4958354587267907421, guid: c479f9f8953b234418e7d2ef8efc1441, type: 3}
-  - {fileID: 4958354587267907421, guid: f3a455e59293341408ea99ebc0ba4758, type: 3}
-  - {fileID: 4958354587267907421, guid: d1bacfea5836cf1428022367fcde2a8a, type: 3}
+  - {fileID: 4958354587267907421, guid: a4542fbdd4b9db04abf1919d52dd716b, type: 3}
+  - {fileID: 4958354587267907421, guid: d56aeb7dbc002c44eba5dd2a132a63d6, type: 3}
+  - {fileID: 4958354587267907421, guid: 767106b30adc50e4583154e5bb0da0a2, type: 3}
   Pos:
   - {fileID: 1129057045}
   - {fileID: 1939375707}
@@ -4505,6 +4504,7 @@ MonoBehaviour:
   magnesita: 0
   cobre: 0
   fluorita: 0
+  manganes: 0
 --- !u!114 &863807745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5256,7 +5256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016174342}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.008465621, y: -0.89602387, z: 0.440994, w: -0.050931554}
+  m_LocalRotation: {x: -0.008465626, y: -0.89602387, z: 0.44099396, w: -0.050931584}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6111,7 +6111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092257326}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.01031012, y: -0.8794134, z: 0.47325096, w: -0.050590433}
+  m_LocalRotation: {x: -0.010310117, y: -0.87941337, z: 0.4732509, w: -0.050590426}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
