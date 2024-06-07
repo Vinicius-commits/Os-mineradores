@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Lanterna : MonoBehaviour
 {
     [SerializeField] float BateriaTotal;
-    [SerializeField] public static float BateriaAtual;
+    [SerializeField] float BateriaAtual;
     private float Tempo = 0.01f;
-    private GameManager gameManager;
+    [SerializeField] GameManager gameManager;
     [SerializeField] GameObject lanterna;
     [SerializeField] Light luz;
 
@@ -37,19 +38,24 @@ public class Lanterna : MonoBehaviour
         {
             lanterna.SetActive(true);
         }
-        if(BateriaAtual <= 0.5 && Input.GetKeyDown(KeyCode.R))
-        {
-            Recarregar();
-        }
+        // if(BateriaAtual <= 0.5 && Input.GetKeyDown(KeyCode.R))
+        // {
+        //     Debug.Log("Recarregou");
+        //     Recarregar();
+        // }
         
     }
 
-    void Recarregar()
+    public void Recarregar(InputAction.CallbackContext context)
     {
-        if(gameManager.grafita >= 1)
+        if((context.started || context.performed) && BateriaAtual <= 0.5)
         {
-            BateriaAtual = 1;
-            gameManager.grafita -= 1;
+            Debug.Log("Entrada no recarregar da lanterna");
+            if(gameManager.grafita >= 1)
+            {
+                BateriaAtual = 1;
+                gameManager.grafita -= 1;
+            }
         }
     }
     IEnumerator DiminuirIntensidadeGradualmente(float duracao)

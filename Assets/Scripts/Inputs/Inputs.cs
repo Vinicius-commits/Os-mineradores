@@ -89,6 +89,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Lanterna"",
+                    ""type"": ""Button"",
+                    ""id"": ""425ab2a0-7f5a-4f5c-93f8-9524e1a6d640"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -289,6 +298,17 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""Pausa"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1f912174-13c8-443c-9deb-29757360cdfa"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Lanterna"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -343,6 +363,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_MovimentoPlayer_SpaceBar = m_MovimentoPlayer.FindAction("SpaceBar", throwIfNotFound: true);
         m_MovimentoPlayer_Agua = m_MovimentoPlayer.FindAction("Agua", throwIfNotFound: true);
         m_MovimentoPlayer_Pausa = m_MovimentoPlayer.FindAction("Pausa", throwIfNotFound: true);
+        m_MovimentoPlayer_Lanterna = m_MovimentoPlayer.FindAction("Lanterna", throwIfNotFound: true);
         // CameraMovimento
         m_CameraMovimento = asset.FindActionMap("CameraMovimento", throwIfNotFound: true);
         m_CameraMovimento_CameraRotationY = m_CameraMovimento.FindAction("CameraRotationY", throwIfNotFound: true);
@@ -414,6 +435,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_MovimentoPlayer_SpaceBar;
     private readonly InputAction m_MovimentoPlayer_Agua;
     private readonly InputAction m_MovimentoPlayer_Pausa;
+    private readonly InputAction m_MovimentoPlayer_Lanterna;
     public struct MovimentoPlayerActions
     {
         private @Inputs m_Wrapper;
@@ -425,6 +447,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         public InputAction @SpaceBar => m_Wrapper.m_MovimentoPlayer_SpaceBar;
         public InputAction @Agua => m_Wrapper.m_MovimentoPlayer_Agua;
         public InputAction @Pausa => m_Wrapper.m_MovimentoPlayer_Pausa;
+        public InputAction @Lanterna => m_Wrapper.m_MovimentoPlayer_Lanterna;
         public InputActionMap Get() { return m_Wrapper.m_MovimentoPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -455,6 +478,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Pausa.started += instance.OnPausa;
             @Pausa.performed += instance.OnPausa;
             @Pausa.canceled += instance.OnPausa;
+            @Lanterna.started += instance.OnLanterna;
+            @Lanterna.performed += instance.OnLanterna;
+            @Lanterna.canceled += instance.OnLanterna;
         }
 
         private void UnregisterCallbacks(IMovimentoPlayerActions instance)
@@ -480,6 +506,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Pausa.started -= instance.OnPausa;
             @Pausa.performed -= instance.OnPausa;
             @Pausa.canceled -= instance.OnPausa;
+            @Lanterna.started -= instance.OnLanterna;
+            @Lanterna.performed -= instance.OnLanterna;
+            @Lanterna.canceled -= instance.OnLanterna;
         }
 
         public void RemoveCallbacks(IMovimentoPlayerActions instance)
@@ -552,6 +581,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         void OnSpaceBar(InputAction.CallbackContext context);
         void OnAgua(InputAction.CallbackContext context);
         void OnPausa(InputAction.CallbackContext context);
+        void OnLanterna(InputAction.CallbackContext context);
     }
     public interface ICameraMovimentoActions
     {

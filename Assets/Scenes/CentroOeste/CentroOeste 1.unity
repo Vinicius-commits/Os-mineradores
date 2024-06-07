@@ -6186,6 +6186,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2007814378}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1274810361 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8480303551094822641, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082423919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1278902094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10399,6 +10405,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1274810361}
+    - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: myCamera
+      value: 
+      objectReference: {fileID: 166074555}
     - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
       propertyPath: cameraPlayer

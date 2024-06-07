@@ -67,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Lanterna",
+                    "type": "Button",
+                    "id": "425ab2a0-7f5a-4f5c-93f8-9524e1a6d640",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -265,6 +274,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pausa",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f912174-13c8-443c-9deb-29757360cdfa",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Lanterna",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
