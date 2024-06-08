@@ -5,13 +5,14 @@ using UnityEngine;
 public class BarraLanterna : MonoBehaviour
 {
     Vector3 EscalaLocal;
+    [SerializeField] Lanterna lanterna;
     void Start()
     {
         EscalaLocal = transform.localScale;
     }
     void FixedUpdate()
     {
-        EscalaLocal.x = Lanterna.BateriaAtual;
+        EscalaLocal.x = lanterna.BateriaAtual;
         transform.localScale = EscalaLocal;
     }
 }

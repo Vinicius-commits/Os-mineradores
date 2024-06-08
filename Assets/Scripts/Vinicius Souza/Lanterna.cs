@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Lanterna : MonoBehaviour
 {
     [SerializeField] float BateriaTotal;
-    [SerializeField] float BateriaAtual;
+    public float BateriaAtual;
     private float Tempo = 0.01f;
     [SerializeField] GameManager gameManager;
     [SerializeField] GameObject lanterna;
