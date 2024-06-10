@@ -212,6 +212,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -299,6 +304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -506,7 +516,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &43127346
 Transform:
@@ -597,7 +607,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -690,6 +700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -861,6 +876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1034,6 +1054,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planta3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 235147fc5862b954685c56512178640b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1095,7 +1120,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &83749471
 Transform:
@@ -1329,6 +1354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1770,6 +1800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2105,6 +2140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2191,6 +2231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Minerio
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d81b4423745b8274f817f9dbf6895906,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2396,6 +2441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2636,6 +2686,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2827,6 +2882,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2914,6 +2974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3092,6 +3157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3179,6 +3249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3378,6 +3453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3555,6 +3635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3642,6 +3727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3747,7 +3837,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &370019360
 Transform:
@@ -3838,7 +3928,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3926,6 +4016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Esmeralda
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 914e9ffe3bbbef44f9e16dd043d1a906,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4015,6 +4110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraPedra (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4080,7 +4180,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &401384726
 Transform:
@@ -4171,7 +4271,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4260,6 +4360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Madeira
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 406d11e39ba37c4409cbe74405f9c0cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4353,6 +4458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4392,7 +4502,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &437281074
 Transform:
@@ -4924,7 +5034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466321422}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.009901181, y: -0.000000004213414, z: 8.665244e-10, w: 0.999951}
+  m_LocalRotation: {x: -0.009901181, y: 0.0000000042134136, z: -8.665243e-10, w: 0.999951}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4995,7 +5105,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &466365635
 BoxCollider:
@@ -5172,6 +5282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraChata (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a81a70fd504f63b408ec3dbf9d031654,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5231,7 +5346,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &494733610
 Transform:
@@ -5322,7 +5437,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5415,6 +5530,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tabua (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4333021bb1dc22f45856fa1d30ae471f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5514,6 +5634,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5602,6 +5727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5689,6 +5819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5802,7 +5937,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &538186082
 Transform:
@@ -5893,7 +6028,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6099,6 +6234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabua
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4333021bb1dc22f45856fa1d30ae471f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6197,6 +6337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6290,6 +6435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6400,6 +6550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TerrenoTerra01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d9cac79f24c74949b05a72c065186ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6823,6 +6978,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraChata (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a81a70fd504f63b408ec3dbf9d031654,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6948,6 +7108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7312,6 +7477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrilhoFim
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e2f507fe5ac32b478f01b4a6008df09,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7403,6 +7573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PedraChata
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a81a70fd504f63b408ec3dbf9d031654,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8048,7 +8223,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &679452422
 Transform:
@@ -8139,7 +8314,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8218,6 +8393,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gerador e Lampadas
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1763357936832507055, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8263,6 +8443,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 137.95
       objectReference: {fileID: 0}
+    - target: {fileID: 8930342422568549044, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8769354050892590493, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1, type: 3}
@@ -8299,10 +8484,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 437281074}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1142616238}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
         type: 3}
@@ -8445,6 +8626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8661,6 +8847,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraPedra (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8793,6 +8984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8920,6 +9116,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: carro
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 232a5c3d14d3a4b49bcd2028f3cb253f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9040,6 +9241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9158,6 +9364,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8380157826906577798, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -7388894396013007978, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9168,6 +9379,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: -6733177361254619370, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6577237425059042219, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5546747315237514756, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5063223942988036812, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -4932982780345470907, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9178,6 +9414,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: -2914413575082383075, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -1439730007547781893, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9203,6 +9444,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escavadeira
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014851524106484247, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1129496810705857465, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9213,16 +9464,51 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: 2800250516343163423, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971542036940430761, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3280927520727180574, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: 3849762623622064168, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214726985332892257, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5245042011116262203, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6148596154634031546, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: 6512510688612296998, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919683763462532184, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6944656104360116776, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9238,6 +9524,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: 7487702076113990204, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7743480366618694112, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9253,6 +9544,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93353104a3da0204ea35f2d10f128bec, type: 2}
+    - target: {fileID: 8513859187771203891, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700725330082129686, guid: 2ffc9a3af23ca3f4f88623d5a398c1fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9320,7 +9621,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826338616}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742502, y: -0.000000016747471, z: 0.000000003947382, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742502, y: 0.000000016747471, z: -0.000000003947382, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9697,6 +9998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10113,6 +10419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10412,6 +10723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PedraChata (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a81a70fd504f63b408ec3dbf9d031654,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10932,6 +11248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planta1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a91300749f5b0b84e94a6a2c24317a44,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11058,6 +11379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PedraChata (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a81a70fd504f63b408ec3dbf9d031654,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11302,7 +11628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.000000034143792, z: 0.000000004294142, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.000000034143792, z: -0.000000004294142, w: 0.99218404}
   m_LocalPosition: {x: 0, y: 6.2599998, z: -82.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11627,6 +11953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11883,6 +12214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12370,90 +12706,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129057044}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1142616237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1142616238}
-  - component: {fileID: 1142616240}
-  - component: {fileID: 1142616239}
-  m_Layer: 0
-  m_Name: LampadaMineracao (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1142616238
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142616237}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.090866, y: 17.6, z: 104.35758}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1801662235}
-  m_Father: {fileID: 57683271}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1142616239
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142616237}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8081228178661188526, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1142616240
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142616237}
-  m_Mesh: {fileID: -4686355326351409891, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1, type: 3}
 --- !u!1001 &1153929367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12536,6 +12788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12755,6 +13012,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12948,6 +13210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tabua (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4333021bb1dc22f45856fa1d30ae471f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13370,6 +13637,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13706,7 +13978,7 @@ GameObject:
   m_TagString: Interagivel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1291173305
 Transform:
@@ -13829,7 +14101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1303616492
 Transform:
@@ -13920,7 +14192,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -14202,6 +14474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PedraPedra (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14662,6 +14939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14898,6 +15180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Planta4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0daf0c896c8e1f43a72ce332bbee211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15212,6 +15499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tronco (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ef5c3b1ccfb7644985453c2a8064a3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15295,6 +15587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planta4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0daf0c896c8e1f43a72ce332bbee211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15373,6 +15670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Planta3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 235147fc5862b954685c56512178640b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15467,6 +15769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tronco
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ef5c3b1ccfb7644985453c2a8064a3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15728,6 +16035,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ametista
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ec3431f61bbd824c8da9623b357cb1d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15922,6 +16234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16015,6 +16332,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planta1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a91300749f5b0b84e94a6a2c24317a44,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16102,6 +16424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PedraPedra
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16288,6 +16615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Planta1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a91300749f5b0b84e94a6a2c24317a44,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16802,6 +17134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16889,6 +17226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16982,6 +17324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17044,7 +17391,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1578202244
 Transform:
@@ -17215,6 +17562,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17234,7 +17586,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1604953179
 Transform:
@@ -17245,7 +17597,7 @@ Transform:
   m_GameObject: {fileID: 1604953178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.073805, y: 8.7, z: 103.11}
+  m_LocalPosition: {x: -0.073805, y: 8.79, z: 103.11}
   m_LocalScale: {x: 1.3624, y: 1.3624, z: 1.3624}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17419,6 +17771,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17597,6 +17954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17702,6 +18064,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Madeira
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 406d11e39ba37c4409cbe74405f9c0cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17944,6 +18311,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18036,6 +18408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18123,6 +18500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18325,7 +18707,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1761183383
 Transform:
@@ -18416,7 +18798,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -18510,6 +18892,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabua (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4333021bb1dc22f45856fa1d30ae471f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18541,7 +18928,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1775679272
 Transform:
@@ -18773,124 +19160,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1582339107}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1801662234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1801662235}
-  - component: {fileID: 1801662237}
-  - component: {fileID: 1801662236}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1801662235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801662234}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1142616238}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801662236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801662234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
---- !u!108 &1801662237
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801662234}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.79958075, b: 0.30588233, a: 1}
-  m_Intensity: 400
-  m_Range: 20
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &1803574846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 232a5c3d14d3a4b49bcd2028f3cb253f,
@@ -19321,6 +19590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19414,6 +19688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19586,6 +19865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tronco (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ef5c3b1ccfb7644985453c2a8064a3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20514,7 +20798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1909321188
 Transform:
@@ -20994,6 +21278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraPedra (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21209,6 +21498,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trilho (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21292,6 +21586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Madeira (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 406d11e39ba37c4409cbe74405f9c0cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21492,6 +21791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21858,6 +22162,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21889,7 +22198,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2010347940
 Transform:
@@ -22091,7 +22400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2030366620
 Transform:
@@ -22241,6 +22550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trilho (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d811a74e06e68b547914647aade46cc2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22448,6 +22762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabua (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4333021bb1dc22f45856fa1d30ae471f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22580,6 +22899,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TroncoEngomadinho (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22667,7 +22991,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2079694013
 Transform:
@@ -22751,7 +23075,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2082955522
 Transform:
@@ -22975,6 +23299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Madeira (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 406d11e39ba37c4409cbe74405f9c0cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23068,6 +23397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23344,6 +23678,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedraPedra (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fe52c7e254b64c46aba5d947509b977,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23460,10 +23799,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.91
       objectReference: {fileID: 0}
+    - target: {fileID: -3646975638032841222, guid: b6bf6ffb1922840499b19c8ca6f1f39f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6bf6ffb1922840499b19c8ca6f1f39f,
         type: 3}
       propertyPath: m_Name
       value: ElevadorModelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6bf6ffb1922840499b19c8ca6f1f39f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658498126481997703, guid: b6bf6ffb1922840499b19c8ca6f1f39f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23643,6 +23997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TroncoEngomadinho (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8da6c23115c4ccc409809162ddd3f179,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
