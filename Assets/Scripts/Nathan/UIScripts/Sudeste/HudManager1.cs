@@ -26,7 +26,7 @@ public class HUDManager1 : MonoBehaviour
         ouroText.text = GameManager.Instance.aluminio.ToString();
         ferroText.text = GameManager.Instance.ferro.ToString();
         aluminioText.text = GameManager.Instance.manganes.ToString();
-        niobioText.text = GameManager.Instance.niobio.ToString();
+        niobioText.text = GameManager.Instance.grafita.ToString();
         ZincoText.text = GameManager.Instance.zinco.ToString();
     }
 }
