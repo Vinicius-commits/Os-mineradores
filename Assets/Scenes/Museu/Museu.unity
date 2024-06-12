@@ -4518,7 +4518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324655256}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.011879155, y: 0.0067317644, z: -0.0020004874, w: 0.9999048}
+  m_LocalRotation: {x: -0.011879155, y: 0.006731801, z: -0.0020004986, w: 0.9999048}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4801,7 +4801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361597813}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0405126, y: 0.0067863152, z: -0.0018068661, w: 0.9991544}
+  m_LocalRotation: {x: -0.040512584, y: 0.0067863236, z: -0.0018068685, w: 0.9991544}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9980,6 +9980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JogadorCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921209980544375150, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5822405852026745934, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
@@ -22911,7 +22916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907758600}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00026415323, y: -0.9904238, z: 0.13804741, w: -0.0018951719}
+  m_LocalRotation: {x: -0.00026414258, y: -0.9904238, z: 0.13804741, w: -0.0018950957}
   m_LocalPosition: {x: 11.715042, y: 4.541888, z: 29.539186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
