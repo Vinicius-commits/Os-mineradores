@@ -3368,8 +3368,14 @@ MonoBehaviour:
   perigo: {fileID: 7041400502932948565, guid: ca8667666c012ab46a49fb8943881961, type: 3}
   fase:
   - nome: Primeiro Andar
-    ativar: 0
+    ativar: 1
     timer: 10
+  - nome: Segundo Andaar
+    ativar: 0
+    timer: 5
+  - nome: Terceiro Andar
+    ativar: 0
+    timer: 2
 --- !u!1001 &316397597
 PrefabInstance:
   m_ObjectHideFlags: 0

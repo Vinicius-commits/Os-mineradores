@@ -4717,7 +4717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827600597}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742532, y: -0.0000000041868677, z: 9.868455e-10, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742532, y: 0.0000000041868677, z: -9.868455e-10, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6064,7 +6064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.0000000042679744, z: 5.3676785e-10, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.0000000042679744, z: -5.3676785e-10, w: 0.99218404}
   m_LocalPosition: {x: -9.59, y: 6.26, z: -7.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9218,6 +9218,19 @@ MonoBehaviour:
   AguaTotal: 1
   cooldown: 12
   anim: {fileID: 60117307187117799}
+  pm: {fileID: 1398482945}
+--- !u!114 &1398482945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 60117307187117797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398482939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab9ec431bb19e147859ca11165120c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1435677506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d81b4423745b8274f817f9dbf6895906,
