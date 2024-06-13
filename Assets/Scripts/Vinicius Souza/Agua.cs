@@ -12,6 +12,11 @@ public class Agua : MonoBehaviour
     [SerializeField] float cooldown;
     private float BeberAgua;
     [SerializeField] Animator anim;
+    public PlayerMovimentacao pm;
+    void Awake()
+    {
+        pm.GetComponent<PlayerMovimentacao>();
+    }
 
     private void Start()
     {
@@ -32,13 +37,15 @@ public class Agua : MonoBehaviour
     void Recarregar()
     {
         AguaAtual = 1f;
+        pm.agua = false;
     }
 
     public void RecarregarInputNovo(InputAction.CallbackContext context)
     {
         if (Time.time > BeberAgua + cooldown)   
         {
-            AguaAtual = 1f;
+              pm.agua = true;
+              Invoke("Recarregar", 1.6f);
               anim.SetTrigger("Agua");
         }
     }

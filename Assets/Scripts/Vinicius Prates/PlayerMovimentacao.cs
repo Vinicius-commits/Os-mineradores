@@ -17,6 +17,7 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] private Transform myCamera;
     [SerializeField] bool _minerando;
     [SerializeField] bool correndo;
+    public bool agua;
 
     #endregion
 
@@ -62,7 +63,7 @@ public class PlayerMovimentacao : MonoBehaviour
         if(!correndo)
         velocidade = velocidadeAntiga;
         
-        if(!_minerando)
+        if(!_minerando && !agua)
         {
             RotacionarPersonagem();
             characterController.Move(transform.forward * myInput.magnitude * velocidade * Time.deltaTime);
