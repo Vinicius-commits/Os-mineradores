@@ -502,7 +502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &33672556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -510,16 +510,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33672555}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.702914, w: 0.7112749}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3814323, y: 3.3814323, z: 3.3814323}
+  m_LocalScale: {x: 4.7921658, y: 4.7921658, z: 4.7921658}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1708893268}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.323}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 98, y: -751}
+  m_AnchoredPosition: {x: 98, y: -1146}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!225 &33672557
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d308f236ea3f891478e471c2e06264ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b87dd19ddac74004bb24d6a2839a62c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4890,7 +4890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361597813}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.040512584, y: 0.0067863236, z: -0.0018068685, w: 0.9991544}
+  m_LocalRotation: {x: -0.0405126, y: 0.0067863152, z: -0.0018068661, w: 0.9991544}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10453,14 +10453,14 @@ RectTransform:
   m_GameObject: {fileID: 968626550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.7358153, y: 2.7358153, z: 2.7358153}
+  m_LocalScale: {x: 3.2195075, y: 3.2195075, z: 3.2195075}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1708893268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1601, y: -440}
+  m_AnchoredPosition: {x: 1518, y: -751}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!225 &968626552
@@ -10495,7 +10495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4f423c19e5fc171478692388d56d4a13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 040cb484b91fe614298d6c011788dacf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20620,7 +20620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1708893268
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21400,7 +21400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748792077}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.016954534, y: 0.00667134, z: -0.0021937592, w: 0.9998317}
+  m_LocalRotation: {x: 0.016954549, y: 0.006671309, z: -0.002193749, w: 0.9998317}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23603,8 +23603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc4ee6f25659444aad7e2f9ddb7a217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToShow: {fileID: 1459320828}
-  imagesToShow: []
+  panelToShow: {fileID: 1708893267}
+  imagesToShow:
+  - {fileID: 33672555}
+  - {fileID: 968626550}
   fadeInSpeed: 0.5
   fadeOutSpeed: 0.5
 --- !u!65 &1892196791
@@ -23626,8 +23628,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.2827458, y: 3.3329124, z: 5.736322}
-  m_Center: {x: 0.031715367, y: -0.26429683, z: 1.2201207}
+  m_Size: {x: 3.2827458, y: 3.3329124, z: 8.217682}
+  m_Center: {x: 0.031715345, y: -0.26429683, z: 2.4608016}
 --- !u!1 &1899733556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b5372de06c7f3643859b1c88a6b245f,
