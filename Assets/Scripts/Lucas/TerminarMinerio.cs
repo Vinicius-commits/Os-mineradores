@@ -10,6 +10,7 @@ public class TerminarMinerio : Interactable
     [SerializeField] private bool minerando;
     [SerializeField] private bool ouro, ferro, aluminio, niobio, zinco, grafita, cobre, gipsita, magnesita, manganes, opala, tungstenio, turmalina, uranio, fluorita;
     [SerializeField] private GameObject pedra;
+    [SerializeField] private GameObject explosao;
     public bool npc = false;
     [SerializeField] private Transform pai;
     [SerializeField] private GameObject paiObj;
@@ -192,6 +193,7 @@ public class TerminarMinerio : Interactable
             if (pedra != null)
             {
                 //paiObj.tag = "SemMinerio";
+                Instantiate(explosao, transform.position, transform.rotation);
                 pedra.SetActive(true);
                 m_AudioSource.PlayOneShot(destruir);
                 

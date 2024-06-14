@@ -387,6 +387,8 @@ MonoBehaviour:
   uranio: 0
   fluorita: 0
   pedra: {fileID: 7510813742109756445}
+  explosao: {fileID: 4094343938909718216, guid: b2a5139bc2a05214fa8eb9dda3ae554b,
+    type: 3}
   npc: 0
   pai: {fileID: 0}
   paiObj: {fileID: 0}
