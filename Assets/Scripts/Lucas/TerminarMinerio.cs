@@ -16,6 +16,8 @@ public class TerminarMinerio : Interactable
     [SerializeField] private GameObject npcObj;
     [SerializeField] private float distancia = 0;
     [SerializeField] private string tagAntes;
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip destruir;
     
 
     void Start()
@@ -191,6 +193,8 @@ public class TerminarMinerio : Interactable
             {
                 //paiObj.tag = "SemMinerio";
                 pedra.SetActive(true);
+                m_AudioSource.PlayOneShot(destruir);
+                
                 Destroy(this.gameObject);
             }
             else
