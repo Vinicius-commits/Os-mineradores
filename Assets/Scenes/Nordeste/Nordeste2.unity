@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127287637}
   serializedVersion: 2
-  m_LocalRotation: {x: -3.6503467e-10, y: -0.963387, z: 0.26811486, w: 0.00000001720251}
+  m_LocalRotation: {x: 3.6503467e-10, y: -0.963387, z: 0.26811486, w: -0.00000001720251}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4439,7 +4439,6 @@ GameObject:
   m_Component:
   - component: {fileID: 863807741}
   - component: {fileID: 863807743}
-  - component: {fileID: 863807744}
   - component: {fileID: 863807746}
   - component: {fileID: 863807747}
   - component: {fileID: 863807748}
@@ -4478,33 +4477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasPauseMenu: {fileID: 1242825797}
---- !u!114 &863807744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863807739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52bf6df838706041bb7ea79e0cf6284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ouro: 0
-  ferro: 0
-  aluminio: 0
-  niobio: 0
-  zinco: 0
-  grafita: 0
-  gipsita: 0
-  turmalina: 0
-  tungstenio: 0
-  uranio: 0
-  opala: 0
-  magnesita: 0
-  cobre: 0
-  fluorita: 0
-  manganes: 0
 --- !u!114 &863807746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5255,7 +5227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016174342}
   serializedVersion: 2
-  m_LocalRotation: {x: 8.8397567e-10, y: -0.9706709, z: 0.24041247, w: -0.000000017713887}
+  m_LocalRotation: {x: -8.839758e-10, y: -0.9706709, z: 0.24041247, w: 0.00000001771389}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5531,7 +5503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: 0.000000034934867, z: -0.000000004393633, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: -0.000000034934867, z: 0.000000004393633, w: 0.99218404}
   m_LocalPosition: {x: -9.59, y: 1.71, z: 92.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8197,6 +8169,7 @@ MonoBehaviour:
   AguaTotal: 1
   cooldown: 12
   anim: {fileID: 60117307187117799}
+  pm: {fileID: 0}
 --- !u!1 &1411784486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5900449678366147412, guid: 53e99171e2320714b941cd791c7cbf5e,

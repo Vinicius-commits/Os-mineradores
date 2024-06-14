@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78467199}
   serializedVersion: 2
-  m_LocalRotation: {x: 1.7560643e-10, y: -0.97950035, z: 0.20144258, w: -0.000000017735061}
+  m_LocalRotation: {x: -1.7560632e-10, y: -0.97950035, z: 0.20144258, w: 0.000000017735065}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -867,7 +867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124382014}
   serializedVersion: 2
-  m_LocalRotation: {x: -3.3241565e-10, y: -0.973329, z: 0.22941384, w: -0.000000017732818}
+  m_LocalRotation: {x: 3.3241565e-10, y: -0.973329, z: 0.22941384, w: 0.00000001773282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1076,7 +1076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166074554}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.000000035194617, z: 0.0000000044263, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.000000035194617, z: -0.0000000044263, w: 0.99218404}
   m_LocalPosition: {x: 0, y: 6.26, z: 83.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4323,7 +4323,6 @@ GameObject:
   m_Component:
   - component: {fileID: 863807741}
   - component: {fileID: 863807743}
-  - component: {fileID: 863807744}
   - component: {fileID: 863807746}
   - component: {fileID: 863807747}
   - component: {fileID: 863807748}
@@ -4362,33 +4361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasPauseMenu: {fileID: 1242825797}
---- !u!114 &863807744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863807739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52bf6df838706041bb7ea79e0cf6284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ouro: 0
-  ferro: 0
-  aluminio: 0
-  niobio: 0
-  zinco: 0
-  grafita: 0
-  gipsita: 0
-  turmalina: 0
-  tungstenio: 0
-  uranio: 0
-  opala: 0
-  magnesita: 0
-  cobre: 0
-  fluorita: 0
-  manganes: 0
 --- !u!114 &863807746
 MonoBehaviour:
   m_ObjectHideFlags: 0
