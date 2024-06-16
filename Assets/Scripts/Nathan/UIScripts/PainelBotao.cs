@@ -61,6 +61,6 @@ public class PainelBotao: MonoBehaviour
         }
         canvasGroupIn.alpha = 1f;
 
-        fading = false; 
+        //fading = false; 
     }
 }

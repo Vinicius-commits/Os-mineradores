@@ -106,7 +106,6 @@ public class PlayerMovimentacao : MonoBehaviour
 
 
 
-
     public void Interaction(InputAction.CallbackContext context)
     {
         Physics.BoxCast(transform.position, new Vector3(2f, 2f, 0.1f), transform.forward, out hit, transform.rotation, 1.0f);
@@ -125,6 +124,13 @@ public class PlayerMovimentacao : MonoBehaviour
                 }
 
             }
+            else if(hit.collider.CompareTag("Bebedor"))
+            {
+                animator.SetTrigger("Agua");
+                agua = true;
+                Invoke("Agua",  1.6f);
+            }
+            
             else if (hit.collider.CompareTag("Pedra"))
             {
                 hit.collider.GetComponent<Interactable>().Interagir(ref segurando, mao);
@@ -140,6 +146,10 @@ public class PlayerMovimentacao : MonoBehaviour
         {
             isButtonPressed = false;
         }
+    }
+    private void Agua()
+    {
+        agua = false;
     }
 
     private IEnumerator InteracaoContinua()

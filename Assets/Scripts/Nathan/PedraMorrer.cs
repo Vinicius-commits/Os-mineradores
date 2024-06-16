@@ -5,27 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PedraMorrer : MonoBehaviour
 {
-    public string nomeDaCena; 
 
-    
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Pedra"))
-        {
-            
-            SceneManager.LoadScene(nomeDaCena);
-        }
-    }
 
     
     private void OnTriggerEnter(Collider other)
     {
     
-        if (other.gameObject.CompareTag("Pedra"))
+        if (other.gameObject.CompareTag("Player"))
         {
            
-            SceneManager.LoadScene(nomeDaCena);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
