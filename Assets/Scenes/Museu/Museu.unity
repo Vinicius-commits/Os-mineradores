@@ -5633,7 +5633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361597813}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.053876854, y: 0.00866527, z: -0.0021834096, w: 0.9985076}
+  m_LocalRotation: {x: -0.053876854, y: 0.008665304, z: -0.0021834183, w: 0.9985076}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9739,8 +9739,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -445.3, y: 192.3}
-  m_SizeDelta: {x: 268.25293, y: 57.23999}
+  m_AnchoredPosition: {x: -450.8, y: 192.3}
+  m_SizeDelta: {x: 440.3966, y: 57.23999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772318690
 MonoBehaviour:
@@ -9762,7 +9762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inspecione os minerios para saber mais sobre eles!
+  m_text: Inspecione os minerios que voce coletou  para saber mais sobre eles!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f3f5e3dc162cc74e91ba46041878acb, type: 2}
   m_sharedMaterial: {fileID: -4305935508021996782, guid: 2f3f5e3dc162cc74e91ba46041878acb,
@@ -14417,7 +14417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1199653020
 RectTransform:
   m_ObjectHideFlags: 0
