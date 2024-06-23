@@ -8147,7 +8147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826338616}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742502, y: -0.000000016747471, z: 0.000000003947382, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742502, y: 0.000000016747471, z: -0.000000003947382, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8820,6 +8820,7 @@ GameObject:
   - component: {fileID: 863807745}
   - component: {fileID: 863807746}
   - component: {fileID: 863807747}
+  - component: {fileID: 863807748}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8931,6 +8932,24 @@ MonoBehaviour:
   MagnesitaBool: 0
   ManganesBool: 0
   FluoritaBool: 0
+--- !u!114 &863807748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863807739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ce9c5f7d20a09478d68b6c7e385fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  faseTime: 0
+  museuTime: 0
+  sender: 
+  track: 
+  value: 
 --- !u!4 &872232569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c0daf0c896c8e1f43a72ce332bbee211,
@@ -10284,7 +10303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.000000034143792, z: 0.000000004294142, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.000000034143792, z: -0.000000004294142, w: 0.99218404}
   m_LocalPosition: {x: 0, y: 6.2599998, z: -82.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

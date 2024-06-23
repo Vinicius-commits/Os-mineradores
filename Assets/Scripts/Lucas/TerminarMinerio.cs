@@ -196,7 +196,6 @@ public class TerminarMinerio : Interactable
                 Instantiate(explosao, transform.position, transform.rotation);
                 pedra.SetActive(true);
                 m_AudioSource.PlayOneShot(destruir);
-                AnalyticsTest.Instance.minerios++;
                 Destroy(this.gameObject);
             }
             else
