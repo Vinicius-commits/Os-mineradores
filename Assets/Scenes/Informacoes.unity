@@ -451,9 +451,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Instrucoes:\n\n\nVisite as fazes e colete minerios, tome cuidado com os
-    perigos. \n\napos coletar os minerios visite o museu e leia as informacoes dos
-    minerios coletados.\n\n"
+  m_text: "Instrucoes:\n\nSelecione uma fase escolhendo uma regiao no mapa do brasil\n\nVisite
+    as Fases e colete minerios, tome cuidado com os perigos de cada regiao. \n\napos
+    coletar os minerios visite o museu e leia as informacoes dos minerios coletados.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f3f5e3dc162cc74e91ba46041878acb, type: 2}
   m_sharedMaterial: {fileID: -4305935508021996782, guid: 2f3f5e3dc162cc74e91ba46041878acb,

@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Sudeste/Jogo 2.unity
     guid: 098399a6f252cd84bb8c842a533546ca
   - enabled: 1
+    path: Assets/Scenes/Informacoes.unity
+    guid: 0efc44ed733aa9d44b03fa9e16da9638
+  - enabled: 1
     path: Assets/Scenes/Sudeste/Jogo 3.unity
     guid: a8049cadd172e524297a06ab66072e29
   - enabled: 1
