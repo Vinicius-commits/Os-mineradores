@@ -4047,6 +4047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevador
       objectReference: {fileID: 0}
+    - target: {fileID: 3984429159921000055, guid: e25e030a40096084b9ebff1e380a314e,
+        type: 3}
+      propertyPath: painelElevador
+      value: 
+      objectReference: {fileID: 5844768586325469254}
     - target: {fileID: 6447296089707225614, guid: e25e030a40096084b9ebff1e380a314e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10845,7 +10850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973959052}
   serializedVersion: 2
-  m_LocalRotation: {x: -3.3241565e-10, y: -0.973329, z: 0.22941384, w: -0.000000017732818}
+  m_LocalRotation: {x: 3.3241565e-10, y: -0.973329, z: 0.22941384, w: 0.00000001773282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11011,7 +11016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984785156}
   serializedVersion: 2
-  m_LocalRotation: {x: 1.7560643e-10, y: -0.97950035, z: 0.20144258, w: -0.000000017735061}
+  m_LocalRotation: {x: -1.7560632e-10, y: -0.97950035, z: 0.20144258, w: 0.000000017735065}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11533,7 +11538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080674311}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.000000035194617, z: 0.0000000044263, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.000000035194617, z: -0.0000000044263, w: 0.99218404}
   m_LocalPosition: {x: -14, y: 6.26, z: 77.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11975,6 +11980,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDaCena: Menu
+--- !u!1 &5844768586325469254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7968031408565877420, guid: 0b1e5ec932807204fae9b6fc09d36b50,
+    type: 3}
+  m_PrefabInstance: {fileID: 5844768586325469251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

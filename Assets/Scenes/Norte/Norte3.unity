@@ -1341,7 +1341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321530407}
   serializedVersion: 2
-  m_LocalRotation: {x: -7.819094e-10, y: -0.97172, z: 0.23613635, w: 0.0000000171886}
+  m_LocalRotation: {x: 7.8190976e-10, y: -0.97172, z: 0.23613635, w: -0.000000017188608}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1942,6 +1942,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+--- !u!1 &544553140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2802514256680504533, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &584640436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5834,6 +5840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevador
       objectReference: {fileID: 0}
+    - target: {fileID: 3984429159921000055, guid: e25e030a40096084b9ebff1e380a314e,
+        type: 3}
+      propertyPath: painelElevador
+      value: 
+      objectReference: {fileID: 544553140}
     - target: {fileID: 6447296089707225614, guid: e25e030a40096084b9ebff1e380a314e,
         type: 3}
       propertyPath: m_LocalPosition.x

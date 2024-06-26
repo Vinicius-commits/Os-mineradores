@@ -9,19 +9,39 @@ public class TabelaPeriodica : MonoBehaviour
     public GameObject[] imagesToShow;
     public float fadeInSpeed = 0.5f;
     public float fadeOutSpeed = 0.5f;
+    public string targetTag;
 
     private bool hovering = false;
+    private GameObject Ultimo = null;
 
-    private void OnMouseEnter()
+    void Update()
     {
-        hovering = true;
-        StartCoroutine(FadeInImages());
-    }
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-    private void OnMouseExit()
-    {
-        hovering = false;
-        StartCoroutine(FadeOutImages());
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.CompareTag(targetTag))
+            {
+                if (Ultimo != hit.collider.gameObject)
+                {
+                    if (Ultimo != null)
+                    {
+                        StartCoroutine(FadeOutImages());
+                    }
+
+                    Ultimo = hit.collider.gameObject;
+                    hovering = true;
+                    StartCoroutine(FadeInImages());
+                }
+            }
+        }
+        else if (Ultimo != null)
+        {
+            StartCoroutine(FadeOutImages());
+            Ultimo = null;
+            hovering = false;
+        }
     }
 
     private IEnumerator FadeInImages()
@@ -58,4 +78,5 @@ public class TabelaPeriodica : MonoBehaviour
             image.SetActive(false);
         }
     }
+
 }

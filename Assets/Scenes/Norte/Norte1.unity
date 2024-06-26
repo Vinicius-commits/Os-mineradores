@@ -4156,7 +4156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979285691}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742532, y: -0.0000000041868677, z: 9.868455e-10, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742532, y: 0.0000000041868677, z: -9.868455e-10, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4592,7 +4592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: -0.0000000042679744, z: 5.3676785e-10, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: 0.0000000042679744, z: -5.3676785e-10, w: 0.99218404}
   m_LocalPosition: {x: 0, y: 6.26, z: -7.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9949,6 +9949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevador
       objectReference: {fileID: 0}
+    - target: {fileID: 3984429159921000055, guid: e25e030a40096084b9ebff1e380a314e,
+        type: 3}
+      propertyPath: painelElevador
+      value: 
+      objectReference: {fileID: 1283282666}
     - target: {fileID: 6447296089707225614, guid: e25e030a40096084b9ebff1e380a314e,
         type: 3}
       propertyPath: m_LocalPosition.x

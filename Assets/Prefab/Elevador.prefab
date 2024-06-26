@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 8123594878755987956}
   - component: {fileID: 6011886757426523216}
   - component: {fileID: 6383399298136492144}
+  - component: {fileID: 3984429159921000055}
   m_Layer: 0
   m_Name: Painel
   m_TagString: Interagivel
@@ -257,6 +258,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2018826, y: 1.0750939, z: 0.9999998}
   m_Center: {x: -0.0028037007, y: 0.5232496, z: 1.2355001e-18}
+--- !u!114 &3984429159921000055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7005470032321170455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afde29037b68c374eab36b26c460fe12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  painelElevador: {fileID: 0}
 --- !u!1001 &840857218477197237
 PrefabInstance:
   m_ObjectHideFlags: 0
