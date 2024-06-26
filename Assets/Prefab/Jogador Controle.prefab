@@ -599,6 +599,9 @@ MonoBehaviour:
   cena: Jogo 2
   objInt: {fileID: 0}
   animator: {fileID: 0}
+  djalminha: {fileID: 2100000, guid: 812d25ffe7e7313499f683e34980e8e3, type: 2}
+  marriCurri: {fileID: 2100000, guid: edcb15a39a6953245ba779f9d9f55887, type: 2}
+  renderer: {fileID: 1389881318688045206}
 --- !u!136 &1963881990909150581
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -813,7 +816,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 812d25ffe7e7313499f683e34980e8e3, type: 2}
+      objectReference: {fileID: 2100000, guid: edcb15a39a6953245ba779f9d9f55887, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -827,6 +830,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4513377210687774992}
   m_SourcePrefab: {fileID: 100100000, guid: fd70c4c45145153499a2ae36a634b92c, type: 3}
+--- !u!137 &1389881318688045206 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7930178732453267726, guid: fd70c4c45145153499a2ae36a634b92c,
+    type: 3}
+  m_PrefabInstance: {fileID: 9026478334714196376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8179970589787360457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fd70c4c45145153499a2ae36a634b92c,

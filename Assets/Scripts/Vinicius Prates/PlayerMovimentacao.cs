@@ -41,10 +41,21 @@ public class PlayerMovimentacao : MonoBehaviour
     [SerializeField] Animator animator;
     #endregion
 
+    #region MaterialSkin
+    [Header("Skins")]
+    [SerializeField] Material djalminha;
+    [SerializeField] Material marriCurri;
+    [SerializeField] Renderer renderer;
+    #endregion
+
     private void Awake()
     {
         velocidadeAntiga = velocidade;
         characterController = GetComponent<CharacterController>();
+        if(GameManager.Instance.djalminha)
+        renderer.material = djalminha;
+        else
+        renderer.material = marriCurri;
     }
 
     /// <summary>

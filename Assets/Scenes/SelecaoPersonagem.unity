@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18115892, g: 0.22674778, b: 0.30732194, a: 1}
+  m_IndirectSpecularColor: {r: 0.18115868, g: 0.22674735, b: 0.30732128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 354632666}
   - component: {fileID: 354632667}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Djalminha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,7 +574,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1459421296}
+        m_TargetAssemblyTypeName: PersonagemSeletor, Assembly-CSharp
+        m_MethodName: Djalminha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1459421297}
         m_TargetAssemblyTypeName: MudaCena, Assembly-CSharp
         m_MethodName: TrocarParaCena
         m_Mode: 1
@@ -624,6 +636,18 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 200
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1459421296}
+          m_TargetAssemblyTypeName: PersonagemSeletor, Assembly-CSharp
+          m_MethodName: DjalminhaAnm
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -1037,6 +1061,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!95 &669240224 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5252276987795805296, guid: 3e021608d9ad35846b10f2f13126f0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 962747189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &951004660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc45b4b8ee736c446a7fe1c7732802bb,
@@ -1142,6 +1172,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1389881318688045206, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 812d25ffe7e7313499f683e34980e8e3, type: 2}
     - target: {fileID: 2821246263411881450, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}
       propertyPath: m_Enabled
@@ -1151,6 +1186,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898916237484177103, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898916237484177103, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898916237484177103, guid: 3e021608d9ad35846b10f2f13126f0a1,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8505274383528960439, guid: 3e021608d9ad35846b10f2f13126f0a1,
         type: 3}
@@ -1207,7 +1257,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3120051108343074228, guid: 3e021608d9ad35846b10f2f13126f0a1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1716,7 +1767,7 @@ GameObject:
   - component: {fileID: 1439065758}
   - component: {fileID: 1439065759}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: MarriCurri
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1882,7 +1933,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1439065756}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1459421296}
+        m_TargetAssemblyTypeName: PersonagemSeletor, Assembly-CSharp
+        m_MethodName: MariCurri
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1459421297}
+        m_TargetAssemblyTypeName: MudaCena, Assembly-CSharp
+        m_MethodName: TrocarParaCena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1439065759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1924,6 +1999,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1459421296}
+          m_TargetAssemblyTypeName: PersonagemSeletor, Assembly-CSharp
+          m_MethodName: MarriCurriAnm
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -1952,6 +2039,66 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1459421295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459421298}
+  - component: {fileID: 1459421297}
+  - component: {fileID: 1459421296}
+  m_Layer: 0
+  m_Name: Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1459421296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459421295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9e1f1f71379ee40ad4cd85ed80cb68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  djalminha: {fileID: 669240224}
+  marriCurri: {fileID: 1604799271}
+--- !u!114 &1459421297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459421295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: MapaBrasil
+--- !u!4 &1459421298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459421295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42.090397, y: -337.26816, z: 1534.8092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581411127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,6 +2217,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -349.284, y: 0, z: 0}
+--- !u!95 &1604799271 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5252276987795805296, guid: 3e021608d9ad35846b10f2f13126f0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1941332605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1624651083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2558,7 +2711,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3120051108343074228, guid: 3e021608d9ad35846b10f2f13126f0a1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3051,3 +3205,4 @@ SceneRoots:
   - {fileID: 1581411130}
   - {fileID: 1107298824}
   - {fileID: 1908816116}
+  - {fileID: 1459421298}

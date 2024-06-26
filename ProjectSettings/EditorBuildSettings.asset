@@ -71,7 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sul/Sul 2.unity
     guid: c5bcf4a1156dd6247bf53a825f9a3fec
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SelecaoPersonagem.unity
     guid: d09331b317599084db941583e389ddb0
   - enabled: 1

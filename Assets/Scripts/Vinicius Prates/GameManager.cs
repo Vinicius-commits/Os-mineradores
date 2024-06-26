@@ -6,6 +6,8 @@ using System;
 
 public class GameManager : Singleton<GameManager>
 {
+    public bool djalminha;
+    public bool mariCurri;
     public int ouro = 0;
     public int ferro = 0;
     public int aluminio = 0;
