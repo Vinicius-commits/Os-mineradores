@@ -927,6 +927,7 @@ GameObject:
   - component: {fileID: 408362046}
   - component: {fileID: 408362045}
   - component: {fileID: 408362048}
+  - component: {fileID: 408362049}
   m_Layer: 0
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -998,10 +999,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1551542616}
-        m_TargetAssemblyTypeName: MudarCena, Assembly-CSharp
-        m_MethodName: MudandoCena
-        m_Mode: 5
+      - m_Target: {fileID: 408362049}
+        m_TargetAssemblyTypeName: TelaPreta, Assembly-CSharp
+        m_MethodName: StartFade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1302,6 +1303,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &408362049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408362040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61a95ed3484774459bfea6a02112a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeCanvasGroup: {fileID: 2130544816}
+  fadeDuration: 0.5
+  sceneToLoad: Creditos
 --- !u!1001 &521778719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3400,6 +3416,7 @@ GameObject:
   - component: {fileID: 1216773694}
   - component: {fileID: 1216773693}
   - component: {fileID: 1216773699}
+  - component: {fileID: 1216773700}
   m_Layer: 0
   m_Name: InfoButton
   m_TagString: Untagged
@@ -3629,10 +3646,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1551542616}
-        m_TargetAssemblyTypeName: MudarCena, Assembly-CSharp
-        m_MethodName: MudandoCena
-        m_Mode: 5
+      - m_Target: {fileID: 1216773700}
+        m_TargetAssemblyTypeName: TelaPreta, Assembly-CSharp
+        m_MethodName: StartFade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3775,6 +3792,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1216773700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216773691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61a95ed3484774459bfea6a02112a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeCanvasGroup: {fileID: 2130544816}
+  fadeDuration: 0.5
+  sceneToLoad: informacoes
 --- !u!1 &1219251508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,6 +4561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1456372565}
   - component: {fileID: 1456372564}
+  - component: {fileID: 1456372566}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -4566,6 +4599,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456372566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456372563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a5d93020e817547af796e54d202cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeCanvasGroup: {fileID: 2130544816}
+  fadeDuration: 0.5
 --- !u!1 &1456887274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6874,7 +6921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &2130544816
 CanvasGroup:
   m_ObjectHideFlags: 0

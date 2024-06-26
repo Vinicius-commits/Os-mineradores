@@ -8911,12 +8911,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ce9c5f7d20a09478d68b6c7e385fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  faseTime: 0
   museuTime: 0
-  sender: 
-  track: 
-  value: 
+  faseTime: 0
+  minerios: 0
+  data: []
 --- !u!1 &708202674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b5372de06c7f3643859b1c88a6b245f,
@@ -14436,7 +14434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1199653020
 RectTransform:
   m_ObjectHideFlags: 0
