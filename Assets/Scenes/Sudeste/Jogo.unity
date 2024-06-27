@@ -3862,7 +3862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466321422}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.009901181, y: 0.0000000042134136, z: -8.665243e-10, w: 0.999951}
+  m_LocalRotation: {x: -0.009901181, y: -0.000000004213414, z: 8.665244e-10, w: 0.999951}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4860,6 +4860,33 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 768669518}
   m_SourcePrefab: {fileID: 100100000, guid: 8d9cac79f24c74949b05a72c065186ee, type: 3}
+--- !u!1 &588277132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8930342422568549044, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 685980909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &588277136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588277132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9670937, y: 2.8338788, z: 6.758489}
+  m_Center: {x: 0.85973454, y: 1.3910228, z: 0.9180642}
 --- !u!1 &593552204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6803,6 +6830,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 685980912}
+    - targetCorrespondingSourceObject: {fileID: 8930342422568549044, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588277136}
   m_SourcePrefab: {fileID: 100100000, guid: 21e9f9b6c1e0e684c9c390ca8c2af2d1, type: 3}
 --- !u!1 &685980910 stripped
 GameObject:
@@ -8191,7 +8222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826338616}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018742502, y: 0.000000016747471, z: -0.000000003947382, w: 0.99982435}
+  m_LocalRotation: {x: 0.018742502, y: -0.000000016747471, z: 0.000000003947382, w: 0.99982435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10357,7 +10388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: 0.000000034143792, z: -0.000000004294142, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: -0.000000034143792, z: 0.000000004294142, w: 0.99218404}
   m_LocalPosition: {x: 0, y: 6.2599998, z: -82.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -21128,6 +21159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevador
       objectReference: {fileID: 0}
+    - target: {fileID: 3984429159921000055, guid: e25e030a40096084b9ebff1e380a314e,
+        type: 3}
+      propertyPath: painelElevador
+      value: 
+      objectReference: {fileID: 1283282666}
     - target: {fileID: 6447296089707225614, guid: e25e030a40096084b9ebff1e380a314e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21181,31 +21217,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7005470032321170455, guid: e25e030a40096084b9ebff1e380a314e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 307374734752684890}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25e030a40096084b9ebff1e380a314e, type: 3}
---- !u!1 &307374734752684889 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7005470032321170455, guid: e25e030a40096084b9ebff1e380a314e,
-    type: 3}
-  m_PrefabInstance: {fileID: 307374734752684888}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &307374734752684890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307374734752684889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afde29037b68c374eab36b26c460fe12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  painelElevador: {fileID: 1283282666}
 --- !u!1001 &533781538467386110
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class RaycastBrasil : MonoBehaviour
 {
     [SerializeField] string Tag;
@@ -10,8 +10,10 @@ public class RaycastBrasil : MonoBehaviour
     [SerializeField] string Anim2;
     [SerializeField] string Cena;
     [SerializeField] Animator animator;
-    private bool MouseEmCima = false;
-    private GameObject Ultimo = null;
+    [SerializeField] GameObject[] imagesToShow;
+    [SerializeField] float fadeInSpeed = 0.5f;
+    [SerializeField] float fadeOutSpeed = 0.5f;
+    private GameObject currentObject = null;
 
     void Update()
     {
@@ -22,15 +24,11 @@ public class RaycastBrasil : MonoBehaviour
         {
             if (hit.collider.CompareTag(Tag))
             {
-                if (Ultimo != hit.collider.gameObject)
+                if (currentObject != hit.collider.gameObject)
                 {
-                    if (Ultimo != null)
-                    {
-                        Animacao(Anim2);
-                    }
-
-                    Ultimo = hit.collider.gameObject;
-                    Animacao(Anim1);
+                    OnCollisionExit(currentObject);
+                    currentObject = hit.collider.gameObject;
+                    OnCollisionEnter(currentObject);
                 }
 
                 if (Input.GetMouseButtonDown(0))
@@ -39,30 +37,71 @@ public class RaycastBrasil : MonoBehaviour
                 }
             }
         }
-        else if (Ultimo != null)
+        else
         {
-            Animacao(Anim2);
-            Ultimo = null;
+            OnCollisionExit(currentObject);
+            currentObject = null;
         }
     }
 
-    void Animacao(string a)
+    void OnCollisionEnter(GameObject obj)
+    {
+        if (obj != null)
+        {
+            Animacao(Anim1);
+            StartCoroutine(FadeInImages());
+        }
+    }
+
+    void OnCollisionExit(GameObject obj)
+    {
+        if (obj != null)
+        {
+            Animacao(Anim2);
+            StartCoroutine(FadeOutImages());
+        }
+    }
+
+    void Animacao(string anim)
     {
         if (animator != null)
         {
-            animator.Play(a);
+            animator.Play(anim);
+        }
+    }
+    private IEnumerator FadeInImages()
+    {
+        foreach (GameObject image in imagesToShow)
+        {
+            image.SetActive(true);
+            CanvasGroup canvasGroup = image.GetComponent<CanvasGroup>();
+            float alpha = 0f;
+
+            while (alpha < 1f)
+            {
+                alpha += Time.deltaTime * fadeInSpeed;
+                canvasGroup.alpha = alpha;
+                yield return null;
+            }
         }
     }
 
-    void OnMouseEnter()
+    private IEnumerator FadeOutImages()
     {
-        MouseEmCima = true;
-        Animacao(Anim1);
-    }
+        foreach (GameObject image in imagesToShow)
+        {
+            CanvasGroup canvasGroup = image.GetComponent<CanvasGroup>();
+            float alpha = 1f;
 
-    void OnMouseExit()
-    {
-        MouseEmCima = false;
-        Animacao(Anim2);
+            while (alpha > 0f)
+            {
+                alpha -= Time.deltaTime * fadeOutSpeed;
+                canvasGroup.alpha = alpha;
+                yield return null;
+            }
+
+            image.SetActive(false);
+        }
     }
 }
+

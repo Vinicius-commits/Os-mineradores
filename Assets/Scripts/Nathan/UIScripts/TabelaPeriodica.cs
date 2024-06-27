@@ -11,36 +11,37 @@ public class TabelaPeriodica : MonoBehaviour
     public float fadeOutSpeed = 0.5f;
     public string targetTag;
 
+    private GameObject ultimo = null;
     private bool hovering = false;
-    private GameObject Ultimo = null;
 
-    void Update()
+    private void OnCollisionEnter(Collider other)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
+        if (other.CompareTag(targetTag))
         {
-            if (hit.collider.CompareTag(targetTag))
+            if (ultimo != other.gameObject)
             {
-                if (Ultimo != hit.collider.gameObject)
+                if (ultimo != null)
                 {
-                    if (Ultimo != null)
-                    {
-                        StartCoroutine(FadeOutImages());
-                    }
-
-                    Ultimo = hit.collider.gameObject;
-                    hovering = true;
-                    StartCoroutine(FadeInImages());
+                    StartCoroutine(FadeOutImages());
                 }
+
+                ultimo = other.gameObject;
+                hovering = true;
+                StartCoroutine(FadeInImages());
             }
         }
-        else if (Ultimo != null)
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(targetTag))
         {
-            StartCoroutine(FadeOutImages());
-            Ultimo = null;
-            hovering = false;
+            if (ultimo == other.gameObject)
+            {
+                StartCoroutine(FadeOutImages());
+                ultimo = null;
+                hovering = false;
+            }
         }
     }
 
