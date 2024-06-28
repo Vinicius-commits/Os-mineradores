@@ -4,13 +4,13 @@ using System.IO;
 using UnityEngine.SceneManagement;
 using System;
 
-public class AnalyticsTest : MonoBehaviour
+public class Analitics : MonoBehaviour
 {
     public float museuTime;
     public float faseTime;
     public int minerios;
     public List<AnalyticsData> data;
-    public static AnalyticsTest Instance { get; private set; }
+    public static Analitics Instance { get; private set; }
 
     void Awake()
     {
