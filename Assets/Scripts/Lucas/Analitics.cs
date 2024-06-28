@@ -4,29 +4,18 @@ using System.IO;
 using UnityEngine.SceneManagement;
 using System;
 
-public class Analitics : MonoBehaviour
+public class AnalyticsTest : MonoBehaviour
 {
     public float museuTime;
     public float faseTime;
     public int minerios;
     public List<AnalyticsData> data;
-    public static Analitics Instance { get; private set; }
+    public static AnalyticsTest Instance { get; private set; }
 
     void Awake()
     {
-        
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        
+        Instance = this;
         data = new List<AnalyticsData>();
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -42,16 +31,6 @@ public class Analitics : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Menu")
         {
             Destruido();
-            Destroy(this);
-        }
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == "Menu")
-        {
-            Destruido();
-            SceneManager.sceneLoaded -= OnSceneLoaded;
             Destroy(this);
         }
     }
