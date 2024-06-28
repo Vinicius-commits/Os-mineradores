@@ -12,7 +12,7 @@ public class RaycastBrasil : MonoBehaviour
     [SerializeField] GameObject[] imagesToShow;
     [SerializeField] float fadeInSpeed = 0.5f;
     [SerializeField] float fadeOutSpeed = 0.5f;
-    private GameObject lastObject = null;
+    private GameObject currentObject = null;
 
     void Update()
     {
@@ -23,14 +23,14 @@ public class RaycastBrasil : MonoBehaviour
         {
             if (hit.collider.CompareTag(Tag))
             {
-                if (lastObject != hit.collider.gameObject)
+                if (currentObject != hit.collider.gameObject)
                 {
-                    if (lastObject != null)
+                    if (currentObject != null)
                     {
-                        OnTriggerExit(lastObject.GetComponent<Collider>());
+                        OnTriggerExit(currentObject.GetComponent<Collider>());
                     }
-                    lastObject = hit.collider.gameObject;
-                    OnTriggerEnter(lastObject.GetComponent<Collider>());
+                    currentObject = hit.collider.gameObject;
+                    OnTriggerEnter(currentObject.GetComponent<Collider>());
                 }
 
                 if (Input.GetMouseButtonDown(0))
@@ -38,13 +38,21 @@ public class RaycastBrasil : MonoBehaviour
                     SceneManager.LoadScene(Cena);
                 }
             }
+            else
+            {
+                if (currentObject != null)
+                {
+                    OnTriggerExit(currentObject.GetComponent<Collider>());
+                    currentObject = null;
+                }
+            }
         }
         else
         {
-            if (lastObject != null)
+            if (currentObject != null)
             {
-                OnTriggerExit(lastObject.GetComponent<Collider>());
-                lastObject = null;
+                OnTriggerExit(currentObject.GetComponent<Collider>());
+                currentObject = null;
             }
         }
     }
