@@ -14,8 +14,19 @@ public class Analitics : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
+        
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        
         data = new List<AnalyticsData>();
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -31,6 +42,16 @@ public class Analitics : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Menu")
         {
             Destruido();
+            Destroy(this);
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Menu")
+        {
+            Destruido();
+            SceneManager.sceneLoaded -= OnSceneLoaded;
             Destroy(this);
         }
     }
