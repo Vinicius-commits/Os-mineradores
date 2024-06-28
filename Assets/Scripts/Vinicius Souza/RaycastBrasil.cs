@@ -9,11 +9,10 @@ public class RaycastBrasil : MonoBehaviour
     [SerializeField] string Anim1;
     [SerializeField] string Anim2;
     [SerializeField] string Cena;
-    [SerializeField] Animator animator;
     [SerializeField] GameObject[] imagesToShow;
     [SerializeField] float fadeInSpeed = 0.5f;
     [SerializeField] float fadeOutSpeed = 0.5f;
-    private GameObject currentObject = null;
+    private GameObject lastObject = null;
 
     void Update()
     {
@@ -24,11 +23,14 @@ public class RaycastBrasil : MonoBehaviour
         {
             if (hit.collider.CompareTag(Tag))
             {
-                if (currentObject != hit.collider.gameObject)
+                if (lastObject != hit.collider.gameObject)
                 {
-                    OnCollisionExit(currentObject);
-                    currentObject = hit.collider.gameObject;
-                    OnCollisionEnter(currentObject);
+                    if (lastObject != null)
+                    {
+                        OnTriggerExit(lastObject.GetComponent<Collider>());
+                    }
+                    lastObject = hit.collider.gameObject;
+                    OnTriggerEnter(lastObject.GetComponent<Collider>());
                 }
 
                 if (Input.GetMouseButtonDown(0))
@@ -39,36 +41,41 @@ public class RaycastBrasil : MonoBehaviour
         }
         else
         {
-            OnCollisionExit(currentObject);
-            currentObject = null;
+            if (lastObject != null)
+            {
+                OnTriggerExit(lastObject.GetComponent<Collider>());
+                lastObject = null;
+            }
         }
     }
 
-    void OnCollisionEnter(GameObject obj)
+    void OnTriggerEnter(Collider collider)
     {
-        if (obj != null)
+        if (collider != null && collider.CompareTag(Tag))
         {
-            Animacao(Anim1);
+            PlayAnimation(collider.gameObject, Anim1);
             StartCoroutine(FadeInImages());
         }
     }
 
-    void OnCollisionExit(GameObject obj)
+    void OnTriggerExit(Collider collider)
     {
-        if (obj != null)
+        if (collider != null && collider.CompareTag(Tag))
         {
-            Animacao(Anim2);
+            PlayAnimation(collider.gameObject, Anim2);
             StartCoroutine(FadeOutImages());
         }
     }
 
-    void Animacao(string anim)
+    void PlayAnimation(GameObject obj, string anim)
     {
-        if (animator != null)
+        Animator objAnimator = obj.GetComponent<Animator>();
+        if (objAnimator != null)
         {
-            animator.Play(anim);
+            objAnimator.Play(anim);
         }
     }
+
     private IEnumerator FadeInImages()
     {
         foreach (GameObject image in imagesToShow)

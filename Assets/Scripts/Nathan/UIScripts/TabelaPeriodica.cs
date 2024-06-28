@@ -14,7 +14,7 @@ public class TabelaPeriodica : MonoBehaviour
     private GameObject ultimo = null;
     private bool hovering = false;
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(targetTag))
         {
