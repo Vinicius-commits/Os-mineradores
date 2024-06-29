@@ -3303,10 +3303,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1837896085}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1837896084}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
         type: 3}
@@ -3929,7 +3925,8 @@ PrefabInstance:
       value: -12.803
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9080946301470813094, guid: 9407c2e4dc166454abf471ab274bff63, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9407c2e4dc166454abf471ab274bff63, type: 3}
@@ -21624,24 +21621,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1585226940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585226936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc4ee6f25659444aad7e2f9ddb7a217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelToShow: {fileID: 2025941403}
-  imagesToShow:
-  - {fileID: 224241911}
-  - {fileID: 15680177}
-  fadeInSpeed: 0.5
-  fadeOutSpeed: 0.5
 --- !u!65 &1585226941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25191,10 +25170,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1585226940}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1585226939}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 984c0e791d7b04a49974088a7998dec7,
         type: 3}
@@ -26135,24 +26110,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1837896085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837896081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc4ee6f25659444aad7e2f9ddb7a217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelToShow: {fileID: 191905271}
-  imagesToShow:
-  - {fileID: 1541965272}
-  - {fileID: 1618236580}
-  fadeInSpeed: 0.5
-  fadeOutSpeed: 0.5
 --- !u!65 &1837896086
 BoxCollider:
   m_ObjectHideFlags: 0
