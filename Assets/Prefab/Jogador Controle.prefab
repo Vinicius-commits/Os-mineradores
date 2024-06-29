@@ -599,7 +599,7 @@ MonoBehaviour:
   cena: Jogo 2
   objInt: {fileID: 0}
   animator: {fileID: 0}
-  djalminha: {fileID: 2100000, guid: 812d25ffe7e7313499f683e34980e8e3, type: 2}
+  djalminha: {fileID: 2100000, guid: 0c0c21bf433283548adec5d402e37667, type: 2}
   marriCurri: {fileID: 2100000, guid: edcb15a39a6953245ba779f9d9f55887, type: 2}
   renderer: {fileID: 1389881318688045206}
 --- !u!136 &1963881990909150581
@@ -816,7 +816,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: edcb15a39a6953245ba779f9d9f55887, type: 2}
+      objectReference: {fileID: 2100000, guid: 0c0c21bf433283548adec5d402e37667, type: 2}
+    - target: {fileID: 7930178732453267726, guid: fd70c4c45145153499a2ae36a634b92c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3534a3d52b897c94fa80b08a79f87484, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
