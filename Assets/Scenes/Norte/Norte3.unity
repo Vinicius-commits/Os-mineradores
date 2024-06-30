@@ -767,6 +767,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136883368}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &196824476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4247633185913130019, guid: 53e99171e2320714b941cd791c7cbf5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544553139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &196824483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196824476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b565020ef2b6b499af881ae13a6ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaCena: Menu
 --- !u!1 &208886954
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +931,7 @@ Transform:
   m_GameObject: {fileID: 241117133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1805,6 +1824,21 @@ PrefabInstance:
       propertyPath: nomeDaCena
       value: Norte3
       objectReference: {fileID: 0}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 196824483}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TrocarParaCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363893390112063939, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MudaCena, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2802514256680504533, guid: 53e99171e2320714b941cd791c7cbf5e,
         type: 3}
       propertyPath: m_Name
@@ -1938,9 +1972,16 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4990406263572093312, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     - {fileID: 5252239836129915979, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6514811705457248645, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 3545906215546237954, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
+    - {fileID: 5750643634895460096, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4247633185913130019, guid: 53e99171e2320714b941cd791c7cbf5e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 196824483}
   m_SourcePrefab: {fileID: 100100000, guid: 53e99171e2320714b941cd791c7cbf5e, type: 3}
 --- !u!1 &544553140 stripped
 GameObject:
@@ -3799,7 +3840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042048714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12478341, y: 0.000000035194617, z: -0.0000000044263, w: 0.99218404}
+  m_LocalRotation: {x: 0.12478341, y: -0.000000035194617, z: 0.0000000044263, w: 0.99218404}
   m_LocalPosition: {x: -9.59, y: 6.26, z: 89.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6321,7 +6362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581847080}
   serializedVersion: 2
-  m_LocalRotation: {x: -2.9819347e-10, y: -0.9645582, z: 0.26387054, w: 0.000000017733429}
+  m_LocalRotation: {x: 2.9819347e-10, y: -0.9645582, z: 0.26387054, w: -0.000000017733422}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8724,6 +8765,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 190670654870133285, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1594103578843205429, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
       propertyPath: animator
@@ -8739,6 +8785,11 @@ PrefabInstance:
       propertyPath: cameraPlayer
       value: 
       objectReference: {fileID: 1042048717}
+    - target: {fileID: 2743498620171438068, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4921209980544375150, guid: fdfa2d31f9f6c554fb9623e31a2eb2fd,
         type: 3}
       propertyPath: m_Name
