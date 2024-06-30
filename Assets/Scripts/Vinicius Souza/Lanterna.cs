@@ -8,8 +8,8 @@ public class Lanterna : MonoBehaviour
 {
     [SerializeField] float BateriaTotal;
     public float BateriaAtual;
-    private float Tempo = 0.01f;
-    [SerializeField] GameManager gameManager;
+    private float Tempo = 0.007f;
+    GameManager gameManager;
     [SerializeField] GameObject lanterna;
     [SerializeField] Light luz;
 
@@ -51,10 +51,10 @@ public class Lanterna : MonoBehaviour
         if((context.started || context.performed) && BateriaAtual <= 0.5)
         {
             Debug.Log("Entrada no recarregar da lanterna");
-            if(gameManager.grafita >= 1)
+            if(gameManager.manganes >= 1)
             {
                 BateriaAtual = 1;
-                gameManager.grafita -= 1;
+                gameManager.manganes -= 1;
             }
         }
     }

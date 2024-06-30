@@ -4,9 +4,11 @@ using UnityEngine;
 using TMPro;
 public class HUDSul : MonoBehaviour
 {
-    public TextMeshProUGUI ouroText;
-    
-    
+    public TextMeshProUGUI FluoritaText;
+    public TextMeshProUGUI FerroText;
+    public TextMeshProUGUI ManganesText;
+
+
 
     private void Start()
     {
@@ -20,8 +22,10 @@ public class HUDSul : MonoBehaviour
 
     private void AtualizarHUD(int valor)
     {
-        ouroText.text = GameManager.Instance.fluorita.ToString();
-        ;
-        
+        FluoritaText.text = GameManager.Instance.fluorita.ToString();
+        FerroText.text = GameManager.Instance.ferro.ToString();
+        ManganesText.text = GameManager.Instance.manganes.ToString();
+
+
     }
 }
